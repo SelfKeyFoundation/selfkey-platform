@@ -1,0 +1,7 @@
+{
+  "id": "http://platform.selfkey.org/schema/attribute/last-name.json",
+  "$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
+  "title": "Last Name",
+  "description": "An individual's last (family) name.",
+  "type": "string"
+}
