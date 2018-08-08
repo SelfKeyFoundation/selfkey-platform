@@ -1,0 +1,29 @@
+{
+  "id": "http://platform.selfkey.org/schema/attribute/id-selfie.json",
+  "$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
+  "title": "ID Selfie",
+  "description": "An selfie photo with a valid identification document.",
+  "type": "object",
+  "properties": {
+    "image": {
+      "anyOf": [
+        {
+          "type": "string",
+          "contentEncoding": "base64",
+          "contentMediaType": "image/jpg"
+        },
+        {
+          "type": "string",
+          "contentEncoding": "base64",
+          "contentMediaType": "image/png"
+        },
+        {
+          "type": "string",
+          "contentEncoding": "base64",
+          "contentMediaType": "application/pdf"
+        }, 
+      ]
+    }
+  },
+  "required": [ "image" ]
+}

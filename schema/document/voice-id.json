@@ -1,0 +1,34 @@
+{
+  "id": "http://platform.selfkey.org/schema/attribute/voice-id.json",
+  "$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
+  "title": "Voice ID",
+  "description": "A voice identification document.",
+  "type": "object",
+  "properties": {
+    "audio": {
+      "anyOf": [
+        {
+          "type": "string",
+          "contentEncoding": "base64",
+          "contentMediaType": "audio/mp3"
+        },
+        {
+          "type": "string",
+          "contentEncoding": "base64",
+          "contentMediaType": "audio/mp4"
+        },
+        {
+          "type": "string",
+          "contentEncoding": "base64",
+          "contentMediaType": "audio/ogg"
+        },                 
+        {
+          "type": "string",
+          "contentEncoding": "base64",
+          "contentMediaType": "audio/x-wav"
+        }
+      ]
+    }
+  },
+  "required": [ "audio" ]
+}

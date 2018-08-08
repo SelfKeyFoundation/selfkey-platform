@@ -1,0 +1,29 @@
+{
+  "id": "http://platform.selfkey.org/schema/attribute/passport.json",
+  "$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
+  "title": "Passport",
+  "description": "A copy of an individuals passport.",
+  "type": "object",
+  "properties": {
+    "image": {
+      "anyOf": [
+        {
+          "type": "string",
+          "contentEncoding": "base64",
+          "contentMediaType": "image/jpg"
+        },
+        {
+          "type": "string",
+          "contentEncoding": "base64",
+          "contentMediaType": "image/png"
+        },
+        {
+          "type": "string",
+          "contentEncoding": "base64",
+          "contentMediaType": "application/pdf"
+        }, 
+      ]
+    }
+  },
+  "required": [ "image" ]
+}

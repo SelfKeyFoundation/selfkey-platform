@@ -1,0 +1,29 @@
+{
+  "id": "http://platform.selfkey.org/schema/attribute/drivers-license.json",
+  "$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
+  "title": "Drivers License",
+  "description": "A copy of an individuals drivers license.",
+  "type": "object",
+  "properties": {
+    "image": {
+      "anyOf": [
+        {
+          "type": "string",
+          "contentEncoding": "base64",
+          "contentMediaType": "image/jpg"
+        },
+        {
+          "type": "string",
+          "contentEncoding": "base64",
+          "contentMediaType": "image/png"
+        },
+        {
+          "type": "string",
+          "contentEncoding": "base64",
+          "contentMediaType": "application/pdf"
+        }, 
+      ]
+    }
+  },
+  "required": [ "image" ]
+}
