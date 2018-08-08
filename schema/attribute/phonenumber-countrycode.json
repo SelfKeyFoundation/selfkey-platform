@@ -1,0 +1,7 @@
+{
+  "id": "http://platform.selfkey.org/schema/attribute/phonenumber_countrycode.json",
+  "$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
+  "title": "Phone Number",
+  "description": "An individual's phone number",
+  "type": "integer"
+}
