@@ -184,15 +184,23 @@
 <p>The Login with SelfKey client library accepts a configuration object containing the following attributes:</p>
 <ul>
 <li><strong><code>path</code></strong> is fully-qualified URL or relative path to the Login with SelfKey API exposed by your web service,</li>
-<li><strong><code>attributes</code></strong> contains an optional array of additional identity attributes to request from the user&apos;s SelfKey ID Wallet, and</li>
+<li><strong><code>attributes</code></strong> contains an optional array of additional identity attributes to request from the user&apos;s SelfKey ID Wallet referenced by their schema URL, and</li>
 <li><strong><code>onAuthResponse</code></strong> contains an optional callback function which receives the response from the Response Endpoint. If you omit the <code>onAuthResponse</code> handler the Login with SelfKey client library will assume your application uses cookie-based authentication and make a POST request to the login endpoint to activate the user&apos;s session in the browser.</li>
 </ul>
 <p>For example:</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">const</span> config = {
   path: <span class="hljs-string">&quot;/api/v1/auth/selfkey&quot;</span>,
   attributes: [
-    { key: <span class="hljs-string">&quot;firstname&quot;</span>, label: <span class="hljs-string">&quot;First Name&quot;</span>, attributeType: <span class="hljs-string">&quot;first_name&quot;</span> },
-    { key: <span class="hljs-string">&quot;lastname&quot;</span>, label: <span class="hljs-string">&quot;Last Name&quot;</span>, attributeType: <span class="hljs-string">&quot;last_name&quot;</span> }
+    {
+      key: <span class="hljs-string">&quot;firstname&quot;</span>,
+      label: <span class="hljs-string">&quot;First Name&quot;</span>,
+      attribute: <span class="hljs-string">&quot;http://platform.selfkey.org/schema/attribute/first-name.json&quot;</span>
+    },
+    {
+      key: <span class="hljs-string">&quot;lastname&quot;</span>,
+      label: <span class="hljs-string">&quot;Last Name&quot;</span>,
+      attribute: <span class="hljs-string">&quot;http://platform.selfkey.org/schema/attribute/last-name.json&quot;</span>
+    }
   ],
   onAuthResponse: (err, response) =&gt; {
     <span class="hljs-comment">// Handle server response</span>
@@ -300,7 +308,7 @@ POST /api/v1/auth/selfkey/login (optional)
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Implementation","level":"1.2.1","depth":2,"previous":{"title":"Login with SelfKey","level":"1.2","depth":1,"path":"login-with-selfkey/README.md","ref":"login-with-selfkey/README.md","articles":[{"title":"Implementation","level":"1.2.1","depth":2,"path":"login-with-selfkey/implementation.md","ref":"login-with-selfkey/implementation.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"login-with-selfkey/implementation.md","mtime":"2018-08-08T04:49:56.834Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-08-08T04:35:30.275Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Implementation","level":"1.2.1","depth":2,"previous":{"title":"Login with SelfKey","level":"1.2","depth":1,"path":"login-with-selfkey/README.md","ref":"login-with-selfkey/README.md","articles":[{"title":"Implementation","level":"1.2.1","depth":2,"path":"login-with-selfkey/implementation.md","ref":"login-with-selfkey/implementation.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"login-with-selfkey/implementation.md","mtime":"2018-08-08T06:20:58.428Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-08-08T06:21:44.655Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -308,10 +316,6 @@ POST /api/v1/auth/selfkey/login (optional)
         
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
-    
-        
-        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
-        
     
         
         <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
