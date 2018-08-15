@@ -7,13 +7,14 @@
   "properties": {
     "country": {
       "type": "string",
-      "description": "An arbirary, localised country name"
+      "description": "An arbitrary, localised country name"
     },
     "demonym": {
       "type": "string",
       "description": "The word used to identify citizens of the country"
     },
     "isoCode": {
+      "type": "string",
       "description":
         "The two-letter code referencing the country per ISO 3166-1 alpha-2",
       "enum": [
@@ -268,6 +269,7 @@
       ]
     },
     "unCode": {
+      "type": "string",
       "enum": [
         "AFG",
         "ALB",
