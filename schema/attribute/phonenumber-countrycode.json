@@ -3,5 +3,5 @@
   "$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
   "title": "Phone Number",
   "description": "An individual's phone number",
-  "type": "integer"
+  "type": "string"
 }
