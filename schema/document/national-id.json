@@ -6,6 +6,17 @@
   "type": "object",
   "properties": {
     "image": {
+      "$ref": "#/definitions/imageField"
+    }
+  },
+  "required": [
+    "image"
+  ],
+  "definitions": {
+    "imageField": {
+      "type": "string",
+      "title": "Image",
+      "format": "data-url",
       "anyOf": [
         {
           "type": "string",
@@ -24,6 +35,5 @@
         }, 
       ]
     }
-  },
-  "required": [ "image" ]
+  }
 }

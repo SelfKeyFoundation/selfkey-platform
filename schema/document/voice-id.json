@@ -6,6 +6,17 @@
   "type": "object",
   "properties": {
     "audio": {
+      "$ref": "#/definitions/audioField"
+    }
+  },
+  "required": [ 
+    "audio" 
+  ],
+  "definitions": {
+    "audioField": {
+      "type": "string",
+      "title": "Audio",
+      "format": "data-url",
       "anyOf": [
         {
           "type": "string",
@@ -29,6 +40,5 @@
         }
       ]
     }
-  },
-  "required": [ "audio" ]
+  }
 }
