@@ -1,0 +1,7 @@
+{
+  "id": "http://platform.selfkey.org/schema/attribute/tax-id-number.json",
+  "$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
+  "title": "Tax ID",
+  "description": "An individual's tax identification number.",
+  "type": "string"
+}
