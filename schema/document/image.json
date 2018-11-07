@@ -1,24 +1,21 @@
 {
 	"$schema": "https://json-schema.org/draft-07/schema",
 	"$id": "http://platform.selfkey.org/schema/document/audio.json",
-	"type": "string",
+	"type": "object",
 	"title": "Image",
-	"format": "data-url",
-	"anyOf": [
+	"format": "file",
+	"allOf": [
 		{
-			"type": "string",
-			"contentEncoding": "base64",
-			"contentMediaType": "image/jpg"
+			"$ref": "http://platform.selfkey.org/schema/document/document.json"
 		},
 		{
-			"type": "string",
-			"contentEncoding": "base64",
-			"contentMediaType": "image/png"
-		},
-		{
-			"type": "string",
-			"contentEncoding": "base64",
-			"contentMediaType": "application/pdf"
+			"properties": {
+				"mimeType": {
+					"type": "string",
+					"enum": ["audio/mp3", "audio/mp4", "audio/ogg", "audio/x-wav"]
+				},
+				"size": { "type": "integer", "max": 50000000 }
+			}
 		}
 	]
 }
