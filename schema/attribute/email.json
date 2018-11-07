@@ -1,6 +1,7 @@
 {
 	"$id": "http://platform.selfkey.org/schema/attribute/email.json",
 	"$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
+	"idAttribute": true,
 	"idAttributeRepository": "http://platform.selfkey.org/repository.json",
 	"title": "Email",
 	"description": "An individual's email address",

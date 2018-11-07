@@ -1,8 +1,9 @@
 {
-  "$id": "http://platform.selfkey.org/schema/attribute/tax-id-number.json",
-  "$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
-  "idAttributeRepository": "http://platform.selfkey.org/repository.json",
-  "title": "Tax ID",
-  "description": "An individual's tax identification number.",
-  "type": "string"
+	"$id": "http://platform.selfkey.org/schema/attribute/tax-id-number.json",
+	"$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
+	"idAttribute": true,
+	"idAttributeRepository": "http://platform.selfkey.org/repository.json",
+	"title": "Tax ID",
+	"description": "An individual's tax identification number.",
+	"type": "string"
 }

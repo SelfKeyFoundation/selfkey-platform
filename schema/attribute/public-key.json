@@ -1,8 +1,9 @@
 {
-  "$id": "http://platform.selfkey.org/schema/attribute/public-key.json",
-  "$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
-  "idAttributeRepository": "http://platform.selfkey.org/repository.json",
-  "title": "Public Key",
-  "description": "A cryptographic public key.",
-  "type": "string"
+	"$id": "http://platform.selfkey.org/schema/attribute/public-key.json",
+	"$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
+	"idAttribute": true,
+	"idAttributeRepository": "http://platform.selfkey.org/repository.json",
+	"title": "Public Key",
+	"description": "A cryptographic public key.",
+	"type": "string"
 }

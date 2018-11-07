@@ -1,8 +1,9 @@
 {
 	"$id": "http://platform.selfkey.org/schema/attribute/national-id-back.json",
 	"$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
-  "title": "National ID Back",
-  "idAttributeRepository": "http://platform.selfkey.org/repository.json",
+	"idAttribute": true,
+	"title": "National ID Back",
+	"idAttributeRepository": "http://platform.selfkey.org/repository.json",
 	"description": "A copy of the back of a national identification document.",
 	"type": "object",
 	"properties": {

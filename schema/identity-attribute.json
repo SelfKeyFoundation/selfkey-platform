@@ -5,15 +5,16 @@
 		{ "$ref": "http://json-schema.org/draft-07/schema" },
 		{
 			"properties": {
-				"identityAttribute": {
-					"const": "true"
+				"idAttribute": {
+					"type": "boolean",
+					"const": true
 				},
-				"identityAttributeRepository": {
+				"idAttributeRepository": {
 					"type": "string",
 					"format": "url"
 				}
 			}
 		}
 	],
-	"required": ["id", "title", "description", "identityAttribute"]
+	"required": ["id", "title", "description", "idttribute"]
 }

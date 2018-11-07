@@ -1,8 +1,9 @@
 {
-  "$id": "http://platform.selfkey.org/schema/attribute/last-name.json",
-  "$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
-  "idAttributeRepository": "http://platform.selfkey.org/repository.json",
-  "title": "Last Name",
-  "description": "An individual's last (family) name.",
-  "type": "string"
+	"$id": "http://platform.selfkey.org/schema/attribute/last-name.json",
+	"$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
+	"idAttribute": true,
+	"idAttributeRepository": "http://platform.selfkey.org/repository.json",
+	"title": "Last Name",
+	"description": "An individual's last (family) name.",
+	"type": "string"
 }
