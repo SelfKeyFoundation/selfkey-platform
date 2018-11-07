@@ -1,0 +1,14 @@
+{
+	"$id": "http://platform.selfkey.org/schema/attribute/passport.json",
+	"$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
+	"idAttributeRepository": "http://platform.selfkey.org/repository.json",
+	"title": "Passport",
+	"description": "A copy of an individuals passport.",
+	"type": "object",
+	"properties": {
+		"image": {
+			"$ref": "http://platform.selfkey.org/schema/document/image.json"
+		}
+	},
+	"required": ["image"]
+}

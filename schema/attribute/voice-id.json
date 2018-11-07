@@ -1,0 +1,14 @@
+{
+	"$id": "http://platform.selfkey.org/schema/attribute/voice-id.json",
+	"$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
+	"idAttributeRepository": "http://platform.selfkey.org/repository.json",
+	"title": "Voice ID",
+	"description": "A voice identification document.",
+	"type": "object",
+	"properties": {
+		"audio": {
+			"$ref": "http://platform.selfkey.org/schema/document/audio.json"
+		}
+	},
+	"required": ["audio"]
+}

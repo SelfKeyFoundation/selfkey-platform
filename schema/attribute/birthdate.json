@@ -1,6 +1,7 @@
 {
-  "id": "http://platform.selfkey.org/schema/attribute/birthday.json",
+  "$id": "http://platform.selfkey.org/schema/attribute/birthday.json",
   "$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
+  "idAttributeRepository": "http://platform.selfkey.org/repository.json",
   "title": "Birthday",
   "description": "An individual's date of birth.",
   "type": "string",

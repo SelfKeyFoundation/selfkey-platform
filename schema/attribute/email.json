@@ -1,8 +1,9 @@
 {
-  "id": "http://platform.selfkey.org/schema/attribute/email.json",
-  "$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
-  "title": "Email",
-  "description": "An individual's email address",
-  "type": "string",
-  "format": "email"
+	"$id": "http://platform.selfkey.org/schema/attribute/email.json",
+	"$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
+	"idAttributeRepository": "http://platform.selfkey.org/repository.json",
+	"title": "Email",
+	"description": "An individual's email address",
+	"type": "string",
+	"format": "email"
 }

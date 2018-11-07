@@ -1,6 +1,7 @@
 {
-  "id": "http://platform.selfkey.org/schema/attribute/country-of-residency.json",
+  "$id": "http://platform.selfkey.org/schema/attribute/country-of-residency.json",
   "$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
+  "idAttributeRepository": "http://platform.selfkey.org/repository.json",
   "title": "Country of Residency",
   "description": "An individual's country of residency.",
   "type": "object",

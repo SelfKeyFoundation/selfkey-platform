@@ -1,6 +1,7 @@
 {
-  "id": "http://platform.selfkey.org/schema/attribute/physical-address.json",
+  "$id": "http://platform.selfkey.org/schema/attribute/physical-address.json",
   "$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
+  "idAttributeRepository": "http://platform.selfkey.org/repository.json",
   "title": "Address",
   "description": "An individual's address.",
   "type": "object",

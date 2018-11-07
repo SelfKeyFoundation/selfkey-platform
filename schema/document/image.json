@@ -1,0 +1,24 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema",
+	"$id": "http://platform.selfkey.org/schema/document/audio.json",
+	"type": "string",
+	"title": "Image",
+	"format": "data-url",
+	"anyOf": [
+		{
+			"type": "string",
+			"contentEncoding": "base64",
+			"contentMediaType": "image/jpg"
+		},
+		{
+			"type": "string",
+			"contentEncoding": "base64",
+			"contentMediaType": "image/png"
+		},
+		{
+			"type": "string",
+			"contentEncoding": "base64",
+			"contentMediaType": "application/pdf"
+		}
+	]
+}

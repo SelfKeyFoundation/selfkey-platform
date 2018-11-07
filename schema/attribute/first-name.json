@@ -1,6 +1,7 @@
 {
-  "id": "http://platform.selfkey.org/schema/attribute/first-name.json",
+  "$id": "http://platform.selfkey.org/schema/attribute/first-name.json",
   "$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
+  "idAttributeRepository": "http://platform.selfkey.org/repository.json",
   "title": "First Name",
   "description": "An individual's first (given) name.",
   "type": "string"

@@ -1,0 +1,14 @@
+{
+	"$id": "http://platform.selfkey.org/schema/attribute/national-id.json",
+	"$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
+	"idAttributeRepository": "http://platform.selfkey.org/repository.json",
+	"title": "National ID",
+	"description": "A copy of a national identification document.",
+	"type": "object",
+	"properties": {
+		"image": {
+			"$ref": "http://platform.selfkey.org/schema/document/image.json"
+		}
+	},
+	"required": ["image"]
+}
