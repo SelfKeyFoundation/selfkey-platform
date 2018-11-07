@@ -1,29 +1,20 @@
 {
-    "$schema": "https://json-schema.org/draft-07/schema",
-    "$id": "http://platform.selfkey.org/schema/document/audio.json",
-	"type": "string",
+	"$schema": "https://json-schema.org/draft-07/schema",
+	"$id": "http://platform.selfkey.org/schema/document/audio.json",
+	"type": "object",
+	"fomat": "file",
 	"title": "Audio",
-	"format": "data-url",
-	"anyOf": [
+	"allOf": [
 		{
-			"type": "string",
-			"contentEncoding": "base64",
-			"contentMediaType": "audio/mp3"
+			"$ref": "http://platform.selfkey.org/schema/document/document.json"
 		},
 		{
-			"type": "string",
-			"contentEncoding": "base64",
-			"contentMediaType": "audio/mp4"
-		},
-		{
-			"type": "string",
-			"contentEncoding": "base64",
-			"contentMediaType": "audio/ogg"
-		},
-		{
-			"type": "string",
-			"contentEncoding": "base64",
-			"contentMediaType": "audio/x-wav"
+			"properties": {
+				"mimeType": {
+					"type": "string",
+					"enum": ["audio/mp3", "audio/mp4", "audio/ogg", "audio/x-wav"]
+				}
+			}
 		}
 	]
 }
