@@ -1,3 +1,29 @@
 {
-    
+	"idAttributes": [
+		{
+			"json": "http://platform.selfkey.org/schema/attribute/public-key.json",
+			"ui": "http://platform.selfkey.org/ui/public-key.json"
+		},
+		"http://platform.selfkey.org/schema/attribute/bank-statement.json",
+		"http://platform.selfkey.org/schema/attribute/birthdate.json",
+		"http://platform.selfkey.org/schema/attribute/country-of-residency.json",
+		"http://platform.selfkey.org/schema/attribute/drivers-license.json",
+		"http://platform.selfkey.org/schema/attribute/email.json",
+		"http://platform.selfkey.org/schema/attribute/fingerprint.json",
+		"http://platform.selfkey.org/schema/attribute/first-name.json",
+		"http://platform.selfkey.org/schema/attribute/id-selfie.json",
+		"http://platform.selfkey.org/schema/attribute/last-name.json",
+		"http://platform.selfkey.org/schema/attribute/middle-name.json",
+		"http://platform.selfkey.org/schema/attribute/national-id.json",
+		"http://platform.selfkey.org/schema/attribute/national-id-back.json",
+		"http://platform.selfkey.org/schema/attribute/nationality.json",
+		"http://platform.selfkey.org/schema/attribute/passport.json",
+		"http://platform.selfkey.org/schema/attribute/phonenumber-countrycode.json",
+		"http://platform.selfkey.org/schema/attribute/physical-address.json",
+		"http://platform.selfkey.org/schema/attribute/tax-certificate.json",
+		"http://platform.selfkey.org/schema/attribute/tax-id-number.json",
+		"http://platform.selfkey.org/schema/attribute/utility-bill.json",
+		"http://platform.selfkey.org/schema/attribute/voice-id.json",
+		"http://platform.selfkey.org/schema/attribute/work-place.json"
+	]
 }
