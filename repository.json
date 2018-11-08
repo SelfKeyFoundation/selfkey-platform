@@ -1,4 +1,5 @@
 {
+	"name": "Selfkey.org",
 	"idAttributes": [
 		{
 			"json": "http://platform.selfkey.org/schema/attribute/public-key.json",
