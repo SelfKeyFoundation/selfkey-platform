@@ -9,6 +9,7 @@
 			"$ref": "http://platform.selfkey.org/schema/document/document.json"
 		},
 		{
+			"type": "object",
 			"properties": {
 				"mimeType": {
 					"type": "string",
