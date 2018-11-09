@@ -1,0 +1,10 @@
+{
+	"$id": "http://platform.selfkey.org/schema/attribute/date-of-birth.json",
+	"$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
+	"identityAttribute": true,
+	"identityAttributeRepository": "http://platform.selfkey.org/repository.json",
+	"title": "Date of Birth",
+	"description": "An individual's date of birth.",
+	"type": "string",
+	"format": "date"
+}
