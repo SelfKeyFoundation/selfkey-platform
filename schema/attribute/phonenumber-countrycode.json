@@ -1,8 +1,8 @@
 {
 	"$id": "http://platform.selfkey.org/schema/attribute/phonenumber_countrycode.json",
 	"$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
-	"idAttribute": true,
-	"idAttributeRepository": "http://platform.selfkey.org/repository.json",
+	"identityAttribute": true,
+	"identityAttributeRepository": "http://platform.selfkey.org/repository.json",
 	"title": "Phone Number",
 	"description": "An individual's phone number",
 	"type": "string"

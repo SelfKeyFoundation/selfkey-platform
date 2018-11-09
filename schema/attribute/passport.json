@@ -1,8 +1,8 @@
 {
 	"$id": "http://platform.selfkey.org/schema/attribute/passport.json",
 	"$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
-	"idAttribute": true,
-	"idAttributeRepository": "http://platform.selfkey.org/repository.json",
+	"identityAttribute": true,
+	"identityAttributeRepository": "http://platform.selfkey.org/repository.json",
 	"title": "Passport",
 	"description": "A copy of an individuals passport.",
 	"type": "object",
