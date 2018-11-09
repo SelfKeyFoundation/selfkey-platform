@@ -1,5 +1,5 @@
 {
-	"$id": "http://platform.selfkey.org/schema/attribute/phonenumber_countrycode.json",
+	"$id": "http://platform.selfkey.org/schema/attribute/phone-number.json",
 	"$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
 	"identityAttribute": true,
 	"identityAttributeRepository": "http://platform.selfkey.org/repository.json",
