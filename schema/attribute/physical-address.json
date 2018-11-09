@@ -7,31 +7,15 @@
 	"description": "An individual's address.",
 	"type": "object",
 	"properties": {
-		"post-office-box": {
+		"address-line-1": {
 			"type": "string"
 		},
-		"extended-address": {
+		"address-line-2": {
 			"type": "string"
 		},
-		"street-address": {
-			"type": "string"
-		},
-		"locality": {
-			"type": "string"
-		},
-		"region": {
-			"type": "string"
-		},
-		"postal-code": {
-			"type": "string"
-		},
-		"country-name": {
+		"address-line3": {
 			"type": "string"
 		}
 	},
-	"required": ["locality", "region", "country-name"],
-	"dependencies": {
-		"post-office-box": ["street-address"],
-		"extended-address": ["street-address"]
-	}
+	"required": ["address-line-1", "address-line-2", "address-line-3"]
 }
