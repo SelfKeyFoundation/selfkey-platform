@@ -16,7 +16,6 @@
 		"http://platform.selfkey.org/schema/attribute/last-name.json",
 		"http://platform.selfkey.org/schema/attribute/middle-name.json",
 		"http://platform.selfkey.org/schema/attribute/national-id.json",
-		"http://platform.selfkey.org/schema/attribute/national-id-back.json",
 		"http://platform.selfkey.org/schema/attribute/nationality.json",
 		"http://platform.selfkey.org/schema/attribute/passport.json",
 		"http://platform.selfkey.org/schema/attribute/phone-number.json",

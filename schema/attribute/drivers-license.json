@@ -8,20 +8,12 @@
 	"type": "object",
 	"properties": {
 		"front": {
-			"type": "object",
 			"title": "Front image",
-			"properties": {
-				"$ref": "http://platform.selfkey.org/schema/document/image.json"
-			},
-			"required": ["image"]
+			"$ref": "http://platform.selfkey.org/schema/document/image.json"
 		},
 		"back": {
-			"type": "object",
 			"title": "Back image",
-			"properties": {
-				"$ref": "http://platform.selfkey.org/schema/document/image.json"
-			},
-			"required": ["image"]
+			"$ref": "http://platform.selfkey.org/schema/document/image.json"
 		}
 	},
 	"required": ["front", "back"]
