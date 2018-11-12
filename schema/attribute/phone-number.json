@@ -1,9 +1,9 @@
 {
-	"$id": "http://platform.selfkey.org/schema/attribute/public-key.json",
+	"$id": "http://platform.selfkey.org/schema/attribute/phone-number.json",
 	"$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
 	"identityAttribute": true,
 	"identityAttributeRepository": "http://platform.selfkey.org/repository.json",
-	"title": "Public Key",
-	"description": "A cryptographic public key.",
+	"title": "Phone Number",
+	"description": "An individual's phone number",
 	"type": "string"
 }

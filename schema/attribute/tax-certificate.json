@@ -1,0 +1,15 @@
+{
+	"$id": "http://platform.selfkey.org/schema/attribute/tax-certificate.json",
+	"$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
+	"identityAttribute": true,
+	"identityAttributeRepository": "http://platform.selfkey.org/repository.json",
+	"title": "Tax Certificate",
+	"description": "A copy of a tax certificate.",
+	"type": "object",
+	"properties": {
+		"image": {
+			"$ref": "http://platform.selfkey.org/schema/document/image.json"
+		}
+	},
+	"required": ["image"]
+}

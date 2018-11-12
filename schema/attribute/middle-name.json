@@ -1,7 +1,9 @@
 {
-  "id": "http://platform.selfkey.org/schema/attribute/middle-name.json",
-  "$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
-  "title": "Middle Name",
-  "description": "An individual's middle name.",
-  "type": "string"
+	"$id": "http://platform.selfkey.org/schema/attribute/middle-name.json",
+	"$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
+	"identityAttribute": true,
+	"identityAttributeRepository": "http://platform.selfkey.org/repository.json",
+	"title": "Middle Name",
+	"description": "An individual's middle name.",
+	"type": "string"
 }

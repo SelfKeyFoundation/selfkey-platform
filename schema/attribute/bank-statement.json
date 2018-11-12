@@ -1,0 +1,15 @@
+{
+	"$id": "http://platform.selfkey.org/schema/attribute/bank-statement.json",
+	"$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
+	"identityAttribute": true,
+	"identityAttributeRepository": "http://platform.selfkey.org/repository.json",
+	"title": "Bank Statement",
+	"description": "A copy of a bank statement.",
+	"type": "object",
+	"properties": {
+		"image": {
+			"$ref": "http://platform.selfkey.org/schema/document/image.json"
+		}
+	},
+	"required": ["image"]
+}

@@ -1,35 +1,21 @@
 {
-  "id": "http://platform.selfkey.org/schema/attribute/physical-address.json",
-  "$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
-  "title": "Address",
-  "description": "An individual's address.",
-  "type": "object",
-  "properties": {
-    "post-office-box": {
-      "type": "string"
-    },
-    "extended-address": {
-      "type": "string"
-    },
-    "street-address": {
-      "type": "string"
-    },
-    "locality": {
-      "type": "string"
-    },
-    "region": {
-      "type": "string"
-    },
-    "postal-code": {
-      "type": "string"
-    },
-    "country-name": {
-      "type": "string"
-    }
-  },
-  "required": [ "locality", "region", "country-name" ],
-  "dependencies": {
-    "post-office-box": [ "street-address" ],
-    "extended-address": [ "street-address" ]
-  }
+	"$id": "http://platform.selfkey.org/schema/attribute/physical-address.json",
+	"$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
+	"identityAttribute": true,
+	"identityAttributeRepository": "http://platform.selfkey.org/repository.json",
+	"title": "Address",
+	"description": "An individual's address.",
+	"type": "object",
+	"properties": {
+		"address-line-1": {
+			"type": "string"
+		},
+		"address-line-2": {
+			"type": "string"
+		},
+		"address-line3": {
+			"type": "string"
+		}
+	},
+	"required": ["address-line-1", "address-line-2", "address-line-3"]
 }

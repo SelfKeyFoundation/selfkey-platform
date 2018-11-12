@@ -1,10 +1,10 @@
 {
-	"$id": "http://platform.selfkey.org/schema/attribute/email.json",
+	"$id": "http://platform.selfkey.org/schema/attribute/date-of-birth.json",
 	"$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
 	"identityAttribute": true,
 	"identityAttributeRepository": "http://platform.selfkey.org/repository.json",
-	"title": "Email",
-	"description": "An individual's email address",
+	"title": "Date of Birth",
+	"description": "An individual's date of birth.",
 	"type": "string",
-	"format": "email"
+	"format": "date"
 }

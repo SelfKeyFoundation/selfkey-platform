@@ -1,0 +1,15 @@
+{
+	"$id": "http://platform.selfkey.org/schema/attribute/utility-bill.json",
+	"$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
+	"identityAttribute": true,
+	"identityAttributeRepository": "http://platform.selfkey.org/repository.json",
+	"title": "Utility Bill",
+	"description": "A copy of a utility bill.",
+	"type": "object",
+	"properties": {
+		"image": {
+			"$ref": "http://platform.selfkey.org/schema/document/image.json"
+		}
+	},
+	"required": ["image"]
+}

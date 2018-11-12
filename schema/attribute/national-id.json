@@ -1,0 +1,28 @@
+{
+	"$id": "http://platform.selfkey.org/schema/attribute/national-id.json",
+	"$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
+	"identityAttribute": true,
+	"identityAttributeRepository": "http://platform.selfkey.org/repository.json",
+	"title": "National ID",
+	"description": "A copy of a national identification document.",
+	"type": "object",
+	"properties": {
+		"front": {
+			"title": "Front image",
+			"$ref": "http://platform.selfkey.org/schema/document/image.json"
+
+		},
+		"back": {
+			"title": "Back image",
+			"$ref": "http://platform.selfkey.org/schema/document/image.json"
+		},
+		"additional": {
+			"type": "array",
+			"title": "Additional images",
+			"items": {
+				"$ref": "http://platform.selfkey.org/schema/document/image.json"
+			}
+		}
+	},
+	"required": ["front"]
+}

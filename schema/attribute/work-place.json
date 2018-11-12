@@ -1,7 +1,9 @@
 {
-  "id": "http://platform.selfkey.org/schema/attribute/work-place.json",
-  "$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
-  "title": "Workplace",
-  "description": "An individual's place of work.",
-  "type": "string"
+	"$id": "http://platform.selfkey.org/schema/attribute/work-place.json",
+	"$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
+	"identityAttribute": true,
+	"identityAttributeRepository": "http://platform.selfkey.org/repository.json",
+	"title": "Workplace",
+	"description": "An individual's place of work.",
+	"type": "string"
 }

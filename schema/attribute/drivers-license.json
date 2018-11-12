@@ -1,0 +1,20 @@
+{
+	"$id": "http://platform.selfkey.org/schema/attribute/drivers-license.json",
+	"$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
+	"identityAttribute": true,
+	"identityAttributeRepository": "http://platform.selfkey.org/repository.json",
+	"title": "Drivers License",
+	"description": "A copy of an individuals drivers license.",
+	"type": "object",
+	"properties": {
+		"front": {
+			"title": "Front image",
+			"$ref": "http://platform.selfkey.org/schema/document/image.json"
+		},
+		"back": {
+			"title": "Back image",
+			"$ref": "http://platform.selfkey.org/schema/document/image.json"
+		}
+	},
+	"required": ["front", "back"]
+}
