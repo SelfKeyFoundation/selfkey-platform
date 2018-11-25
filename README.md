@@ -4,4 +4,4 @@ This repo contains files for https://platform.selfkey.org including JSON Schema 
 
 ## JSON Schema
 
-Schemas are located in `./schema` and should conform to the JSON Schema Draft 4 specification.
+Schemas are located in `./schema` and should conform to the JSON Schema Draft 7 specification.
