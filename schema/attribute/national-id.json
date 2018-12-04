@@ -10,7 +10,6 @@
 		"front": {
 			"title": "Front image",
 			"$ref": "http://platform.selfkey.org/schema/document/image.json"
-
 		},
 		"back": {
 			"title": "Back image",
