@@ -8,11 +8,7 @@
 		"mimeType": { "type": "string", "enum": ["audio/mp3", "audio/mp4", "audio/ogg", "audio/x-wav"] },
 		"size": { "type": "integer", "max": 50000000 },
 		"content": {
-			"oneOf": [
-				{ "type": "string", "contentEncoding": "base64", "format": "data-url" },
-				{ "type": "string", "format": "url" },
-				{ "type": "string" }
-			]
+			"type": "string"
 		}
 	},
 	"required": ["mimeType", "size", "content"]
