@@ -4,19 +4,12 @@
 	"type": "object",
 	"format": "file",
 	"title": "Audio",
-	"allOf": [
-		{
-			"$ref": "http://platform.selfkey.org/schema/document/document.json"
-		},
-		{
-			"type": "object",
-			"properties": {
-				"mimeType": {
-					"type": "string",
-					"enum": ["audio/mp3", "audio/mp4", "audio/ogg", "audio/x-wav"]
-				},
-				"size": { "type": "integer", "max": 50000000 }
-			}
+	"properties": {
+		"mimeType": { "type": "string", "enum": ["audio/mp3", "audio/mp4", "audio/ogg", "audio/x-wav"] },
+		"size": { "type": "integer", "max": 50000000 },
+		"content": {
+			"type": "string"
 		}
-	]
+	},
+	"required": ["mimeType", "size", "content"]
 }
