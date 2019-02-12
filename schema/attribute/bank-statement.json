@@ -8,7 +8,7 @@
 	"type": "object",
 	"properties": {
 		"image": {
-			"$ref": "http://platform.selfkey.org/schema/document/image.json"
+			"$ref": "http://platform.selfkey.org/schema/file/image.json"
 		}
 	},
 	"required": ["image"]

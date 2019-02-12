@@ -9,11 +9,11 @@
 	"properties": {
 		"front": {
 			"title": "Front image",
-			"$ref": "http://platform.selfkey.org/schema/document/image.json"
+			"$ref": "http://platform.selfkey.org/schema/file/image.json"
 		},
 		"back": {
 			"title": "Back image",
-			"$ref": "http://platform.selfkey.org/schema/document/image.json"
+			"$ref": "http://platform.selfkey.org/schema/file/image.json"
 		}
 	},
 	"required": ["front", "back"]
