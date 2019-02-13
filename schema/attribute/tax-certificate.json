@@ -4,7 +4,7 @@
 	"identityAttribute": true,
 	"identityAttributeRepository": "http://platform.selfkey.org/repository.json",
 	"title": "Tax Certificate",
-	"description": "A copy of a tax certificate.",
+	"description": "Please provide a copy of a recent tax certificate. No older than 12 months.",
 	"type": "object",
 	"properties": {
 		"image": {
