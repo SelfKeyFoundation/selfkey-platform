@@ -5,14 +5,8 @@
 	"identityAttributeRepository": "http://platform.selfkey.org/repository.json",
 	"title": "Voice ID",
 	"description": "Please provide a recording with your voice authentication phrase.",
-	"type": "object",
-	"properties": {
-		"audio": {
-			"$ref": "http://platform.selfkey.org/schema/document/audio.json"
-		},
-		"extra": {
-			"$ref": "http://platform.selfkey.org/schema/misc/extra-images.json"
-		}
-	},
-	"required": ["audio"]
+	"type": "array",
+	"items": {
+		"$ref": "http://platform.selfkey.org/schema/document/audio.json"
+	}
 }
