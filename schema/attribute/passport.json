@@ -4,7 +4,7 @@
 	"identityAttribute": true,
 	"identityAttributeRepository": "http://platform.selfkey.org/repository.json",
 	"title": "Passport",
-	"description": "A copy of an individuals passport.",
+	"description": "Please provide an image of your passport. It must still be valid.",
 	"type": "object",
 	"properties": {
 		"image": {
