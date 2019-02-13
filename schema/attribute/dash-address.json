@@ -1,0 +1,10 @@
+{
+	"$id": "http://platform.selfkey.org/schema/attribute/dash-address.json",
+	"$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
+	"identityAttribute": true,
+	"identityAttributeRepository": "http://platform.selfkey.org/repository.json",
+	"title": "Dash Address",
+	"description": "Please provide a Dash wallet address, that you currently use.",
+	"type": "string",
+	"pattern": "^X[1-9A-HJ-NP-Za-km-z]{33}"
+}

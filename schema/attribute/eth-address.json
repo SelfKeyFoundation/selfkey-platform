@@ -1,0 +1,10 @@
+{
+	"$id": "http://platform.selfkey.org/schema/attribute/eth-address.json",
+	"$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
+	"identityAttribute": true,
+	"identityAttributeRepository": "http://platform.selfkey.org/repository.json",
+	"title": "ETH Address",
+	"description": "Please provide a ETH wallet address, that you currently use.",
+	"type": "string",
+	"pattern": "^0x[a-fA-F0-9]{40}$"
+}

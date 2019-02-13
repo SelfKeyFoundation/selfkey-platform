@@ -19,6 +19,9 @@
 		{ "json": "http://platform.selfkey.org/schema/attribute/tax-id-number.json" },
 		{ "json": "http://platform.selfkey.org/schema/attribute/utility-bill.json" },
 		{ "json": "http://platform.selfkey.org/schema/attribute/voice-id.json" },
-		{ "json": "http://platform.selfkey.org/schema/attribute/work-place.json" }
+		{ "json": "http://platform.selfkey.org/schema/attribute/work-place.json" },
+		{ "json": "http://platform.selfkey.org/schema/attribute/btc-address.json" },
+		{ "json": "http://platform.selfkey.org/schema/attribute/eth-address.json" },
+		{ "json": "http://platform.selfkey.org/schema/attribute/dash-address.json" }
 	]
 }
