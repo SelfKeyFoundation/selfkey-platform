@@ -4,6 +4,6 @@
 	"identityAttribute": true,
 	"identityAttributeRepository": "http://platform.selfkey.org/repository.json",
 	"title": "Workplace",
-	"description": "An individual's place of work.",
+	"description": "Please specify your current place of work. You can also state if you are un-employed or retired.",
 	"type": "string"
 }
