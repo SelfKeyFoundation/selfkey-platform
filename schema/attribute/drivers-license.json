@@ -14,6 +14,15 @@
 		"back": {
 			"title": "Back image",
 			"$ref": "http://platform.selfkey.org/schema/file/image.json"
+		},
+		"expires": {
+			"$ref": "http://platform.selfkey.org/schema/misc/expiry-date.json"
+		},
+		"selfie": {
+			"$ref": "http://platform.selfkey.org/schema/misc/selfie.json"
+		},
+		"extra": {
+			"$ref": "http://platform.selfkey.org/schema/misc/extra-images.json"
 		}
 	},
 	"required": ["front", "back"]

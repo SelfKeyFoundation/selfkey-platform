@@ -9,6 +9,9 @@
 	"properties": {
 		"audio": {
 			"$ref": "http://platform.selfkey.org/schema/document/audio.json"
+		},
+		"extra": {
+			"$ref": "http://platform.selfkey.org/schema/misc/extra-images.json"
 		}
 	},
 	"required": ["audio"]

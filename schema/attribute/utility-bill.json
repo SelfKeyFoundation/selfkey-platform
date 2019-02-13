@@ -7,9 +7,15 @@
 	"description": "Please provide an image with a recent utility bill. No older than 3 months.",
 	"type": "object",
 	"properties": {
-		"image": {
-			"$ref": "http://platform.selfkey.org/schema/file/image.json"
+		"images": {
+			"$ref": "http://platform.selfkey.org/schema/file/muilti-image.json"
+		},
+		"issue": {
+			"$ref": "http://platform.selfkey.org/schema/misc/issue-date.json"
+		},
+		"extra": {
+			"$ref": "http://platform.selfkey.org/schema/misc/extra-images.json"
 		}
 	},
-	"required": ["image"]
+	"required": ["images"]
 }
