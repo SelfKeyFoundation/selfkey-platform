@@ -17,5 +17,5 @@
 			"$ref": "http://platform.selfkey.org/schema/misc/extra-images.json"
 		}
 	},
-	"required": ["images"]
+	"required": ["images", "issue"]
 }
