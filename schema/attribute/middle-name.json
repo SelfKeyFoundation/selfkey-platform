@@ -4,6 +4,6 @@
 	"identityAttribute": true,
 	"identityAttributeRepository": "http://platform.selfkey.org/repository.json",
 	"title": "Middle Name",
-	"description": "An individual's middle name.",
+	"description": "Middle Name.",
 	"type": "string"
 }
