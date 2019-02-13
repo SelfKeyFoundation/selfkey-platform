@@ -4,7 +4,7 @@
 	"identityAttribute": true,
 	"identityAttributeRepository": "http://platform.selfkey.org/repository.json",
 	"title": "Email",
-	"description": "An individual's email address",
+	"description": "Please enter your e-mail address.",
 	"type": "string",
 	"format": "email"
 }
