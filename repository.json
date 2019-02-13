@@ -27,6 +27,7 @@
 		{ "json": "http://platform.selfkey.org/schema/attribute/registration-certificate.json" },
 		{ "json": "http://platform.selfkey.org/schema/attribute/external-document.json" },
 		{ "json": "http://platform.selfkey.org/schema/attribute/company-name.json" },
-		{ "json": "http://platform.selfkey.org/schema/attribute/birth-certificate.json" }
+		{ "json": "http://platform.selfkey.org/schema/attribute/birth-certificate.json" },
+		{ "json": "http://platform.selfkey.org/schema/attribute/member-register.json" }
 	]
 }
