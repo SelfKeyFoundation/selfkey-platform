@@ -4,7 +4,7 @@
 	"identityAttribute": true,
 	"identityAttributeRepository": "http://platform.selfkey.org/repository.json",
 	"title": "Utility Bill",
-	"description": "A copy of a utility bill.",
+	"description": "Please provide an image with a recent utility bill. No older than 3 months.",
 	"type": "object",
 	"properties": {
 		"image": {

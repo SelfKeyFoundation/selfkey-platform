@@ -4,7 +4,7 @@
 	"identityAttribute": true,
 	"identityAttributeRepository": "http://platform.selfkey.org/repository.json",
 	"title": "National ID",
-	"description": "A copy of a national identification file.",
+	"description": "Please provide a valid national identification document.",
 	"type": "object",
 	"properties": {
 		"front": {
