@@ -4,7 +4,7 @@
 	"identityAttribute": true,
 	"identityAttributeRepository": "http://platform.selfkey.org/repository.json",
 	"title": "Date of Birth",
-	"description": "An individual's date of birth.",
+	"description": "Please enter your full date of birth.",
 	"type": "string",
 	"format": "date"
 }
