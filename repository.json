@@ -22,6 +22,7 @@
 		{ "json": "http://platform.selfkey.org/schema/attribute/work-place.json" },
 		{ "json": "http://platform.selfkey.org/schema/attribute/btc-address.json" },
 		{ "json": "http://platform.selfkey.org/schema/attribute/eth-address.json" },
-		{ "json": "http://platform.selfkey.org/schema/attribute/dash-address.json" }
+		{ "json": "http://platform.selfkey.org/schema/attribute/dash-address.json" },
+		{ "json": "http://platform.selfkey.org/schema/attribute/certificate-of-incorporation.json" }
 	]
 }
