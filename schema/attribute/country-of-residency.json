@@ -4,7 +4,7 @@
 	"identityAttribute": true,
 	"identityAttributeRepository": "http://platform.selfkey.org/repository.json",
 	"title": "Country of Residency",
-	"description": "An individual's country of residency.",
+	"description": "Please specify the country you are currently living in.",
 	"type": "object",
 	"properties": {
 		"country": {
