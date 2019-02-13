@@ -25,6 +25,7 @@
 		{ "json": "http://platform.selfkey.org/schema/attribute/dash-address.json" },
 		{ "json": "http://platform.selfkey.org/schema/attribute/certificate-of-incorporation.json" },
 		{ "json": "http://platform.selfkey.org/schema/attribute/registration-certificate.json" },
-		{ "json": "http://platform.selfkey.org/schema/attribute/external-document.json" }
+		{ "json": "http://platform.selfkey.org/schema/attribute/external-document.json" },
+		{ "json": "http://platform.selfkey.org/schema/attribute/company-name.json" }
 	]
 }
