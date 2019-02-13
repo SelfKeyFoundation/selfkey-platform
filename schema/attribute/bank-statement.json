@@ -4,7 +4,7 @@
 	"identityAttribute": true,
 	"identityAttributeRepository": "http://platform.selfkey.org/repository.json",
 	"title": "Bank Statement",
-	"description": "A copy of a bank statement.",
+	"description": "Please provide a copy of a recent bank statement. No older than 6 months.",
 	"type": "object",
 	"properties": {
 		"image": {
