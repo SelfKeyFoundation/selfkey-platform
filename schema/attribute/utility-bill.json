@@ -8,7 +8,7 @@
 	"type": "object",
 	"properties": {
 		"images": {
-			"$ref": "http://platform.selfkey.org/schema/file/muilti-image.json"
+			"$ref": "http://platform.selfkey.org/schema/file/multi-image.json"
 		},
 		"issued": {
 			"$ref": "http://platform.selfkey.org/schema/misc/issue-date.json"
