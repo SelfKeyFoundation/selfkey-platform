@@ -43,7 +43,7 @@ async function fetchUiSchema(url) {
 }
 
 function usage() {
-	console.log(`Usage: ${process.argv[1]} <repository-url> > repository.json`);
+	console.log(`Usage: ${process.argv[1]} <repository-url> > resolved-repository.json`);
 }
 
 async function main() {
