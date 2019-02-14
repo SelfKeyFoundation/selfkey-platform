@@ -15,7 +15,7 @@
 			"title": "Back image",
 			"$ref": "http://platform.selfkey.org/schema/file/image.json"
 		},
-		"issue": {
+		"issued": {
 			"$ref": "http://platform.selfkey.org/schema/misc/issue-date.json"
 		},
 		"expires": {
@@ -28,5 +28,5 @@
 			"$ref": "http://platform.selfkey.org/schema/misc/extra-images.json"
 		}
 	},
-	"required": ["front", "issue"]
+	"required": ["front", "issued"]
 }

@@ -18,12 +18,12 @@
 			"title": "Registration Number",
 			"type": "integer"
 		},
-		"issue": {
+		"issued": {
 			"$ref": "http://platform.selfkey.org/schema/misc/issue-date.json"
 		},
 		"extra": {
 			"$ref": "http://platform.selfkey.org/schema/misc/extra-images.json"
 		}
 	},
-	"required": ["image", "company_name", "registration_number", "issue"]
+	"required": ["image", "company_name", "registration_number", "issued"]
 }

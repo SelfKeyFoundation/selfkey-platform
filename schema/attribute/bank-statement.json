@@ -10,12 +10,12 @@
 		"images": {
 			"$ref": "http://platform.selfkey.org/schema/file/muilti-image.json"
 		},
-		"issue": {
+		"issued": {
 			"$ref": "http://platform.selfkey.org/schema/misc/issue-date.json"
 		},
 		"extra": {
 			"$ref": "http://platform.selfkey.org/schema/misc/extra-images.json"
 		}
 	},
-	"required": ["images", "issue"]
+	"required": ["images", "issued"]
 }

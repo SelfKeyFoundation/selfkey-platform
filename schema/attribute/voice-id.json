@@ -7,6 +7,6 @@
 	"description": "Please provide a recording with your voice authentication phrase.",
 	"type": "array",
 	"items": {
-		"$ref": "http://platform.selfkey.org/schema/document/audio.json"
+		"$ref": "http://platform.selfkey.org/schema/file/audio.json"
 	}
 }

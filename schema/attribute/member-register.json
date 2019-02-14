@@ -9,7 +9,7 @@
 		"images": {
 			"$ref": "http://platform.selfkey.org/schema/file/multi-image.json"
 		},
-		"issue": {
+		"issued": {
 			"$ref": "http://platform.selfkey.org/schema/misc/issue-date.json"
 		},
 		"members": {
@@ -35,5 +35,5 @@
 			"$ref": "http://platform.selfkey.org/schema/misc/extra-images.json"
 		}
 	},
-	"required": ["images", "issue", "members"]
+	"required": ["images", "issued", "members"]
 }
