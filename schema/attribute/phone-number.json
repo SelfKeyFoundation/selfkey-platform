@@ -4,6 +4,7 @@
 	"identityAttribute": true,
 	"identityAttributeRepository": "http://platform.selfkey.org/repository.json",
 	"title": "Phone Number",
-	"description": "An individual's phone number",
+	"pattern": "^[\\+]?[(]?[0-9]{3}[)]?[-\\s\\.]?[0-9]{3}[-\\s\\.]?[0-9]{4,6}$",
+	"description": "Please enter your current phone number.",
 	"type": "string"
 }

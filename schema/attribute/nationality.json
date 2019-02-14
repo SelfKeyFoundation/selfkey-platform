@@ -4,7 +4,7 @@
 	"identityAttribute": true,
 	"identityAttributeRepository": "http://platform.selfkey.org/repository.json",
 	"title": "Nationality",
-	"description": "A country an individual holds citizenship in.",
+	"description": "Please specify your current nationality.",
 	"type": "object",
 	"properties": {
 		"country": {

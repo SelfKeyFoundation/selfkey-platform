@@ -1,14 +1,14 @@
 {
-	"$id": "http://platform.selfkey.org/schema/attribute/bank-statement.json",
+	"$id": "http://platform.selfkey.org/schema/attribute/certificate-of-incorporation.json",
 	"$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
 	"identityAttribute": true,
 	"identityAttributeRepository": "http://platform.selfkey.org/repository.json",
-	"title": "Bank Statement",
-	"description": "Please provide a copy of a recent bank statement. No older than 6 months.",
+	"title": "Certificate of Incorporation",
+	"description": "Please provide a copy of your company's certificate of incorporation.",
 	"type": "object",
 	"properties": {
-		"images": {
-			"$ref": "http://platform.selfkey.org/schema/file/muilti-image.json"
+		"image": {
+			"$ref": "http://platform.selfkey.org/schema/file/image.json"
 		},
 		"issued": {
 			"$ref": "http://platform.selfkey.org/schema/misc/issue-date.json"
@@ -17,5 +17,5 @@
 			"$ref": "http://platform.selfkey.org/schema/misc/extra-images.json"
 		}
 	},
-	"required": ["images", "issued"]
+	"required": ["image", "issued"]
 }

@@ -4,6 +4,6 @@
 	"identityAttribute": true,
 	"identityAttributeRepository": "http://platform.selfkey.org/repository.json",
 	"title": "Last Name",
-	"description": "An individual's last (family) name.",
+	"description": "Family Name.",
 	"type": "string"
 }

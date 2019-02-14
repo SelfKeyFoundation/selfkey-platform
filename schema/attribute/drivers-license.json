@@ -4,17 +4,26 @@
 	"identityAttribute": true,
 	"identityAttributeRepository": "http://platform.selfkey.org/repository.json",
 	"title": "Drivers License",
-	"description": "A copy of an individuals drivers license.",
+	"description": "Please provide images of the front and back sides of your driver's license.",
 	"type": "object",
 	"properties": {
 		"front": {
 			"title": "Front image",
-			"$ref": "http://platform.selfkey.org/schema/document/image.json"
+			"$ref": "http://platform.selfkey.org/schema/file/image.json"
 		},
 		"back": {
 			"title": "Back image",
-			"$ref": "http://platform.selfkey.org/schema/document/image.json"
+			"$ref": "http://platform.selfkey.org/schema/file/image.json"
+		},
+		"expires": {
+			"$ref": "http://platform.selfkey.org/schema/misc/expiry-date.json"
+		},
+		"selfie": {
+			"$ref": "http://platform.selfkey.org/schema/misc/selfie.json"
+		},
+		"extra": {
+			"$ref": "http://platform.selfkey.org/schema/misc/extra-images.json"
 		}
 	},
-	"required": ["front", "back"]
+	"required": ["front", "back", "expires"]
 }

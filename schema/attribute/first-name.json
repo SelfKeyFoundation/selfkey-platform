@@ -4,6 +4,6 @@
 	"identityAttribute": true,
 	"identityAttributeRepository": "http://platform.selfkey.org/repository.json",
 	"title": "First Name",
-	"description": "An individual's first (given) name.",
+	"description": "Given Name.",
 	"type": "string"
 }

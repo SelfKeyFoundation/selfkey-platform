@@ -1,10 +1,10 @@
 {
-	"$id": "http://platform.selfkey.org/schema/attribute/date-of-birth.json",
+	"$id": "http://platform.selfkey.org/schema/attribute/eth-address.json",
 	"$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
 	"identityAttribute": true,
 	"identityAttributeRepository": "http://platform.selfkey.org/repository.json",
-	"title": "Date of Birth",
-	"description": "Please enter your full date of birth.",
+	"title": "ETH Wallet Address",
+	"description": "Please enter your Ethereum Wallet Address",
 	"type": "string",
-	"format": "date"
+	"pattern": "^0x[a-fA-F0-9]{40}$"
 }

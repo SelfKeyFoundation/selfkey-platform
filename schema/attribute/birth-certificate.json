@@ -1,14 +1,17 @@
 {
-	"$id": "http://platform.selfkey.org/schema/attribute/fingerprint.json",
+	"$id": "http://platform.selfkey.org/schema/attribute/birth-certificate.json",
 	"$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
 	"identityAttribute": true,
 	"identityAttributeRepository": "http://platform.selfkey.org/repository.json",
-	"title": "Fingerprint",
-	"description": "Please provide an image with your fingerprint. It can be either your thumb or index finger.",
+	"title": "Birth Certificate",
+	"description": "Please provide an image of your birth certificate.",
 	"type": "object",
 	"properties": {
 		"images": {
 			"$ref": "http://platform.selfkey.org/schema/file/multi-image.json"
+		},
+		"selfie": {
+			"$ref": "http://platform.selfkey.org/schema/misc/selfie.json"
 		},
 		"extra": {
 			"$ref": "http://platform.selfkey.org/schema/misc/extra-images.json"

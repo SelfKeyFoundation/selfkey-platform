@@ -4,6 +4,6 @@
 	"identityAttribute": true,
 	"identityAttributeRepository": "http://platform.selfkey.org/repository.json",
 	"title": "Tax ID",
-	"description": "An individual's tax identification number.",
+	"description": "Please provide your taxpayer identification number.",
 	"type": "string"
 }

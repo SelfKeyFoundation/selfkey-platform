@@ -4,18 +4,18 @@
 	"identityAttribute": true,
 	"identityAttributeRepository": "http://platform.selfkey.org/repository.json",
 	"title": "Address",
-	"description": "An individual's address.",
+	"description": "Please enter your current home address, including number, street, zip code and city",
 	"type": "object",
 	"properties": {
-		"address-line-1": {
+		"address_line_1": {
 			"type": "string"
 		},
-		"address-line-2": {
+		"address_line_2": {
 			"type": "string"
 		},
-		"address-line3": {
+		"address_line_3": {
 			"type": "string"
 		}
 	},
-	"required": ["address-line-1", "address-line-2", "address-line-3"]
+	"required": ["address_line_1", "address_line_2", "address_line_3"]
 }

@@ -1,14 +1,22 @@
 {
-	"$id": "http://platform.selfkey.org/schema/attribute/tax-certificate.json",
+	"$id": "http://platform.selfkey.org/schema/attribute/registration-certificate.json",
 	"$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
 	"identityAttribute": true,
 	"identityAttributeRepository": "http://platform.selfkey.org/repository.json",
-	"title": "Tax Certificate",
-	"description": "Please provide a copy of a recent tax certificate. No older than 12 months.",
+	"title": "Registration Certificate",
+	"description": "Please provide a copy of your company's registration certificate.",
 	"type": "object",
 	"properties": {
 		"image": {
 			"$ref": "http://platform.selfkey.org/schema/file/image.json"
+		},
+		"company_name": {
+			"title": "Compnay Name",
+			"type": "string"
+		},
+		"registration_number": {
+			"title": "Registration Number",
+			"type": "integer"
 		},
 		"issued": {
 			"$ref": "http://platform.selfkey.org/schema/misc/issue-date.json"
@@ -17,5 +25,5 @@
 			"$ref": "http://platform.selfkey.org/schema/misc/extra-images.json"
 		}
 	},
-	"required": ["image", "issued"]
+	"required": ["image", "company_name", "registration_number", "issued"]
 }

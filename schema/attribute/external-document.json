@@ -1,0 +1,12 @@
+{
+	"$id": "http://platform.selfkey.org/schema/attribute/external-document.json",
+	"$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
+	"identityAttribute": true,
+	"identityAttributeRepository": "http://platform.selfkey.org/repository.json",
+	"title": "External Document",
+	"description": "Please provide any external documents requested.",
+	"type": "array",
+	"items": {
+		"$ref": "http://platform.selfkey.org/schema/file/image.json"
+	}
+}

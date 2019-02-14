@@ -4,12 +4,9 @@
 	"identityAttribute": true,
 	"identityAttributeRepository": "http://platform.selfkey.org/repository.json",
 	"title": "Voice ID",
-	"description": "A voice identification document.",
-	"type": "object",
-	"properties": {
-		"audio": {
-			"$ref": "http://platform.selfkey.org/schema/document/audio.json"
-		}
-	},
-	"required": ["audio"]
+	"description": "Please provide a recording with your voice authentication phrase.",
+	"type": "array",
+	"items": {
+		"$ref": "http://platform.selfkey.org/schema/file/audio.json"
+	}
 }
