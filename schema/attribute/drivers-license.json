@@ -4,7 +4,7 @@
 	"identityAttribute": true,
 	"identityAttributeRepository": "http://platform.selfkey.org/repository.json",
 	"title": "Drivers License",
-	"description": "Please provide an image of your driver's license. Front and back cover are required.",
+	"description": "Please provide images of the front and back sides of your driver's license.",
 	"type": "object",
 	"properties": {
 		"front": {

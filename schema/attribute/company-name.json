@@ -4,6 +4,6 @@
 	"identityAttribute": true,
 	"identityAttributeRepository": "http://platform.selfkey.org/repository.json",
 	"title": "Company Name",
-	"description": "Company Name.",
+	"description": "Please provide the name of your company, as it appears in official documents.",
 	"type": "string"
 }

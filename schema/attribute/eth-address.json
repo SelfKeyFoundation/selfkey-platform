@@ -3,8 +3,8 @@
 	"$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
 	"identityAttribute": true,
 	"identityAttributeRepository": "http://platform.selfkey.org/repository.json",
-	"title": "ETH Address",
-	"description": "Please provide a ETH wallet address, that you currently use.",
+	"title": "ETH Wallet Address",
+	"description": "Please enter your Ethereum Wallet Address",
 	"type": "string",
 	"pattern": "^0x[a-fA-F0-9]{40}$"
 }

@@ -4,6 +4,7 @@
 	"identityAttribute": true,
 	"identityAttributeRepository": "http://platform.selfkey.org/repository.json",
 	"title": "Member Register",
+	"description": "Please provide a copy of your members register.",
 	"type": "object",
 	"properties": {
 		"images": {

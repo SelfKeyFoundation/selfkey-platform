@@ -4,7 +4,7 @@
 	"identityAttribute": true,
 	"identityAttributeRepository": "http://platform.selfkey.org/repository.json",
 	"title": "Registration Certificate",
-	"description": "Please provide a copy of registration certificate.",
+	"description": "Please provide a copy of your company's registration certificate.",
 	"type": "object",
 	"properties": {
 		"image": {
