@@ -10,7 +10,7 @@
 		"image": {
 			"$ref": "http://platform.selfkey.org/schema/file/image.json"
 		},
-		"issue": {
+		"issued": {
 			"$ref": "http://platform.selfkey.org/schema/misc/issue-date.json"
 		},
 		"expires": {
@@ -23,5 +23,5 @@
 			"$ref": "http://platform.selfkey.org/schema/misc/extra-images.json"
 		}
 	},
-	"required": ["image", "issue", "expires"]
+	"required": ["image", "issued", "expires"]
 }
