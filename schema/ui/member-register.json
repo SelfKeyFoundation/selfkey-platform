@@ -1,0 +1,8 @@
+{
+	"ui:order": ["images", "issued", "members", "extra"],
+	"members": {
+		"items": {
+			"ui:order": ["name", "position"]
+		}
+	}
+}
