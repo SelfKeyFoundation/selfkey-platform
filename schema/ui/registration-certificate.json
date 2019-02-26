@@ -1,0 +1,3 @@
+{
+    "ui:order": ["image", "company_name", "registration_number", "issued", "extra"]
+}
