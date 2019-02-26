@@ -2,88 +2,116 @@
   "name": "Selfkey.org",
   "identityAttributes": [
     {
-      "json": "http://platform.selfkey.org/schema/attribute/bank-statement.json"
+      "json": "http://platform.selfkey.org/schema/attribute/bank-statement.json",
+      "ui": "http://platform.selfkey.org/schema/ui/bank-statement.json"
     },
     {
-      "json": "http://platform.selfkey.org/schema/attribute/date-of-birth.json"
+      "json": "http://platform.selfkey.org/schema/attribute/date-of-birth.json",
+      "ui": "http://platform.selfkey.org/schema/ui/date-of-birth.json"
     },
     {
-      "json": "http://platform.selfkey.org/schema/attribute/country-of-residency.json"
+      "json": "http://platform.selfkey.org/schema/attribute/country-of-residency.json",
+      "ui": "http://platform.selfkey.org/schema/ui/country-of-residency.json"
     },
     {
-      "json": "http://platform.selfkey.org/schema/attribute/drivers-license.json"
+      "json": "http://platform.selfkey.org/schema/attribute/drivers-license.json",
+      "ui": "http://platform.selfkey.org/schema/ui/drivers-license.json"
     },
     {
-      "json": "http://platform.selfkey.org/schema/attribute/email.json"
+      "json": "http://platform.selfkey.org/schema/attribute/email.json",
+      "ui": "http://platform.selfkey.org/schema/ui/email.json"
     },
     {
-      "json": "http://platform.selfkey.org/schema/attribute/fingerprint.json"
+      "json": "http://platform.selfkey.org/schema/attribute/fingerprint.json",
+      "ui": "http://platform.selfkey.org/schema/ui/fingerprint.json"
     },
     {
-      "json": "http://platform.selfkey.org/schema/attribute/first-name.json"
+      "json": "http://platform.selfkey.org/schema/attribute/first-name.json",
+      "ui": "http://platform.selfkey.org/schema/ui/first-name.json"
     },
     {
-      "json": "http://platform.selfkey.org/schema/attribute/last-name.json"
+      "json": "http://platform.selfkey.org/schema/attribute/last-name.json",
+      "ui": "http://platform.selfkey.org/schema/ui/last-name.json"
     },
     {
-      "json": "http://platform.selfkey.org/schema/attribute/middle-name.json"
+      "json": "http://platform.selfkey.org/schema/attribute/middle-name.json",
+      "ui": "http://platform.selfkey.org/schema/ui/middle-name.json"
     },
     {
-      "json": "http://platform.selfkey.org/schema/attribute/national-id.json"
+      "json": "http://platform.selfkey.org/schema/attribute/national-id.json",
+      "ui": "http://platform.selfkey.org/schema/ui/national-id.json"
     },
     {
-      "json": "http://platform.selfkey.org/schema/attribute/nationality.json"
+      "json": "http://platform.selfkey.org/schema/attribute/nationality.json",
+      "ui": "http://platform.selfkey.org/schema/ui/nationality.json"
     },
     {
-      "json": "http://platform.selfkey.org/schema/attribute/passport.json"
+      "json": "http://platform.selfkey.org/schema/attribute/passport.json",
+      "ui": "http://platform.selfkey.org/schema/ui/passport.json"
     },
     {
-      "json": "http://platform.selfkey.org/schema/attribute/phone-number.json"
+      "json": "http://platform.selfkey.org/schema/attribute/phone-number.json",
+      "ui": "http://platform.selfkey.org/schema/ui/phone-number.json"
     },
     {
-      "json": "http://platform.selfkey.org/schema/attribute/physical-address.json"
+      "json": "http://platform.selfkey.org/schema/attribute/physical-address.json",
+      "ui": "http://platform.selfkey.org/schema/ui/physical-address.json"
     },
     {
-      "json": "http://platform.selfkey.org/schema/attribute/tax-certificate.json"
+      "json": "http://platform.selfkey.org/schema/attribute/tax-certificate.json",
+      "ui": "http://platform.selfkey.org/schema/ui/tax-certificate.json"
     },
     {
-      "json": "http://platform.selfkey.org/schema/attribute/tax-id-number.json"
+      "json": "http://platform.selfkey.org/schema/attribute/tax-id-number.json",
+      "ui": "http://platform.selfkey.org/schema/ui/tax-id-number.json"
     },
     {
-      "json": "http://platform.selfkey.org/schema/attribute/utility-bill.json"
+      "json": "http://platform.selfkey.org/schema/attribute/utility-bill.json",
+      "ui": "http://platform.selfkey.org/schema/ui/utility-bill.json"
     },
     {
-      "json": "http://platform.selfkey.org/schema/attribute/voice-id.json"
+      "json": "http://platform.selfkey.org/schema/attribute/voice-id.json",
+      "ui": "http://platform.selfkey.org/schema/ui/voice-id.json"
     },
     {
-      "json": "http://platform.selfkey.org/schema/attribute/work-place.json"
+      "json": "http://platform.selfkey.org/schema/attribute/work-place.json",
+      "ui": "http://platform.selfkey.org/schema/ui/work-place.json"
     },
     {
-      "json": "http://platform.selfkey.org/schema/attribute/btc-address.json"
+      "json": "http://platform.selfkey.org/schema/attribute/btc-address.json",
+      "ui": "http://platform.selfkey.org/schema/ui/btc-address.json"
     },
     {
-      "json": "http://platform.selfkey.org/schema/attribute/eth-address.json"
+      "json": "http://platform.selfkey.org/schema/attribute/eth-address.json",
+      "ui": "http://platform.selfkey.org/schema/ui/eth-address.json"
     },
     {
-      "json": "http://platform.selfkey.org/schema/attribute/dash-address.json"
+      "json": "http://platform.selfkey.org/schema/attribute/dash-address.json",
+      "ui": "http://platform.selfkey.org/schema/ui/dash-address.json"
     },
     {
-      "json": "http://platform.selfkey.org/schema/attribute/certificate-of-incorporation.json"
+      "json": "http://platform.selfkey.org/schema/attribute/certificate-of-incorporation.json",
+      "ui": "http://platform.selfkey.org/schema/ui/certificate-of-incorporation.json"
     },
     {
-      "json": "http://platform.selfkey.org/schema/attribute/registration-certificate.json"
+      "json": "http://platform.selfkey.org/schema/attribute/registration-certificate.json",
+      "ui": "http://platform.selfkey.org/schema/ui/registration-certificate.json"
     },
     {
-      "json": "http://platform.selfkey.org/schema/attribute/external-document.json"
+      "json": "http://platform.selfkey.org/schema/attribute/external-document.json",
+      "ui": "http://platform.selfkey.org/schema/ui/external-document.json"
     },
     {
-      "json": "http://platform.selfkey.org/schema/attribute/company-name.json"
+      "json": "http://platform.selfkey.org/schema/attribute/company-name.json",
+      "ui": "http://platform.selfkey.org/schema/ui/company-name.json"
     },
     {
-      "json": "http://platform.selfkey.org/schema/attribute/birth-certificate.json"
+      "json": "http://platform.selfkey.org/schema/attribute/birth-certificate.json",
+      "ui": "http://platform.selfkey.org/schema/ui/birth-certificate.json"
     },
     {
-      "json": "http://platform.selfkey.org/schema/attribute/member-register.json"
+      "json": "http://platform.selfkey.org/schema/attribute/member-register.json",
+      "ui": "http://platform.selfkey.org/schema/ui/member-register.json"
     }
   ],
   "jsonSchemas": [
@@ -1722,7 +1750,7 @@
             "content"
           ]
         },
-        "issue": {
+        "issued": {
           "$id": "http://platform.selfkey.org/schema/misc/issue-date.json",
           "$schema": "http://json-schema.org/draft-07/schema",
           "title": "Issue Date",
@@ -1816,7 +1844,7 @@
       },
       "required": [
         "image",
-        "issue",
+        "issued",
         "expires"
       ]
     },
@@ -2596,5 +2624,133 @@
       ]
     }
   ],
-  "uiSchemas": []
+  "uiSchemas": [
+    {
+      "ui:order": [
+        "images",
+        "issued",
+        "extra"
+      ]
+    },
+    {},
+    {},
+    {
+      "ui:order": [
+        "front",
+        "back",
+        "expires",
+        "selfie",
+        "extra"
+      ]
+    },
+    {},
+    {
+      "ui:order": [
+        "images",
+        "extra"
+      ]
+    },
+    {},
+    {},
+    {
+      "ui:order": [
+        "front",
+        "back",
+        "expires",
+        "selfie",
+        "extra"
+      ]
+    },
+    {
+      "ui:order": [
+        "images",
+        "issued",
+        "extra"
+      ]
+    },
+    {
+      "ui:order": [
+        "country",
+        "denonym"
+      ]
+    },
+    {
+      "ui:order": [
+        "image",
+        "issued",
+        "expires",
+        "selfie",
+        "extra"
+      ]
+    },
+    {},
+    {
+      "ui:order": [
+        "address_line_1",
+        "address_line_2",
+        "address_line_3"
+      ]
+    },
+    {
+      "ui:order": [
+        "image",
+        "issued",
+        "extra"
+      ]
+    },
+    {},
+    {
+      "ui:order": [
+        "images",
+        "issued",
+        "extra"
+      ]
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+      "ui:order": [
+        "image",
+        "issued",
+        "extra"
+      ]
+    },
+    {
+      "ui:order": [
+        "image",
+        "company_name",
+        "registration_number",
+        "issued",
+        "extra"
+      ]
+    },
+    {},
+    {},
+    {
+      "ui:order": [
+        "images",
+        "issued",
+        "extra"
+      ]
+    },
+    {
+      "ui:order": [
+        "images",
+        "issued",
+        "members",
+        "extra"
+      ],
+      "members": {
+        "items": {
+          "ui:order": [
+            "name",
+            "position"
+          ]
+        }
+      }
+    }
+  ]
 }
