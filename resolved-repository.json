@@ -2663,8 +2663,11 @@
     },
     {
       "ui:order": [
-        "images",
+        "front",
+        "back",
         "issued",
+        "expires",
+        "selfie",
         "extra"
       ]
     },
