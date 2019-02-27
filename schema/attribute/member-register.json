@@ -23,7 +23,7 @@
 						"title": "Full Name",
 						"type": "string"
 					},
-					"positions": {
+					"position": {
 						"title": "Position",
 						"description": "Position in the company.",
 						"type": "string"

@@ -10,7 +10,7 @@
 		"country": {
 			"$ref": "http://platform.selfkey.org/schema/misc/country.json"
 		},
-		"demonym": {
+		"denonym": {
 			"type": "string",
 			"title": "Denonym",
 			"description": "The word used to identify citizens of the country"
