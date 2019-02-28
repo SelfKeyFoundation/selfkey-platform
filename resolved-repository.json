@@ -2630,7 +2630,10 @@
         "images",
         "issued",
         "extra"
-      ]
+      ],
+      "extra": {
+        "ui:hidden": true
+      }
     },
     {},
     {},
@@ -2641,26 +2644,24 @@
         "expires",
         "selfie",
         "extra"
-      ]
+      ],
+      "extra": {
+        "ui:hidden": true
+      }
     },
     {},
     {
       "ui:order": [
         "images",
         "extra"
-      ]
+      ],
+      "extra": {
+        "ui:hidden": true
+      }
     },
     {},
     {},
-    {
-      "ui:order": [
-        "front",
-        "back",
-        "expires",
-        "selfie",
-        "extra"
-      ]
-    },
+    {},
     {
       "ui:order": [
         "front",
@@ -2669,7 +2670,10 @@
         "expires",
         "selfie",
         "extra"
-      ]
+      ],
+      "extra": {
+        "ui:hidden": true
+      }
     },
     {
       "ui:order": [
@@ -2684,7 +2688,10 @@
         "expires",
         "selfie",
         "extra"
-      ]
+      ],
+      "extra": {
+        "ui:hidden": true
+      }
     },
     {},
     {
@@ -2699,7 +2706,10 @@
         "image",
         "issued",
         "extra"
-      ]
+      ],
+      "extra": {
+        "ui:hidden": true
+      }
     },
     {},
     {
@@ -2707,7 +2717,10 @@
         "images",
         "issued",
         "extra"
-      ]
+      ],
+      "extra": {
+        "ui:hidden": true
+      }
     },
     {},
     {},
@@ -2719,7 +2732,10 @@
         "image",
         "issued",
         "extra"
-      ]
+      ],
+      "extra": {
+        "ui:hidden": true
+      }
     },
     {
       "ui:order": [
@@ -2728,7 +2744,10 @@
         "registration_number",
         "issued",
         "extra"
-      ]
+      ],
+      "extra": {
+        "ui:hidden": true
+      }
     },
     {},
     {},
@@ -2737,7 +2756,10 @@
         "images",
         "issued",
         "extra"
-      ]
+      ],
+      "extra": {
+        "ui:hidden": true
+      }
     },
     {
       "ui:order": [
@@ -2753,6 +2775,9 @@
             "position"
           ]
         }
+      },
+      "extra": {
+        "ui:hidden": true
       }
     }
   ]
