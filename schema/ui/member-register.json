@@ -4,5 +4,8 @@
 		"items": {
 			"ui:order": ["name", "position"]
 		}
-	}
+	},
+	"extra": {
+        "ui:hidden": true
+    }
 }

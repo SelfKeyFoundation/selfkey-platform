@@ -1,3 +1,6 @@
 {
-    "ui:order": ["front", "back", "expires", "selfie", "extra"]
+    "ui:order": ["front", "back", "expires", "selfie", "extra"],
+    "extra": {
+        "ui:hidden": true
+    }
 }

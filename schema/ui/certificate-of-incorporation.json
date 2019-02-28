@@ -1,3 +1,6 @@
 {
-    "ui:order": ["image", "issued", "extra"]
+    "ui:order": ["image", "issued", "extra"],
+    "extra": {
+        "ui:hidden": true
+    }
 }
