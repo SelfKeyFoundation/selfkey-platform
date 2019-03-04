@@ -8,14 +8,15 @@
 	"type": "object",
 	"properties": {
 		"address_line_1": {
-			"type": "string"
+			"type": "string",
+			"title": "Physical Address 1",
+			"description": "Street name, number"
 		},
 		"address_line_2": {
-			"type": "string"
-		},
-		"address_line_3": {
-			"type": "string"
+			"type": "string",
+			"title": "Physical Address 2",
+			"description": "Builiding, apartment, etc."
 		}
 	},
-	"required": ["address_line_1", "address_line_2", "address_line_3"]
+	"required": ["address_line_1"]
 }
