@@ -1,6 +1,11 @@
 {
-    "ui:order": ["front", "back", "issued", "expires",  "selfie", "extra"],
-    "extra": {
-        "ui:hidden": true
-    }
+	"ui:order": ["front", "back", "issued", "expires", "selfie", "extra"],
+
+	"country": {
+		"ui:label": false
+	},
+
+	"extra": {
+		"ui:hidden": true
+	}
 }
