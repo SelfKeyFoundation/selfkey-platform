@@ -2274,7 +2274,7 @@
           ]
         },
         "company_name": {
-          "title": "Compnay Name",
+          "title": "Company Name",
           "type": "string"
         },
         "registration_number": {
@@ -2629,6 +2629,9 @@
         "issued",
         "extra"
       ],
+      "images": {
+        "ui:label": false
+      },
       "extra": {
         "ui:hidden": true
       }
@@ -2647,6 +2650,11 @@
         "selfie",
         "extra"
       ],
+      "selfie": {
+        "image": {
+          "ui:label": false
+        }
+      },
       "extra": {
         "ui:hidden": true
       }
@@ -2657,6 +2665,9 @@
         "images",
         "extra"
       ],
+      "images": {
+        "ui:label": false
+      },
       "extra": {
         "ui:hidden": true
       }
@@ -2676,6 +2687,11 @@
       "country": {
         "ui:label": false
       },
+      "selfie": {
+        "image": {
+          "ui:label": false
+        }
+      },
       "extra": {
         "ui:hidden": true
       }
@@ -2694,6 +2710,14 @@
         "selfie",
         "extra"
       ],
+      "image": {
+        "ui:label": false
+      },
+      "selfie": {
+        "image": {
+          "ui:label": false
+        }
+      },
       "extra": {
         "ui:hidden": true
       }
@@ -2711,6 +2735,9 @@
         "issued",
         "extra"
       ],
+      "image": {
+        "ui:label": false
+      },
       "extra": {
         "ui:hidden": true
       }
@@ -2722,6 +2749,9 @@
         "issued",
         "extra"
       ],
+      "images": {
+        "ui:label": false
+      },
       "extra": {
         "ui:hidden": true
       }
@@ -2737,6 +2767,9 @@
         "issued",
         "extra"
       ],
+      "image": {
+        "ui:label": false
+      },
       "extra": {
         "ui:hidden": true
       }
@@ -2749,6 +2782,9 @@
         "issued",
         "extra"
       ],
+      "image": {
+        "ui:label": false
+      },
       "extra": {
         "ui:hidden": true
       }
@@ -2758,9 +2794,12 @@
     {
       "ui:order": [
         "images",
-        "issued",
+        "selfie",
         "extra"
       ],
+      "images": {
+        "ui:label": false
+      },
       "extra": {
         "ui:hidden": true
       }
