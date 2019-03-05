@@ -11,7 +11,7 @@
 			"$ref": "http://platform.selfkey.org/schema/file/image.json"
 		},
 		"company_name": {
-			"title": "Compnay Name",
+			"title": "Company Name",
 			"type": "string"
 		},
 		"registration_number": {

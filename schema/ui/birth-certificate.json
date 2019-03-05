@@ -1,5 +1,8 @@
 {
-    "ui:order": ["images", "issued", "extra"],
+    "ui:order": ["images", "selfie", "extra"],
+    "images": {
+        "ui:label": false
+    },
     "extra": {
         "ui:hidden": true
     }

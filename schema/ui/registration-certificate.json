@@ -1,5 +1,8 @@
 {
     "ui:order": ["image", "company_name", "registration_number", "issued", "extra"],
+    "image": {
+        "ui:label": false
+    },
     "extra": {
         "ui:hidden": true
     }
