@@ -6,10 +6,8 @@
 	},
 
 	"selfie": {
-		"properties": {
-			"image": {
-				"ui:label": false
-			}
+		"image": {
+			"ui:label": false
 		}
 	},
 
