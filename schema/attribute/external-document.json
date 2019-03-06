@@ -8,5 +8,7 @@
 	"type": "array",
 	"items": {
 		"$ref": "http://platform.selfkey.org/schema/file/image.json"
-	}
+	},
+	"minItems": 1,
+	"noFill": true
 }
