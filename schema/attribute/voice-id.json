@@ -10,5 +10,5 @@
 		"$ref": "http://platform.selfkey.org/schema/file/audio.json"
 	},
 	"minItems": 1,
-	"default": []
+	"noFill": true
 }
