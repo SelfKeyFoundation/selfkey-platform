@@ -3,6 +3,11 @@
     "images": {
         "ui:label": false
     },
+    "selfie": {
+        "image": {
+            "ui:label": false
+        }
+    },
     "extra": {
         "ui:hidden": true
     }
