@@ -10,9 +10,6 @@
 		"images": {
 			"$ref": "http://platform.selfkey.org/schema/file/multi-image.json"
 		},
-		"selfie": {
-			"$ref": "http://platform.selfkey.org/schema/misc/selfie.json"
-		},
 		"extra": {
 			"$ref": "http://platform.selfkey.org/schema/misc/extra-images.json"
 		}

@@ -1,14 +1,9 @@
 {
-    "ui:order": ["images", "selfie", "extra"],
-    "images": {
-        "ui:label": false
-    },
-    "selfie": {
-        "image": {
-            "ui:label": false
-        }
-    },
-    "extra": {
-        "ui:hidden": true
-    }
+	"ui:order": ["images", "extra"],
+	"images": {
+		"ui:label": false
+	},
+	"extra": {
+		"ui:hidden": true
+	}
 }
