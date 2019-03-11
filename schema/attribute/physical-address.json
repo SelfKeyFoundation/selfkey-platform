@@ -15,7 +15,7 @@
 		"address_line_2": {
 			"type": "string",
 			"title": "Physical Address 2",
-			"description": "Builiding, apartment, etc."
+			"description": "Building, apartment, etc."
 		}
 	},
 	"required": ["address_line_1"]
