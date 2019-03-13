@@ -112,6 +112,14 @@
 		{
 			"json": "http://platform.selfkey.org/schema/attribute/member-register.json",
 			"ui": "http://platform.selfkey.org/schema/ui/member-register.json"
+		},
+		{
+			"json": "http://platform.selfkey.org/schema/attribute/cv.json",
+			"ui": "http://platform.selfkey.org/schema/ui/cv.json"
+		},
+		{
+			"json": "http://platform.selfkey.org/schema/attribute/professional-reference-letter.json",
+			"ui": "http://platform.selfkey.org/schema/ui/professional-reference-letter.json"
 		}
 	]
 }

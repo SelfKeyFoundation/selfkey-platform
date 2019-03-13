@@ -1,0 +1,14 @@
+{
+	"$id": "http://platform.selfkey.org/schema/attribute/professional-reference-letter.json",
+	"$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
+	"identityAttribute": true,
+	"identityAttributeRepository": "http://platform.selfkey.org/repository.json",
+	"title": "Professional Reference Letter",
+	"description": "Please provide a copy of a recommendation letter your received.",
+	"type": "array",
+	"items": {
+		"$ref": "http://platform.selfkey.org/schema/file/image.json"
+	},
+	"minItems": 1,
+	"noFill": true
+}
