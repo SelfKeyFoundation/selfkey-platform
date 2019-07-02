@@ -28,5 +28,5 @@
 			"$ref": "http://platform.selfkey.org/schema/misc/extra-images.json"
 		}
 	}, 
-	"required": ["front", "issued"]
+	"required": ["front", "issued", "selfie"]
 }
