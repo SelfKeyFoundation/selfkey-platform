@@ -23,5 +23,5 @@
 			"$ref": "http://platform.selfkey.org/schema/misc/extra-images.json"
 		}
 	},
-	"required": ["image", "issued", "expires"]
+	"required": ["image", "issued", "expires", "selfie"]
 }
