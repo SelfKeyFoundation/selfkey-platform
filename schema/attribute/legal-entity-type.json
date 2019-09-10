@@ -1,0 +1,145 @@
+{
+    "$id": "http://platform.selfkey.org/schema/attribute/legal-entity-type.json",
+    "$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
+    "identityAttribute": true,
+    "identityAttributeRepository": "http://platform.selfkey.org/repository.json",
+    "title": "Legal Entity Type",
+    "description": "Please specify the type of legal entity.",
+    "type": "object",
+    "required": [
+        "businessType",
+        "memberTypes"
+    ],
+    "oneOf": [
+        {
+            "properties": {
+                "businessType": {
+                    "const": "Company Limited by Shares (LTD)"
+                },
+                "memberTypes": {
+                    "type": "array",
+                    "uniqueItems": true,
+                    "items": {
+                        "type": "string",
+                        "enum": [
+                            "Director",
+                            "Shareholder",
+                            "UBO",
+                            "Primary Contact",
+                            "Authorised Signatory"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "properties": {
+                "businessType": {
+                    "const": "Limited Liability Company (LLC)"
+                },
+                "memberTypes": {
+                    "type": "array",
+                    "uniqueItems": true,
+                    "items": {
+                        "type": "string",
+                        "enum": [
+                            "Member",
+                            "Manager",
+                            "UBO",
+                            "Primary Contact",
+                            "Authorised Signatory"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "properties": {
+                "businessType": {
+                    "const": "Trust (TST)"
+                },
+                "memberTypes": {
+                    "type": "array",
+                    "uniqueItems": true,
+                    "items": {
+                        "type": "string",
+                        "enum": [
+                            "Granter",
+                            "Settlor",
+                            "Beneficiary",
+                            "Trustee",
+                            "Protector",
+                            "UBO",
+                            "Primary Contact",
+                            "Authorised Signatory"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "properties": {
+                "businessType": {
+                    "const": "Foundation (FND)"
+                },
+                "memberTypes": {
+                    "type": "array",
+                    "uniqueItems": true,
+                    "items": {
+                        "type": "string",
+                        "enum": [
+                            "Founder",
+                            "Director",
+                            "Supervisor",
+                            "Beneficiary",
+                            "UBO",
+                            "Primary Contact",
+                            "Authorised Signatory"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "properties": {
+                "businessType": {
+                    "const": "Limited Partnership (LLP)"
+                },
+                "memberTypes": {
+                    "type": "array",
+                    "uniqueItems": true,
+                    "items": {
+                        "type": "string",
+                        "enum": [
+                            "General Partner",
+                            "Limited Partner",
+                            "UBO",
+                            "Primary Contact",
+                            "Authorised Signatory"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "properties": {
+                "businessType": {
+                    "const": "Other"
+                },
+                "memberTypes": {
+                    "type": "array",
+                    "uniqueItems": true,
+                    "items": {
+                        "type": "string",
+                        "enum": [
+                            "Company Member",
+                            "UBO",
+                            "Primary Contact",
+                            "Authorised Signatory"
+                        ]
+                    }
+                }
+            }
+        }
+    ]
+}
