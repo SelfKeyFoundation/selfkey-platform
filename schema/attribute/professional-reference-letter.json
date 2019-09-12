@@ -3,6 +3,7 @@
 	"$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
 	"identityAttribute": true,
 	"identityAttributeRepository": "http://platform.selfkey.org/repository.json",
+	"entityType": ["corporate", "individual"],
 	"title": "Professional Reference Letter",
 	"description": "Please provide a copy of a recommendation letter your received.",
 	"type": "array",

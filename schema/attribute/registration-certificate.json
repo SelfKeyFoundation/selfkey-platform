@@ -3,6 +3,7 @@
 	"$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
 	"identityAttribute": true,
 	"identityAttributeRepository": "http://platform.selfkey.org/repository.json",
+	"entityType": ["corporate"],
 	"title": "Registration Certificate",
 	"description": "Please provide a copy of your company's registration certificate.",
 	"type": "object",

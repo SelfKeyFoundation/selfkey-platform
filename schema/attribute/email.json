@@ -3,6 +3,7 @@
 	"$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
 	"identityAttribute": true,
 	"identityAttributeRepository": "http://platform.selfkey.org/repository.json",
+	"entityType": ["corporate", "individual"],
 	"title": "Email",
 	"description": "Please enter your e-mail address.",
 	"type": "string",

@@ -19,7 +19,8 @@
 		},
 		{
 			"json": "http://platform.selfkey.org/schema/attribute/email.json",
-			"ui": "http://platform.selfkey.org/schema/ui/email.json"
+			"ui": "http://platform.selfkey.org/schema/ui/email.json",
+			"entityType": ["corporate", "individual"]
 		},
 		{
 			"json": "http://platform.selfkey.org/schema/attribute/fingerprint.json",
@@ -51,19 +52,23 @@
 		},
 		{
 			"json": "http://platform.selfkey.org/schema/attribute/phone-number.json",
-			"ui": "http://platform.selfkey.org/schema/ui/phone-number.json"
+			"ui": "http://platform.selfkey.org/schema/ui/phone-number.json",
+			"entityType": ["corporate", "individual"]
 		},
 		{
 			"json": "http://platform.selfkey.org/schema/attribute/physical-address.json",
-			"ui": "http://platform.selfkey.org/schema/ui/physical-address.json"
+			"ui": "http://platform.selfkey.org/schema/ui/physical-address.json",
+			"entityType": ["corporate", "individual"]
 		},
 		{
 			"json": "http://platform.selfkey.org/schema/attribute/tax-certificate.json",
-			"ui": "http://platform.selfkey.org/schema/ui/tax-certificate.json"
+			"ui": "http://platform.selfkey.org/schema/ui/tax-certificate.json",
+			"entityType": ["corporate", "individual"]
 		},
 		{
 			"json": "http://platform.selfkey.org/schema/attribute/tax-id-number.json",
-			"ui": "http://platform.selfkey.org/schema/ui/tax-id-number.json"
+			"ui": "http://platform.selfkey.org/schema/ui/tax-id-number.json",
+			"entityType": ["corporate", "individual"]
 		},
 		{
 			"json": "http://platform.selfkey.org/schema/attribute/utility-bill.json",
@@ -79,31 +84,38 @@
 		},
 		{
 			"json": "http://platform.selfkey.org/schema/attribute/btc-address.json",
-			"ui": "http://platform.selfkey.org/schema/ui/btc-address.json"
+			"ui": "http://platform.selfkey.org/schema/ui/btc-address.json",
+			"entityType": ["corporate", "individual"]
 		},
 		{
 			"json": "http://platform.selfkey.org/schema/attribute/eth-address.json",
-			"ui": "http://platform.selfkey.org/schema/ui/eth-address.json"
+			"ui": "http://platform.selfkey.org/schema/ui/eth-address.json",
+			"entityType": ["corporate", "individual"]
 		},
 		{
 			"json": "http://platform.selfkey.org/schema/attribute/dash-address.json",
-			"ui": "http://platform.selfkey.org/schema/ui/dash-address.json"
+			"ui": "http://platform.selfkey.org/schema/ui/dash-address.json",
+			"entityType": ["corporate", "individual"]
 		},
 		{
 			"json": "http://platform.selfkey.org/schema/attribute/certificate-of-incorporation.json",
-			"ui": "http://platform.selfkey.org/schema/ui/certificate-of-incorporation.json"
+			"ui": "http://platform.selfkey.org/schema/ui/certificate-of-incorporation.json",
+			"entityType": ["corporate"]
 		},
 		{
 			"json": "http://platform.selfkey.org/schema/attribute/registration-certificate.json",
-			"ui": "http://platform.selfkey.org/schema/ui/registration-certificate.json"
+			"ui": "http://platform.selfkey.org/schema/ui/registration-certificate.json",
+			"entityType": ["corporate"]
 		},
 		{
 			"json": "http://platform.selfkey.org/schema/attribute/external-document.json",
-			"ui": "http://platform.selfkey.org/schema/ui/external-document.json"
+			"ui": "http://platform.selfkey.org/schema/ui/external-document.json",
+			"entityType": ["individual", "corporate"]
 		},
 		{
 			"json": "http://platform.selfkey.org/schema/attribute/company-name.json",
-			"ui": "http://platform.selfkey.org/schema/ui/company-name.json"
+			"ui": "http://platform.selfkey.org/schema/ui/company-name.json",
+			"entityType": ["corporate"]
 		},
 		{
 			"json": "http://platform.selfkey.org/schema/attribute/birth-certificate.json",
@@ -111,7 +123,8 @@
 		},
 		{
 			"json": "http://platform.selfkey.org/schema/attribute/member-register.json",
-			"ui": "http://platform.selfkey.org/schema/ui/member-register.json"
+			"ui": "http://platform.selfkey.org/schema/ui/member-register.json",
+			"entityType": ["corporate"]
 		},
 		{
 			"json": "http://platform.selfkey.org/schema/attribute/cv.json",
@@ -119,7 +132,8 @@
 		},
 		{
 			"json": "http://platform.selfkey.org/schema/attribute/professional-reference-letter.json",
-			"ui": "http://platform.selfkey.org/schema/ui/professional-reference-letter.json"
+			"ui": "http://platform.selfkey.org/schema/ui/professional-reference-letter.json",
+			"entityType": ["corporate", "individual"]
 		}
 	]
 }

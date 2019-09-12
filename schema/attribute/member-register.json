@@ -3,6 +3,7 @@
 	"$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
 	"identityAttribute": true,
 	"identityAttributeRepository": "http://platform.selfkey.org/repository.json",
+	"entityType": ["corporate"],
 	"title": "Member Register",
 	"description": "Please provide a copy of your members register.",
 	"type": "object",
