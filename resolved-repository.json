@@ -3,71 +3,127 @@
   "identityAttributes": [
     {
       "json": "http://platform.selfkey.org/schema/attribute/bank-statement.json",
-      "ui": "http://platform.selfkey.org/schema/ui/bank-statement.json"
+      "ui": "http://platform.selfkey.org/schema/ui/bank-statement.json",
+      "entityType": [
+        "individual"
+      ]
     },
     {
       "json": "http://platform.selfkey.org/schema/attribute/date-of-birth.json",
-      "ui": "http://platform.selfkey.org/schema/ui/date-of-birth.json"
+      "ui": "http://platform.selfkey.org/schema/ui/date-of-birth.json",
+      "entityType": [
+        "individual"
+      ]
     },
     {
       "json": "http://platform.selfkey.org/schema/attribute/country-of-residency.json",
-      "ui": "http://platform.selfkey.org/schema/ui/country-of-residency.json"
+      "ui": "http://platform.selfkey.org/schema/ui/country-of-residency.json",
+      "entityType": [
+        "individual"
+      ]
     },
     {
       "json": "http://platform.selfkey.org/schema/attribute/drivers-license.json",
-      "ui": "http://platform.selfkey.org/schema/ui/drivers-license.json"
+      "ui": "http://platform.selfkey.org/schema/ui/drivers-license.json",
+      "entityType": [
+        "individual"
+      ]
     },
     {
       "json": "http://platform.selfkey.org/schema/attribute/email.json",
-      "ui": "http://platform.selfkey.org/schema/ui/email.json"
+      "ui": "http://platform.selfkey.org/schema/ui/email.json",
+      "entityType": [
+        "corporate",
+        "individual"
+      ]
     },
     {
       "json": "http://platform.selfkey.org/schema/attribute/fingerprint.json",
-      "ui": "http://platform.selfkey.org/schema/ui/fingerprint.json"
+      "ui": "http://platform.selfkey.org/schema/ui/fingerprint.json",
+      "entityType": [
+        "individual"
+      ]
     },
     {
       "json": "http://platform.selfkey.org/schema/attribute/first-name.json",
-      "ui": "http://platform.selfkey.org/schema/ui/first-name.json"
+      "ui": "http://platform.selfkey.org/schema/ui/first-name.json",
+      "entityType": [
+        "individual"
+      ]
     },
     {
       "json": "http://platform.selfkey.org/schema/attribute/last-name.json",
-      "ui": "http://platform.selfkey.org/schema/ui/last-name.json"
+      "ui": "http://platform.selfkey.org/schema/ui/last-name.json",
+      "entityType": [
+        "individual"
+      ]
     },
     {
       "json": "http://platform.selfkey.org/schema/attribute/middle-name.json",
-      "ui": "http://platform.selfkey.org/schema/ui/middle-name.json"
+      "ui": "http://platform.selfkey.org/schema/ui/middle-name.json",
+      "entityType": [
+        "individual"
+      ]
     },
     {
       "json": "http://platform.selfkey.org/schema/attribute/national-id.json",
-      "ui": "http://platform.selfkey.org/schema/ui/national-id.json"
+      "ui": "http://platform.selfkey.org/schema/ui/national-id.json",
+      "entityType": [
+        "individual"
+      ]
     },
     {
       "json": "http://platform.selfkey.org/schema/attribute/nationality.json",
-      "ui": "http://platform.selfkey.org/schema/ui/nationality.json"
+      "ui": "http://platform.selfkey.org/schema/ui/nationality.json",
+      "entityType": [
+        "individual"
+      ]
     },
     {
       "json": "http://platform.selfkey.org/schema/attribute/passport.json",
-      "ui": "http://platform.selfkey.org/schema/ui/passport.json"
+      "ui": "http://platform.selfkey.org/schema/ui/passport.json",
+      "entityType": [
+        "individual"
+      ]
     },
     {
       "json": "http://platform.selfkey.org/schema/attribute/phone-number.json",
-      "ui": "http://platform.selfkey.org/schema/ui/phone-number.json"
+      "ui": "http://platform.selfkey.org/schema/ui/phone-number.json",
+      "entityType": [
+        "corporate",
+        "individual"
+      ]
     },
     {
       "json": "http://platform.selfkey.org/schema/attribute/physical-address.json",
-      "ui": "http://platform.selfkey.org/schema/ui/physical-address.json"
+      "ui": "http://platform.selfkey.org/schema/ui/physical-address.json",
+      "entityType": [
+        "corporate",
+        "individual"
+      ]
     },
     {
       "json": "http://platform.selfkey.org/schema/attribute/tax-certificate.json",
-      "ui": "http://platform.selfkey.org/schema/ui/tax-certificate.json"
+      "ui": "http://platform.selfkey.org/schema/ui/tax-certificate.json",
+      "entityType": [
+        "corporate",
+        "individual"
+      ]
     },
     {
       "json": "http://platform.selfkey.org/schema/attribute/tax-id-number.json",
-      "ui": "http://platform.selfkey.org/schema/ui/tax-id-number.json"
+      "ui": "http://platform.selfkey.org/schema/ui/tax-id-number.json",
+      "entityType": [
+        "corporate",
+        "individual"
+      ]
     },
     {
       "json": "http://platform.selfkey.org/schema/attribute/utility-bill.json",
-      "ui": "http://platform.selfkey.org/schema/ui/utility-bill.json"
+      "ui": "http://platform.selfkey.org/schema/ui/utility-bill.json",
+      "entityType": [
+        "individual"
+      ]
     },
     {
       "json": "http://platform.selfkey.org/schema/attribute/voice-id.json",
@@ -75,35 +131,63 @@
     },
     {
       "json": "http://platform.selfkey.org/schema/attribute/work-place.json",
-      "ui": "http://platform.selfkey.org/schema/ui/work-place.json"
+      "ui": "http://platform.selfkey.org/schema/ui/work-place.json",
+      "entityType": [
+        "individual"
+      ]
     },
     {
       "json": "http://platform.selfkey.org/schema/attribute/btc-address.json",
-      "ui": "http://platform.selfkey.org/schema/ui/btc-address.json"
+      "ui": "http://platform.selfkey.org/schema/ui/btc-address.json",
+      "entityType": [
+        "corporate",
+        "individual"
+      ]
     },
     {
       "json": "http://platform.selfkey.org/schema/attribute/eth-address.json",
-      "ui": "http://platform.selfkey.org/schema/ui/eth-address.json"
+      "ui": "http://platform.selfkey.org/schema/ui/eth-address.json",
+      "entityType": [
+        "corporate",
+        "individual"
+      ]
     },
     {
       "json": "http://platform.selfkey.org/schema/attribute/dash-address.json",
-      "ui": "http://platform.selfkey.org/schema/ui/dash-address.json"
+      "ui": "http://platform.selfkey.org/schema/ui/dash-address.json",
+      "entityType": [
+        "corporate",
+        "individual"
+      ]
     },
     {
       "json": "http://platform.selfkey.org/schema/attribute/certificate-of-incorporation.json",
-      "ui": "http://platform.selfkey.org/schema/ui/certificate-of-incorporation.json"
+      "ui": "http://platform.selfkey.org/schema/ui/certificate-of-incorporation.json",
+      "entityType": [
+        "corporate"
+      ]
     },
     {
       "json": "http://platform.selfkey.org/schema/attribute/registration-certificate.json",
-      "ui": "http://platform.selfkey.org/schema/ui/registration-certificate.json"
+      "ui": "http://platform.selfkey.org/schema/ui/registration-certificate.json",
+      "entityType": [
+        "corporate"
+      ]
     },
     {
       "json": "http://platform.selfkey.org/schema/attribute/external-document.json",
-      "ui": "http://platform.selfkey.org/schema/ui/external-document.json"
+      "ui": "http://platform.selfkey.org/schema/ui/external-document.json",
+      "entityType": [
+        "individual",
+        "corporate"
+      ]
     },
     {
       "json": "http://platform.selfkey.org/schema/attribute/company-name.json",
-      "ui": "http://platform.selfkey.org/schema/ui/company-name.json"
+      "ui": "http://platform.selfkey.org/schema/ui/company-name.json",
+      "entityType": [
+        "corporate"
+      ]
     },
     {
       "json": "http://platform.selfkey.org/schema/attribute/birth-certificate.json",
@@ -111,13 +195,34 @@
     },
     {
       "json": "http://platform.selfkey.org/schema/attribute/member-register.json",
-      "ui": "http://platform.selfkey.org/schema/ui/member-register.json"
+      "ui": "http://platform.selfkey.org/schema/ui/member-register.json",
+      "entityType": [
+        "corporate"
+      ]
+    },
+    {
+      "json": "http://platform.selfkey.org/schema/attribute/cv.json",
+      "ui": "http://platform.selfkey.org/schema/ui/cv.json",
+      "entityType": [
+        "individual"
+      ]
+    },
+    {
+      "json": "http://platform.selfkey.org/schema/attribute/professional-reference-letter.json",
+      "ui": "http://platform.selfkey.org/schema/ui/professional-reference-letter.json",
+      "entityType": [
+        "corporate",
+        "individual"
+      ]
     }
   ],
   "jsonSchemas": [
     {
       "$id": "http://platform.selfkey.org/schema/attribute/bank-statement.json",
       "$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
+      "entityType": [
+        "individual"
+      ],
       "identityAttribute": true,
       "identityAttributeRepository": "http://platform.selfkey.org/repository.json",
       "title": "Bank Statement",
@@ -213,6 +318,9 @@
       "$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
       "identityAttribute": true,
       "identityAttributeRepository": "http://platform.selfkey.org/repository.json",
+      "entityType": [
+        "individual"
+      ],
       "title": "Date of Birth",
       "description": "Please enter your full date of birth.",
       "type": "string",
@@ -223,6 +331,9 @@
       "$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
       "identityAttribute": true,
       "identityAttributeRepository": "http://platform.selfkey.org/repository.json",
+      "entityType": [
+        "individual"
+      ],
       "title": "Country of Residency",
       "description": "Please specify the country you are currently living in.",
       "type": "object",
@@ -745,7 +856,10 @@
       "$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
       "identityAttribute": true,
       "identityAttributeRepository": "http://platform.selfkey.org/repository.json",
-      "title": "Drivers License",
+      "entityType": [
+        "individual"
+      ],
+      "title": "Driver's License",
       "description": "Please provide images of the front and back sides of your driver's license.",
       "type": "object",
       "properties": {
@@ -903,6 +1017,10 @@
       "$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
       "identityAttribute": true,
       "identityAttributeRepository": "http://platform.selfkey.org/repository.json",
+      "entityType": [
+        "corporate",
+        "individual"
+      ],
       "title": "Email",
       "description": "Please enter your e-mail address.",
       "type": "string",
@@ -913,6 +1031,9 @@
       "$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
       "identityAttribute": true,
       "identityAttributeRepository": "http://platform.selfkey.org/repository.json",
+      "entityType": [
+        "individual"
+      ],
       "title": "Fingerprint",
       "description": "Please provide an image with your fingerprint. It can be either your thumb or index finger.",
       "type": "object",
@@ -998,6 +1119,9 @@
       "$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
       "identityAttribute": true,
       "identityAttributeRepository": "http://platform.selfkey.org/repository.json",
+      "entityType": [
+        "individual"
+      ],
       "title": "First Name",
       "description": "Given Name.",
       "type": "string"
@@ -1007,6 +1131,9 @@
       "$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
       "identityAttribute": true,
       "identityAttributeRepository": "http://platform.selfkey.org/repository.json",
+      "entityType": [
+        "individual"
+      ],
       "title": "Last Name",
       "description": "Family Name.",
       "type": "string"
@@ -1016,6 +1143,9 @@
       "$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
       "identityAttribute": true,
       "identityAttributeRepository": "http://platform.selfkey.org/repository.json",
+      "entityType": [
+        "individual"
+      ],
       "title": "Middle Name",
       "description": "Middle Name.",
       "type": "string"
@@ -1025,6 +1155,9 @@
       "$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
       "identityAttribute": true,
       "identityAttributeRepository": "http://platform.selfkey.org/repository.json",
+      "entityType": [
+        "individual"
+      ],
       "title": "National ID",
       "description": "Please provide a valid national identification document.",
       "type": "object",
@@ -1181,7 +1314,8 @@
       },
       "required": [
         "front",
-        "issued"
+        "issued",
+        "selfie"
       ]
     },
     {
@@ -1189,6 +1323,9 @@
       "$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
       "identityAttribute": true,
       "identityAttributeRepository": "http://platform.selfkey.org/repository.json",
+      "entityType": [
+        "individual"
+      ],
       "title": "Nationality",
       "description": "Please specify your current nationality.",
       "type": "object",
@@ -1716,6 +1853,9 @@
       "$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
       "identityAttribute": true,
       "identityAttributeRepository": "http://platform.selfkey.org/repository.json",
+      "entityType": [
+        "individual"
+      ],
       "title": "Passport",
       "description": "Please provide an image of your passport. It must still be valid.",
       "type": "object",
@@ -1844,7 +1984,8 @@
       "required": [
         "image",
         "issued",
-        "expires"
+        "expires",
+        "selfie"
       ]
     },
     {
@@ -1852,6 +1993,10 @@
       "$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
       "identityAttribute": true,
       "identityAttributeRepository": "http://platform.selfkey.org/repository.json",
+      "entityType": [
+        "corporate",
+        "individual"
+      ],
       "title": "Phone Number",
       "pattern": "^[\\+]?[(]?[0-9]{3}[)]?[-\\s\\.]?[0-9]{3}[-\\s\\.]?[0-9]{4,6}$",
       "description": "Please enter your current phone number.",
@@ -1862,6 +2007,10 @@
       "$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
       "identityAttribute": true,
       "identityAttributeRepository": "http://platform.selfkey.org/repository.json",
+      "entityType": [
+        "corporate",
+        "individual"
+      ],
       "title": "Address",
       "description": "Please enter your current home address, including number, street, zip code and city",
       "type": "object",
@@ -1874,7 +2023,7 @@
         "address_line_2": {
           "type": "string",
           "title": "Physical Address 2",
-          "description": "Builiding, apartment, etc."
+          "description": "Building, apartment, etc."
         }
       },
       "required": [
@@ -1886,6 +2035,10 @@
       "$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
       "identityAttribute": true,
       "identityAttributeRepository": "http://platform.selfkey.org/repository.json",
+      "entityType": [
+        "corporate",
+        "individual"
+      ],
       "title": "Tax Certificate",
       "description": "Please provide a copy of a recent tax certificate. No older than 12 months.",
       "type": "object",
@@ -1973,6 +2126,10 @@
       "$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
       "identityAttribute": true,
       "identityAttributeRepository": "http://platform.selfkey.org/repository.json",
+      "entityType": [
+        "corporate",
+        "individual"
+      ],
       "title": "Tax ID",
       "description": "Please provide your taxpayer identification number.",
       "type": "string"
@@ -1982,6 +2139,9 @@
       "$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
       "identityAttribute": true,
       "identityAttributeRepository": "http://platform.selfkey.org/repository.json",
+      "entityType": [
+        "individual"
+      ],
       "title": "Utility Bill",
       "description": "Please provide an image with a recent utility bill. No older than 3 months.",
       "type": "object",
@@ -2075,6 +2235,9 @@
       "$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
       "identityAttribute": true,
       "identityAttributeRepository": "http://platform.selfkey.org/repository.json",
+      "entityType": [
+        "individual"
+      ],
       "title": "Voice ID",
       "description": "Please provide a recording with your voice authentication phrase.",
       "type": "array",
@@ -2090,6 +2253,7 @@
             "enum": [
               "audio/mp3",
               "audio/mp4",
+              "audio/mpeg",
               "audio/ogg",
               "audio/x-wav"
             ]
@@ -2107,13 +2271,18 @@
           "size",
           "content"
         ]
-      }
+      },
+      "minItems": 1,
+      "noFill": true
     },
     {
       "$id": "http://platform.selfkey.org/schema/attribute/work-place.json",
       "$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
       "identityAttribute": true,
       "identityAttributeRepository": "http://platform.selfkey.org/repository.json",
+      "entityType": [
+        "individual"
+      ],
       "title": "Workplace",
       "description": "Please specify your current place of work. You can also state if you are un-employed or retired.",
       "type": "string"
@@ -2123,6 +2292,10 @@
       "$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
       "identityAttribute": true,
       "identityAttributeRepository": "http://platform.selfkey.org/repository.json",
+      "entityType": [
+        "corporate",
+        "individual"
+      ],
       "title": "BTC Wallet Address",
       "description": "Please enter your Bitcoin Wallet Address.",
       "type": "string",
@@ -2133,6 +2306,10 @@
       "$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
       "identityAttribute": true,
       "identityAttributeRepository": "http://platform.selfkey.org/repository.json",
+      "entityType": [
+        "corporate",
+        "individual"
+      ],
       "title": "ETH Wallet Address",
       "description": "Please enter your Ethereum Wallet Address",
       "type": "string",
@@ -2143,6 +2320,10 @@
       "$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
       "identityAttribute": true,
       "identityAttributeRepository": "http://platform.selfkey.org/repository.json",
+      "entityType": [
+        "corporate",
+        "individual"
+      ],
       "title": "Dash Wallet Address",
       "description": "Please enter your Dash Wallet Address.",
       "type": "string",
@@ -2153,6 +2334,9 @@
       "$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
       "identityAttribute": true,
       "identityAttributeRepository": "http://platform.selfkey.org/repository.json",
+      "entityType": [
+        "corporate"
+      ],
       "title": "Certificate of Incorporation",
       "description": "Please provide a copy of your company's certificate of incorporation.",
       "type": "object",
@@ -2240,6 +2424,9 @@
       "$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
       "identityAttribute": true,
       "identityAttributeRepository": "http://platform.selfkey.org/repository.json",
+      "entityType": [
+        "corporate"
+      ],
       "title": "Registration Certificate",
       "description": "Please provide a copy of your company's registration certificate.",
       "type": "object",
@@ -2337,6 +2524,10 @@
       "$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
       "identityAttribute": true,
       "identityAttributeRepository": "http://platform.selfkey.org/repository.json",
+      "entityType": [
+        "corporate",
+        "individual"
+      ],
       "title": "External Document",
       "description": "Please provide any external documents requested.",
       "type": "array",
@@ -2368,13 +2559,18 @@
           "size",
           "content"
         ]
-      }
+      },
+      "minItems": 1,
+      "noFill": true
     },
     {
       "$id": "http://platform.selfkey.org/schema/attribute/company-name.json",
       "$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
       "identityAttribute": true,
       "identityAttributeRepository": "http://platform.selfkey.org/repository.json",
+      "entityType": [
+        "corporate"
+      ],
       "title": "Company Name",
       "description": "Please provide the name of your company, as it appears in official documents.",
       "type": "string"
@@ -2384,6 +2580,9 @@
       "$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
       "identityAttribute": true,
       "identityAttributeRepository": "http://platform.selfkey.org/repository.json",
+      "entityType": [
+        "individual"
+      ],
       "title": "Birth Certificate",
       "description": "Please provide an image of your birth certificate.",
       "type": "object",
@@ -2422,47 +2621,6 @@
               "content"
             ]
           }
-        },
-        "selfie": {
-          "$id": "http://platform.selfkey.org/schema/misc/selfie.json",
-          "$schema": "http://json-schema.org/draft-07/schema",
-          "title": "Selfie",
-          "description": "Take a selfie, making sure the image is clear, and your face isn't covered by any items, such as glasses.",
-          "type": "object",
-          "properties": {
-            "image": {
-              "$schema": "http://json-schema.org/draft-07/schema",
-              "$id": "http://platform.selfkey.org/schema/file/image.json",
-              "type": "object",
-              "title": "Image",
-              "format": "file",
-              "properties": {
-                "mimeType": {
-                  "type": "string",
-                  "enum": [
-                    "image/jpeg",
-                    "image/png",
-                    "application/pdf"
-                  ]
-                },
-                "size": {
-                  "type": "integer",
-                  "maximum": 50000000
-                },
-                "content": {
-                  "type": "string"
-                }
-              },
-              "required": [
-                "mimeType",
-                "size",
-                "content"
-              ]
-            }
-          },
-          "required": [
-            "image"
-          ]
         },
         "extra": {
           "$id": "http://platform.selfkey.org/schema/misc/extra-images.json",
@@ -2510,6 +2668,9 @@
       "$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
       "identityAttribute": true,
       "identityAttributeRepository": "http://platform.selfkey.org/repository.json",
+      "entityType": [
+        "corporate"
+      ],
       "title": "Member Register",
       "description": "Please provide a copy of your members register.",
       "type": "object",
@@ -2620,6 +2781,93 @@
         "issued",
         "members"
       ]
+    },
+    {
+      "$id": "http://platform.selfkey.org/schema/attribute/cv.json",
+      "$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
+      "identityAttribute": true,
+      "identityAttributeRepository": "http://platform.selfkey.org/repository.json",
+      "entityType": [
+        "individual"
+      ],
+      "title": "CV (Resume)",
+      "description": "Please provide a detailed copy of your CV",
+      "type": "array",
+      "items": {
+        "$schema": "http://json-schema.org/draft-07/schema",
+        "$id": "http://platform.selfkey.org/schema/file/image.json",
+        "type": "object",
+        "title": "Image",
+        "format": "file",
+        "properties": {
+          "mimeType": {
+            "type": "string",
+            "enum": [
+              "image/jpeg",
+              "image/png",
+              "application/pdf"
+            ]
+          },
+          "size": {
+            "type": "integer",
+            "maximum": 50000000
+          },
+          "content": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "mimeType",
+          "size",
+          "content"
+        ]
+      },
+      "minItems": 1,
+      "noFill": true
+    },
+    {
+      "$id": "http://platform.selfkey.org/schema/attribute/professional-reference-letter.json",
+      "$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
+      "identityAttribute": true,
+      "identityAttributeRepository": "http://platform.selfkey.org/repository.json",
+      "entityType": [
+        "corporate",
+        "individual"
+      ],
+      "title": "Professional Reference Letter",
+      "description": "Please provide a copy of a recommendation letter your received.",
+      "type": "array",
+      "items": {
+        "$schema": "http://json-schema.org/draft-07/schema",
+        "$id": "http://platform.selfkey.org/schema/file/image.json",
+        "type": "object",
+        "title": "Image",
+        "format": "file",
+        "properties": {
+          "mimeType": {
+            "type": "string",
+            "enum": [
+              "image/jpeg",
+              "image/png",
+              "application/pdf"
+            ]
+          },
+          "size": {
+            "type": "integer",
+            "maximum": 50000000
+          },
+          "content": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "mimeType",
+          "size",
+          "content"
+        ]
+      },
+      "minItems": 1,
+      "noFill": true
     }
   ],
   "uiSchemas": [
@@ -2794,7 +3042,6 @@
     {
       "ui:order": [
         "images",
-        "selfie",
         "extra"
       ],
       "images": {
@@ -2822,6 +3069,8 @@
       "extra": {
         "ui:hidden": true
       }
-    }
+    },
+    {},
+    {}
   ]
 }
