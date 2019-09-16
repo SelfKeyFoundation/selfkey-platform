@@ -34,6 +34,11 @@
 			"ui": "http://platform.selfkey.org/schema/ui/last-name.json"
 		},
 		{
+			"json": "http://platform.selfkey.org/schema/attribute/legal-entity-type.json",
+			"ui": "http://platform.selfkey.org/schema/ui/legal-entity-type.json",
+			"entityType": ["corporate"]
+		},
+		{
 			"json": "http://platform.selfkey.org/schema/attribute/middle-name.json",
 			"ui": "http://platform.selfkey.org/schema/ui/middle-name.json"
 		},
