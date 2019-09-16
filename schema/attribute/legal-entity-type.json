@@ -7,12 +7,12 @@
     "title": "Legal Entity Type",
     "description": "Please specify the type of legal entity.",
     "type": "string",
-		"enum": [
-			"Company Limited by Shares (LTD)",
-			"Limited Liability Company (LLC)",
-			"Trust (TST)",
-			"Foundation (FND)",
-			"Limited Partnership (LLP)",
-			"Other"
-		]
+    "enum": [
+      "Company Limited by Shares (LTD)",
+      "Limited Liability Company (LLC)",
+      "Trust (TST)",
+      "Foundation (FND)",
+      "Limited Partnership (LLP)",
+      "Other"
+    ]
 }
