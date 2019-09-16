@@ -3,6 +3,7 @@
 	"$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
 	"identityAttribute": true,
 	"identityAttributeRepository": "http://platform.selfkey.org/repository.json",
+	"entityType": ["individual"],
 	"title": "Fingerprint",
 	"description": "Please provide an image with your fingerprint. It can be either your thumb or index finger.",
 	"type": "object",

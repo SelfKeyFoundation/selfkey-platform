@@ -3,6 +3,7 @@
 	"$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
 	"identityAttribute": true,
 	"identityAttributeRepository": "http://platform.selfkey.org/repository.json",
+	"entityType": ["individual"],
 	"title": "Workplace",
 	"description": "Please specify your current place of work. You can also state if you are un-employed or retired.",
 	"type": "string"

@@ -12,6 +12,18 @@
 				"identityAttributeRepository": {
 					"type": "string",
 					"format": "url"
+				},
+				"entityType": {
+					"type": "array",
+					"uniqueItems": true,
+					"defaults": ["individual"],
+                    "items": {
+                        "type": "string",
+                        "enum": [
+						   "individual",
+						   "corporate"
+                        ]
+                    }
 				}
 			}
 		}

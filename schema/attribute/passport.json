@@ -3,6 +3,7 @@
 	"$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
 	"identityAttribute": true,
 	"identityAttributeRepository": "http://platform.selfkey.org/repository.json",
+	"entityType": ["individual"],
 	"title": "Passport",
 	"description": "Please provide an image of your passport. It must still be valid.",
 	"type": "object",

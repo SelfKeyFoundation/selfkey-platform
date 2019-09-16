@@ -3,6 +3,7 @@
 	"$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
 	"identityAttribute": true,
 	"identityAttributeRepository": "http://platform.selfkey.org/repository.json",
+	"entityType": ["individual"],
 	"title": "Voice ID",
 	"description": "Please provide a recording with your voice authentication phrase.",
 	"type": "array",

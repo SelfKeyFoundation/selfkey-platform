@@ -3,6 +3,7 @@
 	"$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
 	"identityAttribute": true,
 	"identityAttributeRepository": "http://platform.selfkey.org/repository.json",
+	"entityType": ["corporate", "individual"],
 	"title": "Dash Wallet Address",
 	"description": "Please enter your Dash Wallet Address.",
 	"type": "string",
