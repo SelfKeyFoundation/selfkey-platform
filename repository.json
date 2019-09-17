@@ -12,6 +12,11 @@
 			"entityType": ["individual"]
 		},
 		{
+			"json": "http://platform.selfkey.org/schema/attribute/incorporation-date.json",
+			"ui": "http://platform.selfkey.org/schema/ui/incorporation-date.json",
+			"entityType": ["corporate"]
+		},
+		{
 			"json": "http://platform.selfkey.org/schema/attribute/country-of-residency.json",
 			"ui": "http://platform.selfkey.org/schema/ui/country-of-residency.json",
 			"entityType": ["individual"]
@@ -126,8 +131,8 @@
 			"entityType": ["individual", "corporate"]
 		},
 		{
-			"json": "http://platform.selfkey.org/schema/attribute/company-name.json",
-			"ui": "http://platform.selfkey.org/schema/ui/company-name.json",
+			"json": "http://platform.selfkey.org/schema/attribute/legal-entity-name.json",
+			"ui": "http://platform.selfkey.org/schema/ui/legal-entity-name.json",
 			"entityType": ["corporate"]
 		},
 		{
