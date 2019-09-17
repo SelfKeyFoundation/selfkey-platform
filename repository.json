@@ -141,8 +141,8 @@
       "entityType": ["individual", "corporate"]
     },
     {
-      "json": "http://platform.selfkey.org/schema/attribute/legal-entity-name.json",
-      "ui": "http://platform.selfkey.org/schema/ui/legal-entity-name.json",
+      "json": "http://platform.selfkey.org/schema/attribute/company-name.json",
+      "ui": "http://platform.selfkey.org/schema/ui/company-name.json",
       "entityType": ["corporate"]
     },
     {
