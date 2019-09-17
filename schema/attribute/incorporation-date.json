@@ -1,0 +1,11 @@
+{
+	"$id": "http://platform.selfkey.org/schema/attribute/incorporation-date.json",
+	"$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
+	"identityAttribute": true,
+	"identityAttributeRepository": "http://platform.selfkey.org/repository.json",
+	"entityType": ["individual"],
+	"title": "Date of Incorporation",
+	"description": "Please company incorporation date",
+	"type": "string",
+	"format": "date"
+}
