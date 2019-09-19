@@ -1,0 +1,41 @@
+{
+	"$id": "http://platform.selfkey.org/schema/attribute/member-register.json",
+	"$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
+	"identityAttribute": true,
+	"identityAttributeRepository": "http://platform.selfkey.org/repository.json",
+	"entityType": ["corporate"],
+	"title": "Member Register",
+	"description": "Please provide a copy of your members register.",
+	"type": "object",
+	"properties": {
+		"images": {
+			"$ref": "http://platform.selfkey.org/schema/file/multi-image.json"
+		},
+		"issued": {
+			"$ref": "http://platform.selfkey.org/schema/misc/issue-date.json"
+		},
+		"members": {
+			"type": "array",
+			"title": "Members",
+			"items": {
+				"type": "object",
+				"properties": {
+					"name": {
+						"title": "Full Name",
+						"type": "string"
+					},
+					"position": {
+						"title": "Position",
+						"description": "Position in the company.",
+						"type": "string"
+					}
+				},
+				"required": ["name", "position"]
+			}
+		},
+		"extra": {
+			"$ref": "http://platform.selfkey.org/schema/misc/extra-images.json"
+		}
+	},
+	"required": ["images", "issued", "members"]
+}

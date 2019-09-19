@@ -1,0 +1,11 @@
+{
+	"$id": "http://platform.selfkey.org/schema/attribute/phone-number.json",
+	"$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
+	"identityAttribute": true,
+	"identityAttributeRepository": "http://platform.selfkey.org/repository.json",
+	"entityType": ["corporate", "individual"],
+	"title": "Phone Number",
+	"pattern": "^[\\+]?[(]?[0-9]{3}[)]?[-\\s\\.]?[0-9]{3}[-\\s\\.]?[0-9]{4,6}$",
+	"description": "Please enter your current phone number.",
+	"type": "string"
+}

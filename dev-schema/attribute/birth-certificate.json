@@ -1,0 +1,19 @@
+{
+	"$id": "http://platform.selfkey.org/schema/attribute/birth-certificate.json",
+	"$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
+	"identityAttribute": true,
+	"identityAttributeRepository": "http://platform.selfkey.org/repository.json",
+	"entityType": ["individual"],
+	"title": "Birth Certificate",
+	"description": "Please provide an image of your birth certificate.",
+	"type": "object",
+	"properties": {
+		"images": {
+			"$ref": "http://platform.selfkey.org/schema/file/multi-image.json"
+		},
+		"extra": {
+			"$ref": "http://platform.selfkey.org/schema/misc/extra-images.json"
+		}
+	},
+	"required": ["images"]
+}

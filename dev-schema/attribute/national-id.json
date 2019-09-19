@@ -1,0 +1,33 @@
+{
+	"$id": "http://platform.selfkey.org/schema/attribute/national-id.json",
+	"$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
+	"identityAttribute": true,
+	"identityAttributeRepository": "http://platform.selfkey.org/repository.json",
+	"entityType": ["individual"],
+	"title": "National ID",
+	"description": "Please provide a valid national identification document.",
+	"type": "object",
+	"properties": {
+		"front": {
+			"title": "Front image",
+			"$ref": "http://platform.selfkey.org/schema/file/image.json"
+		},
+		"back": {
+			"title": "Back image",
+			"$ref": "http://platform.selfkey.org/schema/file/image.json"
+		},
+		"issued": {
+			"$ref": "http://platform.selfkey.org/schema/misc/issue-date.json"
+		},
+		"expires": {
+			"$ref": "http://platform.selfkey.org/schema/misc/expiry-date.json"
+		},
+		"selfie": {
+			"$ref": "http://platform.selfkey.org/schema/misc/selfie.json"
+		},
+		"extra": {
+			"$ref": "http://platform.selfkey.org/schema/misc/extra-images.json"
+		}
+	}, 
+	"required": ["front", "issued", "selfie"]
+}

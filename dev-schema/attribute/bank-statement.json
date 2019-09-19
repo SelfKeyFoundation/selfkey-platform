@@ -1,0 +1,22 @@
+{
+	"$id": "http://platform.selfkey.org/schema/attribute/bank-statement.json",
+	"$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
+	"entityType": ["individual"],
+	"identityAttribute": true,
+	"identityAttributeRepository": "http://platform.selfkey.org/repository.json",
+	"title": "Bank Statement",
+	"description": "Please provide a copy of a recent bank statement. No older than 6 months.",
+	"type": "object",
+	"properties": {
+		"images": {
+			"$ref": "http://platform.selfkey.org/schema/file/multi-image.json"
+		},
+		"issued": {
+			"$ref": "http://platform.selfkey.org/schema/misc/issue-date.json"
+		},
+		"extra": {
+			"$ref": "http://platform.selfkey.org/schema/misc/extra-images.json"
+		}
+	},
+	"required": ["images", "issued"]
+}

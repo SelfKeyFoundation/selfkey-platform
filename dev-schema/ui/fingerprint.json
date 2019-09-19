@@ -1,0 +1,9 @@
+{
+    "ui:order": ["images", "extra"],
+    "images": {
+        "ui:label": false
+    },
+    "extra": {
+        "ui:hidden": true
+    }
+}

@@ -1,0 +1,10 @@
+{
+	"$id": "http://platform.selfkey.org/schema/misc/extra-images.json",
+	"$schema": "http://json-schema.org/draft-07/schema",
+	"title": "Extra Images",
+	"description": "Please add any extra images that are relevant",
+	"type": "array",
+	"items": {
+		"$ref": "http://platform.selfkey.org/schema/file/image.json"
+	}
+}
