@@ -1,0 +1,23 @@
+{
+	"$id": "http://platform.selfkey.org/schema/attribute/physical-address.json",
+	"$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
+	"identityAttribute": true,
+	"identityAttributeRepository": "http://platform.selfkey.org/repository.json",
+	"entityType": ["corporate", "individual"],
+	"title": "Address",
+	"description": "Please enter your current home address, including number, street, zip code and city",
+	"type": "object",
+	"properties": {
+		"address_line_1": {
+			"type": "string",
+			"title": "Physical Address 1",
+			"description": "Street name, number"
+		},
+		"address_line_2": {
+			"type": "string",
+			"title": "Physical Address 2",
+			"description": "Building, apartment, etc."
+		}
+	},
+	"required": ["address_line_1"]
+}

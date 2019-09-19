@@ -1,0 +1,11 @@
+{
+	"ui:order": ["front", "back", "expires", "selfie", "extra"],
+	"selfie": {
+		"image": {
+			"ui:label": false
+		}
+	},
+	"extra": {
+		"ui:hidden": true
+	}
+}

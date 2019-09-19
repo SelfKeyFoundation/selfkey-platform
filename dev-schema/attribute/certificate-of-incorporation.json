@@ -1,0 +1,22 @@
+{
+	"$id": "http://platform.selfkey.org/schema/attribute/certificate-of-incorporation.json",
+	"$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
+	"identityAttribute": true,
+	"identityAttributeRepository": "http://platform.selfkey.org/repository.json",
+	"entityType": ["corporate"],
+	"title": "Certificate of Incorporation",
+	"description": "Please provide a copy of your company's certificate of incorporation.",
+	"type": "object",
+	"properties": {
+		"image": {
+			"$ref": "http://platform.selfkey.org/schema/file/image.json"
+		},
+		"issued": {
+			"$ref": "http://platform.selfkey.org/schema/misc/issue-date.json"
+		},
+		"extra": {
+			"$ref": "http://platform.selfkey.org/schema/misc/extra-images.json"
+		}
+	},
+	"required": ["image", "issued"]
+}

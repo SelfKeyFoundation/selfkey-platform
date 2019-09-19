@@ -1,0 +1,19 @@
+{
+	"$id": "http://platform.selfkey.org/schema/attribute/fingerprint.json",
+	"$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
+	"identityAttribute": true,
+	"identityAttributeRepository": "http://platform.selfkey.org/repository.json",
+	"entityType": ["individual"],
+	"title": "Fingerprint",
+	"description": "Please provide an image with your fingerprint. It can be either your thumb or index finger.",
+	"type": "object",
+	"properties": {
+		"images": {
+			"$ref": "http://platform.selfkey.org/schema/file/multi-image.json"
+		},
+		"extra": {
+			"$ref": "http://platform.selfkey.org/schema/misc/extra-images.json"
+		}
+	},
+	"required": ["images"]
+}

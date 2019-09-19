@@ -1,0 +1,13 @@
+{
+	"$id": "http://platform.selfkey.org/schema/misc/selfie.json",
+	"$schema": "http://json-schema.org/draft-07/schema",
+	"title": "Selfie",
+	"description": "Take a selfie, making sure the image is clear, and your face isn't covered by any items, such as glasses.",
+	"type": "object",
+	"properties": {
+		"image": {
+			"$ref": "http://platform.selfkey.org/schema/file/image.json"
+		}
+	},
+	"required": ["image"]
+}

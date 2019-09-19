@@ -1,0 +1,11 @@
+{
+	"$id": "http://platform.selfkey.org/schema/attribute/btc-address.json",
+	"$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
+	"identityAttribute": true,
+	"identityAttributeRepository": "http://platform.selfkey.org/repository.json",
+	"entityType": ["corporate", "individual"],
+	"title": "BTC Wallet Address",
+	"description": "Please enter your Bitcoin Wallet Address.",
+	"type": "string",
+	"pattern": "^[13][a-km-zA-HJ-NP-Z1-9]{25,34}$"
+}

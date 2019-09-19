@@ -1,0 +1,11 @@
+{
+	"$id": "http://platform.selfkey.org/schema/attribute/date-of-birth.json",
+	"$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
+	"identityAttribute": true,
+	"identityAttributeRepository": "http://platform.selfkey.org/repository.json",
+	"entityType": ["individual"],
+	"title": "Date of Birth",
+	"description": "Please enter your full date of birth.",
+	"type": "string",
+	"format": "date"
+}

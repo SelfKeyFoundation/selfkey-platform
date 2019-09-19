@@ -1,0 +1,28 @@
+{
+	"$id": "http://platform.selfkey.org/schema/attribute/passport.json",
+	"$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
+	"identityAttribute": true,
+	"identityAttributeRepository": "http://platform.selfkey.org/repository.json",
+	"entityType": ["individual"],
+	"title": "Passport",
+	"description": "Please provide an image of your passport. It must still be valid.",
+	"type": "object",
+	"properties": {
+		"image": {
+			"$ref": "http://platform.selfkey.org/schema/file/image.json"
+		},
+		"issued": {
+			"$ref": "http://platform.selfkey.org/schema/misc/issue-date.json"
+		},
+		"expires": {
+			"$ref": "http://platform.selfkey.org/schema/misc/expiry-date.json"
+		},
+		"selfie": {
+			"$ref": "http://platform.selfkey.org/schema/misc/selfie.json"
+		},
+		"extra": {
+			"$ref": "http://platform.selfkey.org/schema/misc/extra-images.json"
+		}
+	},
+	"required": ["image", "issued", "expires", "selfie"]
+}
