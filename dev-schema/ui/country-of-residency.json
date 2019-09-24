@@ -1,5 +1,5 @@
 {
     "country": {
-        "ui:label": false
+        "ui:label": true
     }
 }
