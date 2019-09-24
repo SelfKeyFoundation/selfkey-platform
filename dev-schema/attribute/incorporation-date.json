@@ -3,7 +3,7 @@
 	"$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
 	"identityAttribute": true,
 	"identityAttributeRepository": "http://platform.selfkey.org/repository.json",
-	"entityType": ["individual"],
+	"entityType": ["corporate"],
 	"title": "Date of Incorporation",
 	"description": "Please company incorporation date",
 	"type": "string",
