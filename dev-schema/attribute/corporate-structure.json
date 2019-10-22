@@ -13,49 +13,325 @@
 		}
 	},
 	"dependencies": {
+		"equity": {
+			"type": "number",
+			"minimum": 0,
+			"maximum": 100
+		},
 		"companyType": {
 			"oneOf": [
 				{
-					"properties": {
-						"companyType": {
-							"enum": ["Company Limited by Shares (LTD)"]
-						},
-						"members": {
-							"type": "array",
-							"items": {
-								"type": "object",
-								"properties": {
-									"positions": {
-										"$ref": "#/definitions/ltd_positions"
-									},
-									"entity": {
-										"oneOf": [
-											{
-												"$ref": "#/definitions"
-											}
-										]
-									}
-								}
-							}
-						}
-					}
+					"$ref": "#/definitions/ltd"
+				},
+				{
+					"$ref": "#/definitions/llc"
+				},
+				{
+					"$ref": "#/definitions/tst"
+				},
+				{
+					"$ref": "#/definitions/fnd"
+				},
+				{
+					"$ref": "#/definitions/llp"
+				},
+				{
+					"$ref": "#/definitions/other_company"
 				}
 			]
 		}
 	},
 	"definitions": {
+		"ltd": {
+			"type": "object",
+			"properties": {
+				"companyType": {
+					"enum": ["Company Limited by Shares (LTD)"]
+				},
+				"members": {
+					"$ref": "#/definitions/members/ltd"
+				}
+			}
+		},
+		"llc": {
+			"type": "object",
+			"properties": {
+				"companyType": {
+					"enum": ["Limited Liability Company (LLC)"]
+				},
+				"members": {
+					"$ref": "#/definitions/members/llc"
+				}
+			}
+		},
+		"tst": {
+			"type": "object",
+			"properties": {
+				"companyType": {
+					"enum": ["Trust (TST)"]
+				},
+				"members": {
+					"$ref": "#/definitions/members/tst"
+				}
+			}
+		},
+		"fnd": {
+			"type": "object",
+			"properties": {
+				"companyType": {
+					"enum": ["Foundation (FND)"]
+				},
+				"members": {
+					"$ref": "#/definitions/members/fnd"
+				}
+			}
+		},
+		"llp": {
+			"type": "object",
+			"properties": {
+				"companyType": {
+					"enum": ["Limited Partnership (LLP)"]
+				},
+				"members": {
+					"$ref": "#/definitions/members/llp"
+				}
+			}
+		},
+		"other_company": {
+			"type": "object",
+			"properties": {
+				"companyType": {
+					"enum": ["Other"]
+				},
+				"members": {
+					"$ref": "#/definitions/members/other_company"
+				}
+			}
+		},
+		"members": {
+			"definitions": {
+				"ltd": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {
+							"positions": {
+								"type": "array",
+								"items": {
+									"$ref": "#/definitions/positions/ltd"
+								}
+							},
+							"entity": {
+								"$ref": "#/definitions/entities/entity"
+							}
+						}
+					}
+				},
+				"llc": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {
+							"positions": {
+								"type": "array",
+								"items": {
+									"$ref": "#/definitions/positions/llc"
+								}
+							},
+							"entity": {
+								"$ref": "#/definitions/entities/entity"
+							}
+						}
+					}
+				},
+				"tst": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {
+							"positions": {
+								"type": "array",
+								"items": {
+									"$ref": "#/definitions/positions/tst"
+								}
+							},
+							"entity": {
+								"$ref": "#/definitions/entities/entity"
+							}
+						}
+					}
+				},
+				"fnd": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {
+							"positions": {
+								"type": "array",
+								"items": {
+									"$ref": "#/definitions/positions/fnd"
+								}
+							},
+							"entity": {
+								"$ref": "#/definitions/entities/entity"
+							}
+						}
+					}
+				},
+				"llp": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {
+							"positions": {
+								"type": "array",
+								"items": {
+									"$ref": "#/definitions/positions/ltd"
+								}
+							},
+							"entity": {
+								"$ref": "#/definitions/entities/entity"
+							}
+						}
+					}
+				},
+				"other_company": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {
+							"positions": {
+								"type": "array",
+								"items": {
+									"$ref": "#/definitions/positions/other_company"
+								}
+							},
+							"entity": {
+								"$ref": "#/definitions/entities/entity"
+							}
+						}
+					}
+				}
+			}
+		},
 		"positions": {
 			"definitions": {
-				"ltd": {},
-				"llc": {},
-				"tst": {},
-				"fnd": {},
-				"llp": {},
-				"other": {}
+				"ltd": {
+					"oneOf": [
+						{ "$ref": "#/definition/positions/director" },
+						{ "$ref": "#/definition/positions/shareholder" },
+						{ "$ref": "#/definition/positions/ubo" },
+						{ "$ref": "#/definition/positions/observer" },
+						{ "$ref": "#/definition/positions/authorizedSignatory" }
+					]
+				},
+				"llc": {
+					"oneOf": [
+						{ "$ref": "#/definition/positions/manager" },
+						{ "$ref": "#/definition/positions/member" },
+						{ "$ref": "#/definition/positions/ubo" },
+						{ "$ref": "#/definition/positions/observer" },
+						{ "$ref": "#/definition/positions/authorizedSignatory" }
+					]
+				},
+				"tst": {
+					"oneOf": [
+						{ "$ref": "#/definition/positions/grantor" },
+						{ "$ref": "#/definition/positions/beneficiary" },
+						{ "$ref": "#/definition/positions/trustee" },
+						{ "$ref": "#/definition/positions/protector" },
+						{ "$ref": "#/definition/positions/ubo" },
+						{ "$ref": "#/definition/positions/observer" },
+						{ "$ref": "#/definition/positions/authorizedSignatory" }
+					]
+				},
+				"fnd": {
+					"oneOf": [
+						{ "$ref": "#/definition/positions/founder" },
+						{ "$ref": "#/definition/positions/director" },
+						{ "$ref": "#/definition/positions/supervisor" },
+						{ "$ref": "#/definition/positions/beneficiary" },
+						{ "$ref": "#/definition/positions/ubo" },
+						{ "$ref": "#/definition/positions/observer" },
+						{ "$ref": "#/definition/positions/authorizedSignatory" }
+					]
+				},
+				"llp": {
+					"oneOf": [
+						{ "$ref": "#/definition/positions/generalPartner" },
+						{ "$ref": "#/definition/positions/limitedPartner" },
+						{ "$ref": "#/definition/positions/ubo" },
+						{ "$ref": "#/definition/positions/observer" },
+						{ "$ref": "#/definition/positions/authorizedSignatory" }
+					]
+				},
+				"other_company": {
+					"oneOf": [
+						{ "$ref": "#/definition/positions/member" },
+						{ "$ref": "#/definition/positions/ubo" },
+						{ "$ref": "#/definition/positions/observer" },
+						{ "$ref": "#/definition/positions/authorizedSignatory" }
+					]
+				},
+				"director": {
+					"type": "object",
+					"properties": {
+						"position": {
+							"const": "director"
+						}
+					}
+				},
+				"ubo": {
+					"type": "object",
+					"properties": {
+						"position": {
+							"const": "ubo"
+						}
+					}
+				},
+				"observer": {
+					"type": "object",
+					"properties": {
+						"position": {
+							"const": "observer"
+						}
+					}
+				},
+				"authorizedSignatory": {
+					"type": "object",
+					"properties": {
+						"position": {
+							"const": "authorizedSignatory"
+						}
+					}
+				},
+				"shareholder": {
+					"type": "object",
+					"properties": {
+						"position": {
+							"const": "shareholder"
+						},
+						"equity": {
+							"title": "Shares",
+							"$ref": "#/definitions/equity"
+						}
+					}
+				}
 			}
 		},
 		"entities": {
 			"definitions": {
+				"entity": {
+					"oneOf": [
+						{
+							"$ref": "#/definitions/entities/individual"
+						},
+						{
+							"$ref": "#/definitions/entities/corporate"
+						}
+					]
+				},
+
 				"individual": {
 					"type": "object",
 					"properties": {
