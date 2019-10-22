@@ -17,13 +17,14 @@
 					"type": "array",
 					"uniqueItems": true,
 					"defaults": ["individual"],
-                    "items": {
-                        "type": "string",
-                        "enum": [
-						   "individual",
-						   "corporate"
-                        ]
-                    }
+					"items": {
+						"type": "string",
+						"enum": ["individual", "corporate"]
+					}
+				},
+				"system": {
+					"type": "boolean",
+					"defaults": false
 				}
 			}
 		}
