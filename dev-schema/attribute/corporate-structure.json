@@ -13,11 +13,6 @@
 		}
 	},
 	"dependencies": {
-		"equity": {
-			"type": "number",
-			"minimum": 0,
-			"maximum": 100
-		},
 		"companyType": {
 			"oneOf": [
 				{
@@ -42,6 +37,11 @@
 		}
 	},
 	"definitions": {
+		"equity": {
+			"type": "number",
+			"minimum": 0,
+			"maximum": 100
+		},
 		"ltd": {
 			"type": "object",
 			"properties": {
@@ -109,267 +109,346 @@
 			}
 		},
 		"members": {
-			"definitions": {
-				"ltd": {
-					"type": "array",
-					"items": {
-						"type": "object",
-						"properties": {
-							"positions": {
-								"type": "array",
-								"items": {
-									"$ref": "#/definitions/positions/ltd"
-								}
-							},
-							"entity": {
-								"$ref": "#/definitions/entities/entity"
+			"ltd": {
+				"type": "array",
+				"items": {
+					"type": "object",
+					"properties": {
+						"positions": {
+							"type": "array",
+							"items": {
+								"$ref": "#/definitions/positions/ltd"
 							}
+						},
+						"entity": {
+							"$ref": "#/definitions/entities/entity"
 						}
 					}
-				},
-				"llc": {
-					"type": "array",
-					"items": {
-						"type": "object",
-						"properties": {
-							"positions": {
-								"type": "array",
-								"items": {
-									"$ref": "#/definitions/positions/llc"
-								}
-							},
-							"entity": {
-								"$ref": "#/definitions/entities/entity"
+				}
+			},
+			"llc": {
+				"type": "array",
+				"items": {
+					"type": "object",
+					"properties": {
+						"positions": {
+							"type": "array",
+							"items": {
+								"$ref": "#/definitions/positions/llc"
 							}
+						},
+						"entity": {
+							"$ref": "#/definitions/entities/entity"
 						}
 					}
-				},
-				"tst": {
-					"type": "array",
-					"items": {
-						"type": "object",
-						"properties": {
-							"positions": {
-								"type": "array",
-								"items": {
-									"$ref": "#/definitions/positions/tst"
-								}
-							},
-							"entity": {
-								"$ref": "#/definitions/entities/entity"
+				}
+			},
+			"tst": {
+				"type": "array",
+				"items": {
+					"type": "object",
+					"properties": {
+						"positions": {
+							"type": "array",
+							"items": {
+								"$ref": "#/definitions/positions/tst"
 							}
+						},
+						"entity": {
+							"$ref": "#/definitions/entities/entity"
 						}
 					}
-				},
-				"fnd": {
-					"type": "array",
-					"items": {
-						"type": "object",
-						"properties": {
-							"positions": {
-								"type": "array",
-								"items": {
-									"$ref": "#/definitions/positions/fnd"
-								}
-							},
-							"entity": {
-								"$ref": "#/definitions/entities/entity"
+				}
+			},
+			"fnd": {
+				"type": "array",
+				"items": {
+					"type": "object",
+					"properties": {
+						"positions": {
+							"type": "array",
+							"items": {
+								"$ref": "#/definitions/positions/fnd"
 							}
+						},
+						"entity": {
+							"$ref": "#/definitions/entities/entity"
 						}
 					}
-				},
-				"llp": {
-					"type": "array",
-					"items": {
-						"type": "object",
-						"properties": {
-							"positions": {
-								"type": "array",
-								"items": {
-									"$ref": "#/definitions/positions/ltd"
-								}
-							},
-							"entity": {
-								"$ref": "#/definitions/entities/entity"
+				}
+			},
+			"llp": {
+				"type": "array",
+				"items": {
+					"type": "object",
+					"properties": {
+						"positions": {
+							"type": "array",
+							"items": {
+								"$ref": "#/definitions/positions/ltd"
 							}
+						},
+						"entity": {
+							"$ref": "#/definitions/entities/entity"
 						}
 					}
-				},
-				"other_company": {
-					"type": "array",
-					"items": {
-						"type": "object",
-						"properties": {
-							"positions": {
-								"type": "array",
-								"items": {
-									"$ref": "#/definitions/positions/other_company"
-								}
-							},
-							"entity": {
-								"$ref": "#/definitions/entities/entity"
+				}
+			},
+			"other_company": {
+				"type": "array",
+				"items": {
+					"type": "object",
+					"properties": {
+						"positions": {
+							"type": "array",
+							"items": {
+								"$ref": "#/definitions/positions/other_company"
 							}
+						},
+						"entity": {
+							"$ref": "#/definitions/entities/entity"
 						}
 					}
 				}
 			}
 		},
 		"positions": {
-			"definitions": {
-				"ltd": {
-					"oneOf": [
-						{ "$ref": "#/definition/positions/director" },
-						{ "$ref": "#/definition/positions/shareholder" },
-						{ "$ref": "#/definition/positions/ubo" },
-						{ "$ref": "#/definition/positions/observer" },
-						{ "$ref": "#/definition/positions/authorizedSignatory" }
-					]
-				},
-				"llc": {
-					"oneOf": [
-						{ "$ref": "#/definition/positions/manager" },
-						{ "$ref": "#/definition/positions/member" },
-						{ "$ref": "#/definition/positions/ubo" },
-						{ "$ref": "#/definition/positions/observer" },
-						{ "$ref": "#/definition/positions/authorizedSignatory" }
-					]
-				},
-				"tst": {
-					"oneOf": [
-						{ "$ref": "#/definition/positions/grantor" },
-						{ "$ref": "#/definition/positions/beneficiary" },
-						{ "$ref": "#/definition/positions/trustee" },
-						{ "$ref": "#/definition/positions/protector" },
-						{ "$ref": "#/definition/positions/ubo" },
-						{ "$ref": "#/definition/positions/observer" },
-						{ "$ref": "#/definition/positions/authorizedSignatory" }
-					]
-				},
-				"fnd": {
-					"oneOf": [
-						{ "$ref": "#/definition/positions/founder" },
-						{ "$ref": "#/definition/positions/director" },
-						{ "$ref": "#/definition/positions/supervisor" },
-						{ "$ref": "#/definition/positions/beneficiary" },
-						{ "$ref": "#/definition/positions/ubo" },
-						{ "$ref": "#/definition/positions/observer" },
-						{ "$ref": "#/definition/positions/authorizedSignatory" }
-					]
-				},
-				"llp": {
-					"oneOf": [
-						{ "$ref": "#/definition/positions/generalPartner" },
-						{ "$ref": "#/definition/positions/limitedPartner" },
-						{ "$ref": "#/definition/positions/ubo" },
-						{ "$ref": "#/definition/positions/observer" },
-						{ "$ref": "#/definition/positions/authorizedSignatory" }
-					]
-				},
-				"other_company": {
-					"oneOf": [
-						{ "$ref": "#/definition/positions/member" },
-						{ "$ref": "#/definition/positions/ubo" },
-						{ "$ref": "#/definition/positions/observer" },
-						{ "$ref": "#/definition/positions/authorizedSignatory" }
-					]
-				},
-				"director": {
-					"type": "object",
-					"properties": {
-						"position": {
-							"const": "director"
-						}
+			"ltd": {
+				"type": "object",
+				"oneOf": [
+					{ "$ref": "#/definitions/positions/director" },
+					{ "$ref": "#/definitions/positions/shareholder" },
+					{ "$ref": "#/definitions/positions/ubo" },
+					{ "$ref": "#/definitions/positions/observer" },
+					{ "$ref": "#/definitions/positions/authorizedSignatory" }
+				]
+			},
+			"llc": {
+				"oneOf": [
+					{ "$ref": "#/definitions/positions/manager" },
+					{ "$ref": "#/definitions/positions/member" },
+					{ "$ref": "#/definitions/positions/ubo" },
+					{ "$ref": "#/definitions/positions/observer" },
+					{ "$ref": "#/definitions/positions/authorizedSignatory" }
+				]
+			},
+			"tst": {
+				"oneOf": [
+					{ "$ref": "#/definitions/positions/grantor" },
+					{ "$ref": "#/definitions/positions/beneficiary" },
+					{ "$ref": "#/definitions/positions/trustee" },
+					{ "$ref": "#/definitions/positions/protector" },
+					{ "$ref": "#/definitions/positions/ubo" },
+					{ "$ref": "#/definitions/positions/observer" },
+					{ "$ref": "#/definitions/positions/authorizedSignatory" }
+				]
+			},
+			"fnd": {
+				"oneOf": [
+					{ "$ref": "#/definitions/positions/founder" },
+					{ "$ref": "#/definitions/positions/director" },
+					{ "$ref": "#/definitions/positions/supervisor" },
+					{ "$ref": "#/definitions/positions/beneficiary" },
+					{ "$ref": "#/definitions/positions/ubo" },
+					{ "$ref": "#/definitions/positions/observer" },
+					{ "$ref": "#/definitions/positions/authorizedSignatory" }
+				]
+			},
+			"llp": {
+				"oneOf": [
+					{ "$ref": "#/definitions/positions/generalPartner" },
+					{ "$ref": "#/definitions/positions/limitedPartner" },
+					{ "$ref": "#/definitions/positions/ubo" },
+					{ "$ref": "#/definitions/positions/observer" },
+					{ "$ref": "#/definitions/positions/authorizedSignatory" }
+				]
+			},
+			"other_company": {
+				"oneOf": [
+					{ "$ref": "#/definitions/positions/member" },
+					{ "$ref": "#/definitions/positions/ubo" },
+					{ "$ref": "#/definitions/positions/observer" },
+					{ "$ref": "#/definitions/positions/authorizedSignatory" }
+				]
+			},
+			"director": {
+				"type": "object",
+				"properties": {
+					"position": {
+						"const": "director"
 					}
-				},
-				"ubo": {
-					"type": "object",
-					"properties": {
-						"position": {
-							"const": "ubo"
-						}
+				}
+			},
+			"ubo": {
+				"type": "object",
+				"properties": {
+					"position": {
+						"const": "ubo"
 					}
-				},
-				"observer": {
-					"type": "object",
-					"properties": {
-						"position": {
-							"const": "observer"
-						}
+				}
+			},
+			"observer": {
+				"type": "object",
+				"properties": {
+					"position": {
+						"const": "observer"
 					}
-				},
-				"authorizedSignatory": {
-					"type": "object",
-					"properties": {
-						"position": {
-							"const": "authorizedSignatory"
-						}
+				}
+			},
+			"authorizedSignatory": {
+				"type": "object",
+				"properties": {
+					"position": {
+						"const": "authorizedSignatory"
 					}
-				},
-				"shareholder": {
-					"type": "object",
-					"properties": {
-						"position": {
-							"const": "shareholder"
-						},
-						"equity": {
-							"title": "Shares",
-							"$ref": "#/definitions/equity"
-						}
+				}
+			},
+			"shareholder": {
+				"type": "object",
+				"properties": {
+					"position": {
+						"const": "shareholder"
+					},
+					"equity": {
+						"title": "Shares",
+						"$ref": "#/definitions/equity"
+					}
+				}
+			},
+			"member": {
+				"type": "object",
+				"properties": {
+					"position": {
+						"const": "member"
+					},
+					"equity": {
+						"title": "Membership Interest",
+						"$ref": "#/definitions/equity"
+					}
+				}
+			},
+			"manager": {
+				"type": "object",
+				"properties": {
+					"position": {
+						"const": "manager"
+					}
+				}
+			},
+			"grantor": {
+				"type": "object",
+				"properties": {
+					"position": {
+						"const": "grantor"
+					}
+				}
+			},
+			"beneficiary": {
+				"type": "object",
+				"properties": {
+					"position": {
+						"const": "beneficiary"
+					}
+				}
+			},
+			"trustee": {
+				"type": "object",
+				"properties": {
+					"position": {
+						"const": "trustee"
+					}
+				}
+			},
+			"protector": {
+				"type": "object",
+				"properties": {
+					"position": {
+						"const": "protector"
+					}
+				}
+			},
+			"founder": {
+				"type": "object",
+				"properties": {
+					"position": {
+						"const": "founder"
+					}
+				}
+			},
+			"supervisor": {
+				"type": "object",
+				"properties": {
+					"position": {
+						"const": "protector"
+					}
+				}
+			},
+			"generalPartner": {
+				"type": "object",
+				"properties": {
+					"position": {
+						"const": "general-partner"
+					},
+					"equity": {
+						"$ref": "#/definitions/equity"
+					}
+				}
+			},
+			"limitedPartner": {
+				"type": "object",
+				"properties": {
+					"position": {
+						"const": "limited-partner"
+					},
+					"equity": {
+						"$ref": "#/definitions/equity"
 					}
 				}
 			}
 		},
 		"entities": {
-			"definitions": {
-				"entity": {
-					"oneOf": [
-						{
-							"$ref": "#/definitions/entities/individual"
-						},
-						{
-							"$ref": "#/definitions/entities/corporate"
-						}
-					]
-				},
-
-				"individual": {
-					"type": "object",
-					"properties": {
-						"type": {
-							"const": "individual"
-						},
-						"firstName": {
-							"$ref": "http://platform.selfkey.org/schema/attribute/first-name.json"
-						},
-						"lastName": {
-							"$ref": "http://platform.selfkey.org/schema/attribute/last-name.json"
-						},
-						"did": {
-							"$ref": "http://platform.selfkey.org/schema/attribute/did.json"
-						},
-						"email": {
-							"$ref": "http://platform.selfkey.org/schema/attribute/email.json"
-						}
+			"entity": {
+				"oneOf": [
+					{
+						"$ref": "#/definitions/entities/individual"
+					},
+					{
+						"$ref": "#/definitions/entities/corporate"
 					}
-				},
-				"corporate": {
-					"type": "object",
-					"properties": {
-						"type": {
-							"const": "corporate"
-						},
-						"companyType": {
-							"$ref": "http://platform.selfkey.org/schema/attribute/legal-entity-type.json"
-						},
-						"companyName": {
-							"$ref": "http://platform.selfkey.org/schema/attribute/company-name.json"
-						},
-						"did": {
-							"$ref": "http://platform.selfkey.org/schema/attribute/did.json"
-						},
-						"email": {
-							"$ref": "http://platform.selfkey.org/schema/attribute/email.json"
-						}
+				]
+			},
+
+			"individual": {
+				"type": "object",
+				"properties": {
+					"type": {
+						"const": "individual"
+					},
+					"firstName": {
+						"$ref": "http://platform.selfkey.org/schema/attribute/first-name.json"
+					},
+					"lastName": {
+						"$ref": "http://platform.selfkey.org/schema/attribute/last-name.json"
+					},
+					"email": {
+						"$ref": "http://platform.selfkey.org/schema/attribute/email.json"
+					}
+				}
+			},
+			"corporate": {
+				"type": "object",
+				"properties": {
+					"type": {
+						"const": "corporate"
+					},
+					"companyType": {
+						"$ref": "http://platform.selfkey.org/schema/attribute/legal-entity-type.json"
+					},
+					"companyName": {
+						"$ref": "http://platform.selfkey.org/schema/attribute/company-name.json"
+					},
+					"email": {
+						"$ref": "http://platform.selfkey.org/schema/attribute/email.json"
 					}
 				}
 			}
