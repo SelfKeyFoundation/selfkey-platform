@@ -7,17 +7,17 @@
     "doc": "docs"
   },
   "dependencies": {
-    "@babel/core": "^7.6.4",
-    "@babel/preset-env": "^7.6.3",
-    "babel-jest": "^24.9.0",
-    "glob": "^7.1.5",
-    "glob-promise": "^3.4.0",
-    "jest": "^24.9.0",
-    "json-schema-ref-parser": "^6.0.3",
-    "node-fetch": "^2.3.0"
+    "@babel/core": "7.6.4",
+    "@babel/preset-env": "7.6.3",
+    "babel-jest": "24.9.0",
+    "glob": "7.1.5",
+    "glob-promise": "3.4.0",
+    "jest": "24.9.0",
+    "json-schema-ref-parser": "6.0.3",
+    "node-fetch": "2.3.0"
   },
   "devDependencies": {
-    "cz-conventional-changelog": "^2.1.0"
+    "cz-conventional-changelog": "2.1.0"
   },
   "scripts": {
     "resolve-repository": "bin/resolve-repository.js https://platform.selfkey.org/repository.json > resolved-repository.json"
