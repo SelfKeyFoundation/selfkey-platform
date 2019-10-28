@@ -1,12 +1,7 @@
-import RefParser from 'json-schema-ref-parser';
 import glob from 'glob-promise';
 import Ajv from 'ajv';
 import path from 'path';
 import fs from 'fs';
-
-export const dereference = (schema, options = {}) => {
-	return RefParser.dereference(schema);
-};
 
 export const getSchemaBase = dir => {
 	if (/dev-schema/.test(dir)) {
@@ -31,6 +26,7 @@ export const loadAllSchemas = async (options = {}) => {
 		const schemas = await Promise.all(matches.map(loadOneSchema));
 		const metaSchema = await loadOneSchema(`${base}/identity-attribute.json`);
 		const ajv = new Ajv({ validateSchema: false });
+		ajv.addFormat('file', () => {});
 		ajv.addMetaSchema(metaSchema);
 		schemas.forEach(schema => ajv.addSchema(schema));
 		return ajv;
