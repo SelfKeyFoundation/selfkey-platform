@@ -163,6 +163,11 @@
       "json": "http://platform.selfkey.org/schema/attribute/professional-reference-letter.json",
       "ui": "http://platform.selfkey.org/schema/ui/professional-reference-letter.json",
       "entityType": ["corporate", "individual"]
+    },
+    {
+      "json": "http://platform.selfkey.org/schema/attribute/corporate-structure.json",
+      "system": "true",
+      "entityType": ["corporate"]
     }
   ]
 }
