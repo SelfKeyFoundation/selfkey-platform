@@ -1,6 +1,6 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema",
-	"$id": "http://platform.selfkey.org/schema/attribute/identity-attribute.json",
+	"$id": "http://platform.selfkey.org/schema/identity-attribute.json",
 	"allOf": [
 		{ "$ref": "http://json-schema.org/draft-07/schema" },
 		{
@@ -28,5 +28,5 @@
 			}
 		}
 	],
-	"required": ["id", "title", "description", "identityAttribute"]
+	"required": ["$id", "title", "description", "identityAttribute"]
 }
