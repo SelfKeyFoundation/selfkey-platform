@@ -1,0 +1,36 @@
+{
+	"$id": "https://platform.selfkey.org/schema/certifier/document/certified-document.json",
+	"$ref": "https://platform.selfkey.org/schema/certifier/document.json",
+	"certifiedDocument": true,
+	"entityType": ["individual","corporate"],
+	"title": "Certified Document",
+	"description": "A document that has been certified by a SelfKey Certifier",
+	"type": "object",
+	"properties": {
+		"document": {
+			"documentType": "string",
+			"reference": {
+				"type": "string",
+				"format": "url"
+			},
+			"image": {
+				"$ref": "https://platform.selfkey.org/schema/file/image.json"
+			},
+		},
+		"certifier": {
+			"$ref": "https://platform.selfkey.org/schema/certifier/role/certifier.json"
+		},
+		"subject": {
+			"$ref": "https://platform.selfkey.org/schema/certifier/role/subject.json"
+		},
+		"issued": {
+			"$ref": "https://platform.selfkey.org/schema/misc/issue-date.json"
+		},
+		"expires": {
+			"$ref": "https://platform.selfkey.org/schema/misc/expiry-date.json"
+		},
+		"signature": {
+			"$ref": "https://platform.selfkey.org/schema/certifier/misc/signature.json"
+		}
+	}
+}
