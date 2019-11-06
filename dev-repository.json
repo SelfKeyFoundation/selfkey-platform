@@ -1,5 +1,6 @@
 {
   "name": "Selfkey.org",
+  "identityAttributeSchemaId": "http://platform.selfkey.org/schema/identity-attribute.json",
   "identityAttributes": [
     {
       "json": "http://platform.selfkey.org/schema/attribute/bank-statement.json",
