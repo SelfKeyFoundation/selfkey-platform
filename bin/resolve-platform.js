@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-
+const _ = require('lodash');
 const path = require('path');
 const fs = require('fs');
 const RefParser = require('json-schema-ref-parser');
@@ -46,7 +46,7 @@ const resolveRepository = async options => {
 				url = url.json;
 			}
 			const schema = await loadSchema(url, options);
-			const dereferenced = await dereferenceJsonSchema(schema, options);
+			const dereferenced = await dereferenceJsonSchema(_.cloneDeep(schema), options);
 			return { url, schema, dereferenced };
 		})
 	);
