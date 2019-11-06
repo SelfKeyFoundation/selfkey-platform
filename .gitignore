@@ -1,3 +1,4 @@
 node_modules
 .history
 yarn-error.log
+resolved-remote-repository.json

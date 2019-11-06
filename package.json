@@ -17,10 +17,14 @@
     "node-fetch": "2.3.0"
   },
   "devDependencies": {
-    "cz-conventional-changelog": "2.1.0"
+    "cz-conventional-changelog": "2.1.0",
+    "husky": "^3.0.9"
   },
   "scripts": {
-    "resolve-repository": "bin/resolve-repository.js https://platform.selfkey.org/repository.json > resolved-repository.json"
+    "resolve-remote-repository": "bin/resolve-repository-remote.js https://platform.selfkey.org/repository.json > resolved-remote-repository.json",
+    "resolve-dev-repository": "REPO_ENV=development bin/resolve-platform.js > resolved-dev-repository.json",
+    "resolve-repository": "bin/resolve-platform.js > resolved-repository.json",
+    "pre-commit": "yarn resolve-dev-repository && yarn resolve-repository && git add resolved-{dev-repository,repository}.json"
   },
   "repository": {
     "type": "git",
