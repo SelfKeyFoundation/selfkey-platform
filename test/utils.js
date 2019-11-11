@@ -10,6 +10,20 @@ export const getSchemaBase = dir => {
 	return path.join(__dirname, '../schema');
 };
 
+export const getRepositoryPath = dir => {
+	if (/dev-schema/.test(dir)) {
+		return path.join(__dirname, '../dev-repository.json');
+	}
+	return path.join(__dirname, '../repository.json');
+};
+
+export const loadRepository = async (options = {}) => {
+	const { testDir = __dirname } = options;
+	const repoPath = getRepositoryPath(testDir);
+	const repo = await loadOneSchema(repoPath);
+	return repo;
+};
+
 export const loadOneSchema = async schemaPath => {
 	const fileBuffer = await fs.promises.readFile(schemaPath);
 	const schema = JSON.parse(fileBuffer.toString());
@@ -21,7 +35,7 @@ export const loadAllSchemas = async (options = {}) => {
 	const base = getSchemaBase(testDir);
 	try {
 		const matches = await glob(`${base}/**/*.json`, {
-			ignore: [`${base}/ui/**/*.json`, `${base}/identity-attribute.json`],
+			ignore: [`${base}/ui/**/*.json`, `${base}/identity-attribute.json`]
 		});
 		const schemas = await Promise.all(matches.map(loadOneSchema));
 		const metaSchema = await loadOneSchema(`${base}/identity-attribute.json`);
