@@ -238,7 +238,8 @@
           { "$ref": "#/definitions/positions/shareholder" },
           { "$ref": "#/definitions/positions/ubo" },
           { "$ref": "#/definitions/positions/observer" },
-          { "$ref": "#/definitions/positions/authorizedSignatory" }
+          { "$ref": "#/definitions/positions/authorizedSignatory" },
+          { "$ref": "#/definitions/positions/other" }
         ]
       },
       "llc": {
@@ -247,7 +248,8 @@
           { "$ref": "#/definitions/positions/member" },
           { "$ref": "#/definitions/positions/ubo" },
           { "$ref": "#/definitions/positions/observer" },
-          { "$ref": "#/definitions/positions/authorizedSignatory" }
+          { "$ref": "#/definitions/positions/authorizedSignatory" },
+          { "$ref": "#/definitions/positions/other" }
         ]
       },
       "tst": {
@@ -258,7 +260,8 @@
           { "$ref": "#/definitions/positions/protector" },
           { "$ref": "#/definitions/positions/ubo" },
           { "$ref": "#/definitions/positions/observer" },
-          { "$ref": "#/definitions/positions/authorizedSignatory" }
+          { "$ref": "#/definitions/positions/authorizedSignatory" },
+          { "$ref": "#/definitions/positions/other" }
         ]
       },
       "fnd": {
@@ -269,7 +272,8 @@
           { "$ref": "#/definitions/positions/beneficiary" },
           { "$ref": "#/definitions/positions/ubo" },
           { "$ref": "#/definitions/positions/observer" },
-          { "$ref": "#/definitions/positions/authorizedSignatory" }
+          { "$ref": "#/definitions/positions/authorizedSignatory" },
+          { "$ref": "#/definitions/positions/other" }
         ]
       },
       "llp": {
@@ -278,7 +282,8 @@
           { "$ref": "#/definitions/positions/limitedPartner" },
           { "$ref": "#/definitions/positions/ubo" },
           { "$ref": "#/definitions/positions/observer" },
-          { "$ref": "#/definitions/positions/authorizedSignatory" }
+          { "$ref": "#/definitions/positions/authorizedSignatory" },
+          { "$ref": "#/definitions/positions/other" }
         ]
       },
       "other_company": {
@@ -286,13 +291,16 @@
           { "$ref": "#/definitions/positions/member" },
           { "$ref": "#/definitions/positions/ubo" },
           { "$ref": "#/definitions/positions/observer" },
-          { "$ref": "#/definitions/positions/authorizedSignatory" }
+          { "$ref": "#/definitions/positions/authorizedSignatory" },
+          { "$ref": "#/definitions/positions/other" }
         ]
       },
       "director": {
         "type": "object",
         "properties": {
           "position": {
+            "title": "Director",
+            "description": "The person that is chief executive of the organization.",
             "const": "director"
           }
         }
@@ -301,6 +309,8 @@
         "type": "object",
         "properties": {
           "position": {
+            "title": "UBO",
+            "description": "The person or entity that is the ultimate beneficiary of the company.",
             "const": "ubo"
           }
         }
@@ -309,6 +319,8 @@
         "type": "object",
         "properties": {
           "position": {
+            "title": "Observer",
+            "description": "Individual who attends company board meetings but is not an official member.",
             "const": "observer"
           }
         }
@@ -317,6 +329,8 @@
         "type": "object",
         "properties": {
           "position": {
+            "title": "Authorized Signatory",
+            "description": "Director or person who has been authorized to sign documents.",
             "const": "authorizedSignatory"
           }
         }
@@ -325,6 +339,8 @@
         "type": "object",
         "properties": {
           "position": {
+            "title": "Shareholder",
+            "description": "Individual or institution that legally owns one or more shares of stock in your company.",
             "const": "shareholder"
           },
           "equity": {
@@ -337,6 +353,8 @@
         "type": "object",
         "properties": {
           "position": {
+            "title": "Member",
+            "description": "Co-owner of a business, who oversees and runs the that business.",
             "const": "member"
           },
           "equity": {
@@ -349,6 +367,8 @@
         "type": "object",
         "properties": {
           "position": {
+            "title": "Manager",
+            "description": "Person in charge of the LLC for day-to-day and long-term decisions.",
             "const": "manager"
           }
         }
@@ -357,6 +377,8 @@
         "type": "object",
         "properties": {
           "position": {
+            "title": "Grantor",
+            "description": "Person or entity that establishes the trust.",
             "const": "grantor"
           }
         }
@@ -365,6 +387,8 @@
         "type": "object",
         "properties": {
           "position": {
+            "title": "Beneficiary",
+            "description": "Person or entity that establishes the trust.",
             "const": "beneficiary"
           }
         }
@@ -373,6 +397,8 @@
         "type": "object",
         "properties": {
           "position": {
+            "title": "Trustee",
+            "description": "The person who acts as the legal owner of trust assets.",
             "const": "trustee"
           }
         }
@@ -381,6 +407,8 @@
         "type": "object",
         "properties": {
           "position": {
+            "title": "Protector",
+            "description": "Person who directs or restrain the trustees in relation to their administration of the trust.",
             "const": "protector"
           }
         }
@@ -389,6 +417,8 @@
         "type": "object",
         "properties": {
           "position": {
+            "title": "Founder",
+            "description": "Person or entity that establishes the foundation.",
             "const": "founder"
           }
         }
@@ -397,7 +427,9 @@
         "type": "object",
         "properties": {
           "position": {
-            "const": "protector"
+            "title": "Supervisor",
+            "description": "Person  who monitors and regulates employees in their performance of assigned or delegated tasks.",
+            "const": "supervisor"
           }
         }
       },
@@ -405,6 +437,8 @@
         "type": "object",
         "properties": {
           "position": {
+            "title": "General Partner",
+            "description": "Co-owner of a business, who oversees and runs the that business.",
             "const": "general-partner"
           },
           "equity": {
@@ -416,10 +450,22 @@
         "type": "object",
         "properties": {
           "position": {
+            "title": "Limited Partner",
+            "description": "Co-owners of a business, that does not participate in the management.",
             "const": "limited-partner"
           },
           "equity": {
             "$ref": "#/definitions/equity"
+          }
+        }
+      },
+      "other": {
+        "type": "object",
+        "properties": {
+          "position": {
+            "title": "Other",
+            "description": "Designated nonmembers or outsiders.",
+            "const": "other"
           }
         }
       }
