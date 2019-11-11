@@ -1,10 +1,9 @@
 import * as testUtils from '../../../test/utils';
 // import avj from 'avg';
-import corporateStructure from '../corporate-structure.json';
-import validPayloads from './__fixtures__/corporate-structure-valid';
-import invalidPayloads from './__fixtures__/corporate-structure-invalid';
+import countryOfResidency from '../country-of-residency.json';
+import { validPayloads, invalidPayloads } from './__fixtures__/country-of-residency';
 
-describe('corporate structure attribute', () => {
+describe('country-of-residency attribute', () => {
 	let validate = null;
 	let ajv = null;
 	let repo = null;
@@ -13,23 +12,23 @@ describe('corporate structure attribute', () => {
 		const options = { testDir: __dirname };
 		ajv = await testUtils.loadAllSchemas(options);
 		repo = await testUtils.loadRepository(options);
-		validate = ajv.compile(corporateStructure);
+		validate = ajv.compile(countryOfResidency);
 	});
 
-	it('repo should contain corporate structure', async () => {
+	it('repo should contain country of residency', async () => {
 		expect(repo.identityAttributes).toEqual(
 			expect.arrayContaining([
 				{
-					json: 'http://platform.selfkey.org/schema/attribute/corporate-structure.json',
-					system: 'true',
-					entityType: ['corporate']
+					json: 'http://platform.selfkey.org/schema/attribute/country-of-residency.json',
+					ui: 'http://platform.selfkey.org/schema/ui/country-of-residency.json',
+					entityType: ['individual']
 				}
 			])
 		);
 	});
 
-	it('corporate structure schema should be valid', () => {
-		expect(ajv.validateSchema(corporateStructure)).toBe(true);
+	it('country-of-residency schema should be valid', () => {
+		expect(ajv.validateSchema(countryOfResidency)).toBe(true);
 	});
 
 	const t = (payload, valid) =>

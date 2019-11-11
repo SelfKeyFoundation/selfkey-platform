@@ -1,10 +1,9 @@
 import * as testUtils from '../../../test/utils';
 // import avj from 'avg';
-import corporateStructure from '../corporate-structure.json';
-import validPayloads from './__fixtures__/corporate-structure-valid';
-import invalidPayloads from './__fixtures__/corporate-structure-invalid';
+import domicile from '../domicile.json';
+import { validPayloads, invalidPayloads } from './__fixtures__/domicile';
 
-describe('corporate structure attribute', () => {
+describe('domicile attribute', () => {
 	let validate = null;
 	let ajv = null;
 	let repo = null;
@@ -13,23 +12,23 @@ describe('corporate structure attribute', () => {
 		const options = { testDir: __dirname };
 		ajv = await testUtils.loadAllSchemas(options);
 		repo = await testUtils.loadRepository(options);
-		validate = ajv.compile(corporateStructure);
+		validate = ajv.compile(domicile);
 	});
 
-	it('repo should contain corporate structure', async () => {
+	it('repo should contain domicile', async () => {
 		expect(repo.identityAttributes).toEqual(
 			expect.arrayContaining([
 				{
-					json: 'http://platform.selfkey.org/schema/attribute/corporate-structure.json',
-					system: 'true',
+					json: 'http://platform.selfkey.org/schema/attribute/domicile.json',
+					ui: 'http://platform.selfkey.org/schema/ui/domicile.json',
 					entityType: ['corporate']
 				}
 			])
 		);
 	});
 
-	it('corporate structure schema should be valid', () => {
-		expect(ajv.validateSchema(corporateStructure)).toBe(true);
+	it('domicile schema should be valid', () => {
+		expect(ajv.validateSchema(domicile)).toBe(true);
 	});
 
 	const t = (payload, valid) =>
