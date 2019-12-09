@@ -3700,7 +3700,7 @@
 					},
 					"registration_number": {
 						"title": "Registration Number",
-						"type": "integer"
+						"type": "string"
 					},
 					"issued": {
 						"$ref": "http://platform.selfkey.org/schema/misc/issue-date.json"
@@ -3748,7 +3748,7 @@
 					},
 					"registration_number": {
 						"title": "Registration Number",
-						"type": "integer"
+						"type": "string"
 					},
 					"issued": {
 						"$id": "http://platform.selfkey.org/schema/misc/issue-date.json",
