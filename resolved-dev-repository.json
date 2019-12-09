@@ -4457,7 +4457,7 @@
 									"$ref": "#/definitions/positions/manager"
 								},
 								{
-									"$ref": "#/definitions/positions/member"
+									"$ref": "#/definitions/positions/member_llc"
 								},
 								{
 									"$ref": "#/definitions/positions/ubo"
@@ -4469,7 +4469,7 @@
 									"$ref": "#/definitions/positions/authorizedSignatory"
 								},
 								{
-									"$ref": "#/definitions/positions/other"
+									"$ref": "#/definitions/positions/other_llc"
 								}
 							]
 						},
@@ -4479,7 +4479,7 @@
 									"$ref": "#/definitions/positions/grantor"
 								},
 								{
-									"$ref": "#/definitions/positions/beneficiary"
+									"$ref": "#/definitions/positions/beneficiary_tst"
 								},
 								{
 									"$ref": "#/definitions/positions/trustee"
@@ -4513,7 +4513,7 @@
 									"$ref": "#/definitions/positions/supervisor"
 								},
 								{
-									"$ref": "#/definitions/positions/beneficiary"
+									"$ref": "#/definitions/positions/beneficiary_fnd"
 								},
 								{
 									"$ref": "#/definitions/positions/ubo"
@@ -4564,9 +4564,6 @@
 								},
 								{
 									"$ref": "#/definitions/positions/authorizedSignatory"
-								},
-								{
-									"$ref": "#/definitions/positions/other"
 								}
 							]
 						},
@@ -4624,11 +4621,25 @@
 								}
 							}
 						},
-						"member": {
+						"member_llc": {
 							"type": "object",
 							"properties": {
 								"position": {
 									"title": "Member",
+									"description": "Owner of a limited liability company.",
+									"const": "member-llc"
+								},
+								"equity": {
+									"title": "Membership Interest",
+									"$ref": "#/definitions/equity"
+								}
+							}
+						},
+						"member": {
+							"type": "object",
+							"properties": {
+								"position": {
+									"title": "Company Member",
 									"description": "Co-owner of a business, who oversees and runs the that business.",
 									"const": "member"
 								},
@@ -4658,13 +4669,23 @@
 								}
 							}
 						},
-						"beneficiary": {
+						"beneficiary_tst": {
 							"type": "object",
 							"properties": {
 								"position": {
 									"title": "Beneficiary",
 									"description": "Person or entity that establishes the trust.",
-									"const": "beneficiary"
+									"const": "beneficiary-tst"
+								}
+							}
+						},
+						"beneficiary_fnd": {
+							"type": "object",
+							"properties": {
+								"position": {
+									"title": "Beneficiary",
+									"description": "The person who gains an advantage and/or profits from the foundation.",
+									"const": "beneficiary-fnd"
 								}
 							}
 						},
@@ -4739,8 +4760,18 @@
 							"properties": {
 								"position": {
 									"title": "Other",
-									"description": "Designated nonmembers or outsiders.",
+									"description": "Other type of  company members.",
 									"const": "other"
+								}
+							}
+						},
+						"other_llc": {
+							"type": "object",
+							"properties": {
+								"position": {
+									"title": "Other",
+									"description": "Designated nonmembers or outsiders.",
+									"const": "other-llc"
 								}
 							}
 						}
@@ -4906,7 +4937,7 @@
 																"properties": {
 																	"position": {
 																		"title": "Other",
-																		"description": "Designated nonmembers or outsiders.",
+																		"description": "Other type of  company members.",
 																		"const": "other"
 																	}
 																}
@@ -5055,8 +5086,8 @@
 																"properties": {
 																	"position": {
 																		"title": "Member",
-																		"description": "Co-owner of a business, who oversees and runs the that business.",
-																		"const": "member"
+																		"description": "Owner of a limited liability company.",
+																		"const": "member-llc"
 																	},
 																	"equity": {
 																		"title": "Membership Interest",
@@ -5103,7 +5134,7 @@
 																	"position": {
 																		"title": "Other",
 																		"description": "Designated nonmembers or outsiders.",
-																		"const": "other"
+																		"const": "other-llc"
 																	}
 																}
 															}
@@ -5252,7 +5283,7 @@
 																	"position": {
 																		"title": "Beneficiary",
 																		"description": "Person or entity that establishes the trust.",
-																		"const": "beneficiary"
+																		"const": "beneficiary-tst"
 																	}
 																}
 															},
@@ -5311,7 +5342,7 @@
 																"properties": {
 																	"position": {
 																		"title": "Other",
-																		"description": "Designated nonmembers or outsiders.",
+																		"description": "Other type of  company members.",
 																		"const": "other"
 																	}
 																}
@@ -5480,8 +5511,8 @@
 																"properties": {
 																	"position": {
 																		"title": "Beneficiary",
-																		"description": "Person or entity that establishes the trust.",
-																		"const": "beneficiary"
+																		"description": "The person who gains an advantage and/or profits from the foundation.",
+																		"const": "beneficiary-fnd"
 																	}
 																}
 															},
@@ -5520,7 +5551,7 @@
 																"properties": {
 																	"position": {
 																		"title": "Other",
-																		"description": "Designated nonmembers or outsiders.",
+																		"description": "Other type of  company members.",
 																		"const": "other"
 																	}
 																}
@@ -5721,7 +5752,7 @@
 																"properties": {
 																	"position": {
 																		"title": "Other",
-																		"description": "Designated nonmembers or outsiders.",
+																		"description": "Other type of  company members.",
 																		"const": "other"
 																	}
 																}
@@ -5859,7 +5890,7 @@
 																"type": "object",
 																"properties": {
 																	"position": {
-																		"title": "Member",
+																		"title": "Company Member",
 																		"description": "Co-owner of a business, who oversees and runs the that business.",
 																		"const": "member"
 																	},
@@ -5899,16 +5930,6 @@
 																		"title": "Authorized Signatory",
 																		"description": "Director or person who has been authorized to sign documents.",
 																		"const": "authorizedSignatory"
-																	}
-																}
-															},
-															{
-																"type": "object",
-																"properties": {
-																	"position": {
-																		"title": "Other",
-																		"description": "Designated nonmembers or outsiders.",
-																		"const": "other"
 																	}
 																}
 															}
@@ -6113,7 +6134,7 @@
 														"properties": {
 															"position": {
 																"title": "Other",
-																"description": "Designated nonmembers or outsiders.",
+																"description": "Other type of  company members.",
 																"const": "other"
 															}
 														}
@@ -6262,8 +6283,8 @@
 														"properties": {
 															"position": {
 																"title": "Member",
-																"description": "Co-owner of a business, who oversees and runs the that business.",
-																"const": "member"
+																"description": "Owner of a limited liability company.",
+																"const": "member-llc"
 															},
 															"equity": {
 																"title": "Membership Interest",
@@ -6310,7 +6331,7 @@
 															"position": {
 																"title": "Other",
 																"description": "Designated nonmembers or outsiders.",
-																"const": "other"
+																"const": "other-llc"
 															}
 														}
 													}
@@ -6459,7 +6480,7 @@
 															"position": {
 																"title": "Beneficiary",
 																"description": "Person or entity that establishes the trust.",
-																"const": "beneficiary"
+																"const": "beneficiary-tst"
 															}
 														}
 													},
@@ -6518,7 +6539,7 @@
 														"properties": {
 															"position": {
 																"title": "Other",
-																"description": "Designated nonmembers or outsiders.",
+																"description": "Other type of  company members.",
 																"const": "other"
 															}
 														}
@@ -6687,8 +6708,8 @@
 														"properties": {
 															"position": {
 																"title": "Beneficiary",
-																"description": "Person or entity that establishes the trust.",
-																"const": "beneficiary"
+																"description": "The person who gains an advantage and/or profits from the foundation.",
+																"const": "beneficiary-fnd"
 															}
 														}
 													},
@@ -6727,7 +6748,7 @@
 														"properties": {
 															"position": {
 																"title": "Other",
-																"description": "Designated nonmembers or outsiders.",
+																"description": "Other type of  company members.",
 																"const": "other"
 															}
 														}
@@ -6928,7 +6949,7 @@
 														"properties": {
 															"position": {
 																"title": "Other",
-																"description": "Designated nonmembers or outsiders.",
+																"description": "Other type of  company members.",
 																"const": "other"
 															}
 														}
@@ -7066,7 +7087,7 @@
 														"type": "object",
 														"properties": {
 															"position": {
-																"title": "Member",
+																"title": "Company Member",
 																"description": "Co-owner of a business, who oversees and runs the that business.",
 																"const": "member"
 															},
@@ -7106,16 +7127,6 @@
 																"title": "Authorized Signatory",
 																"description": "Director or person who has been authorized to sign documents.",
 																"const": "authorizedSignatory"
-															}
-														}
-													},
-													{
-														"type": "object",
-														"properties": {
-															"position": {
-																"title": "Other",
-																"description": "Designated nonmembers or outsiders.",
-																"const": "other"
 															}
 														}
 													}
@@ -7305,7 +7316,7 @@
 													"properties": {
 														"position": {
 															"title": "Other",
-															"description": "Designated nonmembers or outsiders.",
+															"description": "Other type of  company members.",
 															"const": "other"
 														}
 													}
@@ -7440,8 +7451,8 @@
 													"properties": {
 														"position": {
 															"title": "Member",
-															"description": "Co-owner of a business, who oversees and runs the that business.",
-															"const": "member"
+															"description": "Owner of a limited liability company.",
+															"const": "member-llc"
 														},
 														"equity": {
 															"title": "Membership Interest",
@@ -7488,7 +7499,7 @@
 														"position": {
 															"title": "Other",
 															"description": "Designated nonmembers or outsiders.",
-															"const": "other"
+															"const": "other-llc"
 														}
 													}
 												}
@@ -7623,7 +7634,7 @@
 														"position": {
 															"title": "Beneficiary",
 															"description": "Person or entity that establishes the trust.",
-															"const": "beneficiary"
+															"const": "beneficiary-tst"
 														}
 													}
 												},
@@ -7682,7 +7693,7 @@
 													"properties": {
 														"position": {
 															"title": "Other",
-															"description": "Designated nonmembers or outsiders.",
+															"description": "Other type of  company members.",
 															"const": "other"
 														}
 													}
@@ -7837,8 +7848,8 @@
 													"properties": {
 														"position": {
 															"title": "Beneficiary",
-															"description": "Person or entity that establishes the trust.",
-															"const": "beneficiary"
+															"description": "The person who gains an advantage and/or profits from the foundation.",
+															"const": "beneficiary-fnd"
 														}
 													}
 												},
@@ -7877,7 +7888,7 @@
 													"properties": {
 														"position": {
 															"title": "Other",
-															"description": "Designated nonmembers or outsiders.",
+															"description": "Other type of  company members.",
 															"const": "other"
 														}
 													}
@@ -8064,7 +8075,7 @@
 													"properties": {
 														"position": {
 															"title": "Other",
-															"description": "Designated nonmembers or outsiders.",
+															"description": "Other type of  company members.",
 															"const": "other"
 														}
 													}
@@ -8188,7 +8199,7 @@
 													"type": "object",
 													"properties": {
 														"position": {
-															"title": "Member",
+															"title": "Company Member",
 															"description": "Co-owner of a business, who oversees and runs the that business.",
 															"const": "member"
 														},
@@ -8228,16 +8239,6 @@
 															"title": "Authorized Signatory",
 															"description": "Director or person who has been authorized to sign documents.",
 															"const": "authorizedSignatory"
-														}
-													}
-												},
-												{
-													"type": "object",
-													"properties": {
-														"position": {
-															"title": "Other",
-															"description": "Designated nonmembers or outsiders.",
-															"const": "other"
 														}
 													}
 												}
@@ -8413,7 +8414,7 @@
 									"properties": {
 										"position": {
 											"title": "Other",
-											"description": "Designated nonmembers or outsiders.",
+											"description": "Other type of  company members.",
 											"const": "other"
 										}
 									}
@@ -8437,8 +8438,8 @@
 									"properties": {
 										"position": {
 											"title": "Member",
-											"description": "Co-owner of a business, who oversees and runs the that business.",
-											"const": "member"
+											"description": "Owner of a limited liability company.",
+											"const": "member-llc"
 										},
 										"equity": {
 											"title": "Membership Interest",
@@ -8485,7 +8486,7 @@
 										"position": {
 											"title": "Other",
 											"description": "Designated nonmembers or outsiders.",
-											"const": "other"
+											"const": "other-llc"
 										}
 									}
 								}
@@ -8509,7 +8510,7 @@
 										"position": {
 											"title": "Beneficiary",
 											"description": "Person or entity that establishes the trust.",
-											"const": "beneficiary"
+											"const": "beneficiary-tst"
 										}
 									}
 								},
@@ -8568,7 +8569,7 @@
 									"properties": {
 										"position": {
 											"title": "Other",
-											"description": "Designated nonmembers or outsiders.",
+											"description": "Other type of  company members.",
 											"const": "other"
 										}
 									}
@@ -8612,8 +8613,8 @@
 									"properties": {
 										"position": {
 											"title": "Beneficiary",
-											"description": "Person or entity that establishes the trust.",
-											"const": "beneficiary"
+											"description": "The person who gains an advantage and/or profits from the foundation.",
+											"const": "beneficiary-fnd"
 										}
 									}
 								},
@@ -8652,7 +8653,7 @@
 									"properties": {
 										"position": {
 											"title": "Other",
-											"description": "Designated nonmembers or outsiders.",
+											"description": "Other type of  company members.",
 											"const": "other"
 										}
 									}
@@ -8728,7 +8729,7 @@
 									"properties": {
 										"position": {
 											"title": "Other",
-											"description": "Designated nonmembers or outsiders.",
+											"description": "Other type of  company members.",
 											"const": "other"
 										}
 									}
@@ -8741,7 +8742,7 @@
 									"type": "object",
 									"properties": {
 										"position": {
-											"title": "Member",
+											"title": "Company Member",
 											"description": "Co-owner of a business, who oversees and runs the that business.",
 											"const": "member"
 										},
@@ -8781,16 +8782,6 @@
 											"title": "Authorized Signatory",
 											"description": "Director or person who has been authorized to sign documents.",
 											"const": "authorizedSignatory"
-										}
-									}
-								},
-								{
-									"type": "object",
-									"properties": {
-										"position": {
-											"title": "Other",
-											"description": "Designated nonmembers or outsiders.",
-											"const": "other"
 										}
 									}
 								}
@@ -8853,11 +8844,28 @@
 								}
 							}
 						},
-						"member": {
+						"member_llc": {
 							"type": "object",
 							"properties": {
 								"position": {
 									"title": "Member",
+									"description": "Owner of a limited liability company.",
+									"const": "member-llc"
+								},
+								"equity": {
+									"title": "Membership Interest",
+									"type": "number",
+									"default": 0,
+									"minimum": 0,
+									"maximum": 100
+								}
+							}
+						},
+						"member": {
+							"type": "object",
+							"properties": {
+								"position": {
+									"title": "Company Member",
 									"description": "Co-owner of a business, who oversees and runs the that business.",
 									"const": "member"
 								},
@@ -8890,13 +8898,23 @@
 								}
 							}
 						},
-						"beneficiary": {
+						"beneficiary_tst": {
 							"type": "object",
 							"properties": {
 								"position": {
 									"title": "Beneficiary",
 									"description": "Person or entity that establishes the trust.",
-									"const": "beneficiary"
+									"const": "beneficiary-tst"
+								}
+							}
+						},
+						"beneficiary_fnd": {
+							"type": "object",
+							"properties": {
+								"position": {
+									"title": "Beneficiary",
+									"description": "The person who gains an advantage and/or profits from the foundation.",
+									"const": "beneficiary-fnd"
 								}
 							}
 						},
@@ -8977,8 +8995,18 @@
 							"properties": {
 								"position": {
 									"title": "Other",
-									"description": "Designated nonmembers or outsiders.",
+									"description": "Other type of  company members.",
 									"const": "other"
+								}
+							}
+						},
+						"other_llc": {
+							"type": "object",
+							"properties": {
+								"position": {
+									"title": "Other",
+									"description": "Designated nonmembers or outsiders.",
+									"const": "other-llc"
 								}
 							}
 						}
