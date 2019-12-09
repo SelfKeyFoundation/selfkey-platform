@@ -4601,7 +4601,7 @@
 							"type": "object",
 							"properties": {
 								"position": {
-									"title": "Authorized Signatory",
+									"title": "Authorised Signatory",
 									"description": "Director or person who has been authorized to sign documents.",
 									"const": "authorizedSignatory"
 								}
@@ -4674,7 +4674,7 @@
 							"properties": {
 								"position": {
 									"title": "Beneficiary",
-									"description": "Person or entity that establishes the trust.",
+									"description": "Individual or group of individuals for whom a trust is created.",
 									"const": "beneficiary-tst"
 								}
 							}
@@ -4926,7 +4926,7 @@
 																"type": "object",
 																"properties": {
 																	"position": {
-																		"title": "Authorized Signatory",
+																		"title": "Authorised Signatory",
 																		"description": "Director or person who has been authorized to sign documents.",
 																		"const": "authorizedSignatory"
 																	}
@@ -5122,7 +5122,7 @@
 																"type": "object",
 																"properties": {
 																	"position": {
-																		"title": "Authorized Signatory",
+																		"title": "Authorised Signatory",
 																		"description": "Director or person who has been authorized to sign documents.",
 																		"const": "authorizedSignatory"
 																	}
@@ -5282,7 +5282,7 @@
 																"properties": {
 																	"position": {
 																		"title": "Beneficiary",
-																		"description": "Person or entity that establishes the trust.",
+																		"description": "Individual or group of individuals for whom a trust is created.",
 																		"const": "beneficiary-tst"
 																	}
 																}
@@ -5331,7 +5331,7 @@
 																"type": "object",
 																"properties": {
 																	"position": {
-																		"title": "Authorized Signatory",
+																		"title": "Authorised Signatory",
 																		"description": "Director or person who has been authorized to sign documents.",
 																		"const": "authorizedSignatory"
 																	}
@@ -5540,7 +5540,7 @@
 																"type": "object",
 																"properties": {
 																	"position": {
-																		"title": "Authorized Signatory",
+																		"title": "Authorised Signatory",
 																		"description": "Director or person who has been authorized to sign documents.",
 																		"const": "authorizedSignatory"
 																	}
@@ -5741,7 +5741,7 @@
 																"type": "object",
 																"properties": {
 																	"position": {
-																		"title": "Authorized Signatory",
+																		"title": "Authorised Signatory",
 																		"description": "Director or person who has been authorized to sign documents.",
 																		"const": "authorizedSignatory"
 																	}
@@ -5927,7 +5927,7 @@
 																"type": "object",
 																"properties": {
 																	"position": {
-																		"title": "Authorized Signatory",
+																		"title": "Authorised Signatory",
 																		"description": "Director or person who has been authorized to sign documents.",
 																		"const": "authorizedSignatory"
 																	}
@@ -6123,7 +6123,7 @@
 														"type": "object",
 														"properties": {
 															"position": {
-																"title": "Authorized Signatory",
+																"title": "Authorised Signatory",
 																"description": "Director or person who has been authorized to sign documents.",
 																"const": "authorizedSignatory"
 															}
@@ -6319,7 +6319,7 @@
 														"type": "object",
 														"properties": {
 															"position": {
-																"title": "Authorized Signatory",
+																"title": "Authorised Signatory",
 																"description": "Director or person who has been authorized to sign documents.",
 																"const": "authorizedSignatory"
 															}
@@ -6479,7 +6479,7 @@
 														"properties": {
 															"position": {
 																"title": "Beneficiary",
-																"description": "Person or entity that establishes the trust.",
+																"description": "Individual or group of individuals for whom a trust is created.",
 																"const": "beneficiary-tst"
 															}
 														}
@@ -6528,7 +6528,7 @@
 														"type": "object",
 														"properties": {
 															"position": {
-																"title": "Authorized Signatory",
+																"title": "Authorised Signatory",
 																"description": "Director or person who has been authorized to sign documents.",
 																"const": "authorizedSignatory"
 															}
@@ -6737,7 +6737,7 @@
 														"type": "object",
 														"properties": {
 															"position": {
-																"title": "Authorized Signatory",
+																"title": "Authorised Signatory",
 																"description": "Director or person who has been authorized to sign documents.",
 																"const": "authorizedSignatory"
 															}
@@ -6938,7 +6938,7 @@
 														"type": "object",
 														"properties": {
 															"position": {
-																"title": "Authorized Signatory",
+																"title": "Authorised Signatory",
 																"description": "Director or person who has been authorized to sign documents.",
 																"const": "authorizedSignatory"
 															}
@@ -7124,7 +7124,7 @@
 														"type": "object",
 														"properties": {
 															"position": {
-																"title": "Authorized Signatory",
+																"title": "Authorised Signatory",
 																"description": "Director or person who has been authorized to sign documents.",
 																"const": "authorizedSignatory"
 															}
@@ -7305,7 +7305,7 @@
 													"type": "object",
 													"properties": {
 														"position": {
-															"title": "Authorized Signatory",
+															"title": "Authorised Signatory",
 															"description": "Director or person who has been authorized to sign documents.",
 															"const": "authorizedSignatory"
 														}
@@ -7487,7 +7487,7 @@
 													"type": "object",
 													"properties": {
 														"position": {
-															"title": "Authorized Signatory",
+															"title": "Authorised Signatory",
 															"description": "Director or person who has been authorized to sign documents.",
 															"const": "authorizedSignatory"
 														}
@@ -7633,7 +7633,7 @@
 													"properties": {
 														"position": {
 															"title": "Beneficiary",
-															"description": "Person or entity that establishes the trust.",
+															"description": "Individual or group of individuals for whom a trust is created.",
 															"const": "beneficiary-tst"
 														}
 													}
@@ -7682,7 +7682,7 @@
 													"type": "object",
 													"properties": {
 														"position": {
-															"title": "Authorized Signatory",
+															"title": "Authorised Signatory",
 															"description": "Director or person who has been authorized to sign documents.",
 															"const": "authorizedSignatory"
 														}
@@ -7877,7 +7877,7 @@
 													"type": "object",
 													"properties": {
 														"position": {
-															"title": "Authorized Signatory",
+															"title": "Authorised Signatory",
 															"description": "Director or person who has been authorized to sign documents.",
 															"const": "authorizedSignatory"
 														}
@@ -8064,7 +8064,7 @@
 													"type": "object",
 													"properties": {
 														"position": {
-															"title": "Authorized Signatory",
+															"title": "Authorised Signatory",
 															"description": "Director or person who has been authorized to sign documents.",
 															"const": "authorizedSignatory"
 														}
@@ -8236,7 +8236,7 @@
 													"type": "object",
 													"properties": {
 														"position": {
-															"title": "Authorized Signatory",
+															"title": "Authorised Signatory",
 															"description": "Director or person who has been authorized to sign documents.",
 															"const": "authorizedSignatory"
 														}
@@ -8403,7 +8403,7 @@
 									"type": "object",
 									"properties": {
 										"position": {
-											"title": "Authorized Signatory",
+											"title": "Authorised Signatory",
 											"description": "Director or person who has been authorized to sign documents.",
 											"const": "authorizedSignatory"
 										}
@@ -8474,7 +8474,7 @@
 									"type": "object",
 									"properties": {
 										"position": {
-											"title": "Authorized Signatory",
+											"title": "Authorised Signatory",
 											"description": "Director or person who has been authorized to sign documents.",
 											"const": "authorizedSignatory"
 										}
@@ -8509,7 +8509,7 @@
 									"properties": {
 										"position": {
 											"title": "Beneficiary",
-											"description": "Person or entity that establishes the trust.",
+											"description": "Individual or group of individuals for whom a trust is created.",
 											"const": "beneficiary-tst"
 										}
 									}
@@ -8558,7 +8558,7 @@
 									"type": "object",
 									"properties": {
 										"position": {
-											"title": "Authorized Signatory",
+											"title": "Authorised Signatory",
 											"description": "Director or person who has been authorized to sign documents.",
 											"const": "authorizedSignatory"
 										}
@@ -8642,7 +8642,7 @@
 									"type": "object",
 									"properties": {
 										"position": {
-											"title": "Authorized Signatory",
+											"title": "Authorised Signatory",
 											"description": "Director or person who has been authorized to sign documents.",
 											"const": "authorizedSignatory"
 										}
@@ -8718,7 +8718,7 @@
 									"type": "object",
 									"properties": {
 										"position": {
-											"title": "Authorized Signatory",
+											"title": "Authorised Signatory",
 											"description": "Director or person who has been authorized to sign documents.",
 											"const": "authorizedSignatory"
 										}
@@ -8779,7 +8779,7 @@
 									"type": "object",
 									"properties": {
 										"position": {
-											"title": "Authorized Signatory",
+											"title": "Authorised Signatory",
 											"description": "Director or person who has been authorized to sign documents.",
 											"const": "authorizedSignatory"
 										}
@@ -8821,7 +8821,7 @@
 							"type": "object",
 							"properties": {
 								"position": {
-									"title": "Authorized Signatory",
+									"title": "Authorised Signatory",
 									"description": "Director or person who has been authorized to sign documents.",
 									"const": "authorizedSignatory"
 								}
@@ -8903,7 +8903,7 @@
 							"properties": {
 								"position": {
 									"title": "Beneficiary",
-									"description": "Person or entity that establishes the trust.",
+									"description": "Individual or group of individuals for whom a trust is created.",
 									"const": "beneficiary-tst"
 								}
 							}
