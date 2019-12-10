@@ -3971,30 +3971,11 @@
 					"issued": {
 						"$ref": "http://platform.selfkey.org/schema/misc/issue-date.json"
 					},
-					"members": {
-						"type": "array",
-						"title": "Members",
-						"items": {
-							"type": "object",
-							"properties": {
-								"name": {
-									"title": "Full Name",
-									"type": "string"
-								},
-								"position": {
-									"title": "Position",
-									"description": "Position in the company.",
-									"type": "string"
-								}
-							},
-							"required": ["name", "position"]
-						}
-					},
 					"extra": {
 						"$ref": "http://platform.selfkey.org/schema/misc/extra-images.json"
 					}
 				},
-				"required": ["images", "issued", "members"]
+				"required": ["images", "issued"]
 			},
 			"dereferenced": {
 				"$id": "http://platform.selfkey.org/schema/attribute/member-register.json",
@@ -4040,25 +4021,6 @@
 						"type": "string",
 						"format": "date"
 					},
-					"members": {
-						"type": "array",
-						"title": "Members",
-						"items": {
-							"type": "object",
-							"properties": {
-								"name": {
-									"title": "Full Name",
-									"type": "string"
-								},
-								"position": {
-									"title": "Position",
-									"description": "Position in the company.",
-									"type": "string"
-								}
-							},
-							"required": ["name", "position"]
-						}
-					},
 					"extra": {
 						"$id": "http://platform.selfkey.org/schema/misc/extra-images.json",
 						"$schema": "http://json-schema.org/draft-07/schema",
@@ -4088,7 +4050,7 @@
 						}
 					}
 				},
-				"required": ["images", "issued", "members"]
+				"required": ["images", "issued"]
 			}
 		},
 		"http://platform.selfkey.org/schema/attribute/cv.json": {
@@ -9402,12 +9364,7 @@
 		"http://platform.selfkey.org/schema/ui/member-register.json": {
 			"url": "http://platform.selfkey.org/schema/ui/member-register.json",
 			"schema": {
-				"ui:order": ["images", "issued", "members", "extra"],
-				"members": {
-					"items": {
-						"ui:order": ["name", "position"]
-					}
-				},
+				"ui:order": ["images", "issued", "extra"],
 				"extra": {
 					"ui:hidden": true
 				}

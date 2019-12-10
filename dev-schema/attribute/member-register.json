@@ -14,28 +14,9 @@
 		"issued": {
 			"$ref": "http://platform.selfkey.org/schema/misc/issue-date.json"
 		},
-		"members": {
-			"type": "array",
-			"title": "Members",
-			"items": {
-				"type": "object",
-				"properties": {
-					"name": {
-						"title": "Full Name",
-						"type": "string"
-					},
-					"position": {
-						"title": "Position",
-						"description": "Position in the company.",
-						"type": "string"
-					}
-				},
-				"required": ["name", "position"]
-			}
-		},
 		"extra": {
 			"$ref": "http://platform.selfkey.org/schema/misc/extra-images.json"
 		}
 	},
-	"required": ["images", "issued", "members"]
+	"required": ["images", "issued"]
 }
