@@ -9,62 +9,62 @@ export default [
 						type: 'individual',
 						firstName: 'Maxim',
 						lastName: 'Kovalov',
-						email: 'test@gmail.com',
+						email: 'test@gmail.com'
 					},
 					positions: [
 						{
-							position: 'director',
+							position: 'director'
 						},
 						{
 							position: 'shareholder',
-							equity: 19,
+							equity: 19
 						},
 						{
-							position: 'ubo',
+							position: 'ubo'
 						},
 						{
-							position: 'observer',
+							position: 'observer'
 						},
 						{
-							position: 'authorizedSignatory',
-						},
-					],
+							position: 'authorizedSignatory'
+						}
+					]
 				},
 				{
 					entity: {
 						type: 'corporate',
 						companyType: 'Company Limited by Shares (LTD)',
 						companyName: 'Test Company name',
-						email: 'test@company.org',
+						email: 'test@company.org'
 					},
 					positions: [
 						{
-							position: 'director',
+							position: 'director'
 						},
 						{
 							position: 'shareholder',
-							equity: 19,
+							equity: 19
 						},
 						{
-							position: 'ubo',
+							position: 'ubo'
 						},
 						{
-							position: 'observer',
+							position: 'observer'
 						},
 						{
-							position: 'authorizedSignatory',
-						},
-					],
-				},
-			],
-		},
+							position: 'authorizedSignatory'
+						}
+					]
+				}
+			]
+		}
 	},
 	{
 		name: 'ltd with empty members',
 		value: {
 			companyType: 'Company Limited by Shares (LTD)',
-			members: [],
-		},
+			members: []
+		}
 	},
 	{
 		name: 'llc full',
@@ -76,55 +76,55 @@ export default [
 						type: 'individual',
 						firstName: 'Maxim',
 						lastName: 'Kovalov',
-						email: 'test@gmail.com',
+						email: 'test@gmail.com'
 					},
 					positions: [
 						{
-							position: 'manager',
+							position: 'manager'
 						},
 						{
-							position: 'member',
-							equity: 19,
+							position: 'member-llc',
+							equity: 19
 						},
 						{
-							position: 'ubo',
+							position: 'ubo'
 						},
 						{
-							position: 'observer',
+							position: 'observer'
 						},
 						{
-							position: 'authorizedSignatory',
-						},
-					],
+							position: 'authorizedSignatory'
+						}
+					]
 				},
 				{
 					entity: {
 						type: 'corporate',
 						companyType: 'Company Limited by Shares (LTD)',
 						companyName: 'Test Company name',
-						email: 'test@company.org',
+						email: 'test@company.org'
 					},
 					positions: [
 						{
-							position: 'manager',
+							position: 'manager'
 						},
 						{
-							position: 'member',
-							equity: 19,
+							position: 'member-llc',
+							equity: 19
 						},
 						{
-							position: 'ubo',
+							position: 'ubo'
 						},
 						{
-							position: 'observer',
+							position: 'observer'
 						},
 						{
-							position: 'authorizedSignatory',
-						},
-					],
-				},
-			],
-		},
+							position: 'authorizedSignatory'
+						}
+					]
+				}
+			]
+		}
 	},
 	{
 		name: 'tst full',
@@ -136,65 +136,65 @@ export default [
 						type: 'individual',
 						firstName: 'Maxim',
 						lastName: 'Kovalov',
-						email: 'test@gmail.com',
+						email: 'test@gmail.com'
 					},
 					positions: [
 						{
-							position: 'grantor',
+							position: 'grantor'
 						},
 						{
-							position: 'beneficiary',
+							position: 'beneficiary-tst'
 						},
 						{
-							position: 'trustee',
+							position: 'trustee'
 						},
 						{
-							position: 'protector',
+							position: 'protector'
 						},
 						{
-							position: 'ubo',
+							position: 'ubo'
 						},
 						{
-							position: 'observer',
+							position: 'observer'
 						},
 						{
-							position: 'authorizedSignatory',
-						},
-					],
+							position: 'authorizedSignatory'
+						}
+					]
 				},
 				{
 					entity: {
 						type: 'corporate',
 						companyType: 'Company Limited by Shares (LTD)',
 						companyName: 'Test Company name',
-						email: 'test@company.org',
+						email: 'test@company.org'
 					},
 					positions: [
 						{
-							position: 'grantor',
+							position: 'grantor'
 						},
 						{
-							position: 'beneficiary',
+							position: 'beneficiary-tst'
 						},
 						{
-							position: 'trustee',
+							position: 'trustee'
 						},
 						{
-							position: 'protector',
+							position: 'protector'
 						},
 						{
-							position: 'ubo',
+							position: 'ubo'
 						},
 						{
-							position: 'observer',
+							position: 'observer'
 						},
 						{
-							position: 'authorizedSignatory',
-						},
-					],
-				},
-			],
-		},
+							position: 'authorizedSignatory'
+						}
+					]
+				}
+			]
+		}
 	},
 	{
 		name: 'llp full',
@@ -206,57 +206,57 @@ export default [
 						type: 'individual',
 						firstName: 'Maxim',
 						lastName: 'Kovalov',
-						email: 'test@gmail.com',
+						email: 'test@gmail.com'
 					},
 					positions: [
 						{
 							position: 'general-partner',
-							equity: 2,
+							equity: 2
 						},
 						{
 							position: 'limited-partner',
-							equity: 20,
+							equity: 20
 						},
 						{
-							position: 'ubo',
+							position: 'ubo'
 						},
 						{
-							position: 'observer',
+							position: 'observer'
 						},
 						{
-							position: 'authorizedSignatory',
-						},
-					],
+							position: 'authorizedSignatory'
+						}
+					]
 				},
 				{
 					entity: {
 						type: 'corporate',
 						companyType: 'Company Limited by Shares (LTD)',
 						companyName: 'Test Company name',
-						email: 'test@company.org',
+						email: 'test@company.org'
 					},
 					positions: [
 						{
 							position: 'general-partner',
-							equity: 2,
+							equity: 2
 						},
 						{
 							position: 'limited-partner',
-							equity: 20,
+							equity: 20
 						},
 						{
-							position: 'ubo',
+							position: 'ubo'
 						},
 						{
-							position: 'observer',
+							position: 'observer'
 						},
 						{
-							position: 'authorizedSignatory',
-						},
-					],
-				},
-			],
-		},
+							position: 'authorizedSignatory'
+						}
+					]
+				}
+			]
+		}
 	},
 	{
 		name: 'other company full',
@@ -268,49 +268,49 @@ export default [
 						type: 'individual',
 						firstName: 'Maxim',
 						lastName: 'Kovalov',
-						email: 'test@gmail.com',
+						email: 'test@gmail.com'
 					},
 					positions: [
 						{
 							position: 'member',
-							equity: 2,
+							equity: 2
 						},
 
 						{
-							position: 'ubo',
+							position: 'ubo'
 						},
 						{
-							position: 'observer',
+							position: 'observer'
 						},
 						{
-							position: 'authorizedSignatory',
-						},
-					],
+							position: 'authorizedSignatory'
+						}
+					]
 				},
 				{
 					entity: {
 						type: 'corporate',
 						companyType: 'Company Limited by Shares (LTD)',
 						companyName: 'Test Company name',
-						email: 'test@company.org',
+						email: 'test@company.org'
 					},
 					positions: [
 						{
 							position: 'member',
-							equity: 2,
+							equity: 2
 						},
 						{
-							position: 'ubo',
+							position: 'ubo'
 						},
 						{
-							position: 'observer',
+							position: 'observer'
 						},
 						{
-							position: 'authorizedSignatory',
-						},
-					],
-				},
-			],
-		},
-	},
+							position: 'authorizedSignatory'
+						}
+					]
+				}
+			]
+		}
+	}
 ];
