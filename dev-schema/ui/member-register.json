@@ -1,11 +1,6 @@
 {
-	"ui:order": ["images", "issued", "members", "extra"],
-	"members": {
-		"items": {
-			"ui:order": ["name", "position"]
-		}
-	},
+	"ui:order": ["images", "issued", "extra"],
 	"extra": {
-        "ui:hidden": true
-    }
+		"ui:hidden": true
+	}
 }
