@@ -9,46 +9,46 @@ export default [
 						type: 'individual',
 						firstName: 'Maxim',
 						lastName: 'Kovalov',
-						email: 'test@gmail.com',
+						email: 'test@gmail.com'
 					},
 					positions: [
 						{
-							position: 'director',
+							position: 'director-ltd'
 						},
 						{
 							position: 'shareholder',
-							equity: 19,
-						},
-					],
+							equity: 19
+						}
+					]
 				},
 				{
 					entity: {
 						type: 'corporate',
 						companyType: 'Company Limited by Shares (LTD)',
 						companyName: 'Test Company name',
-						email: 'test@company.org',
+						email: 'test@company.org'
 					},
 					positions: [
 						{
-							position: 'observer1',
-						},
-					],
-				},
-			],
-		},
+							position: 'observer1'
+						}
+					]
+				}
+			]
+		}
 	},
 	{
 		name: 'ltd with missing members',
 		value: {
-			companyType: 'Company Limited by Shares (LTD)',
-		},
+			companyType: 'Company Limited by Shares (LTD)'
+		}
 	},
 	{
 		name: 'invalid company type',
 		value: {
 			companyType: 'invalid',
-			members: [],
-		},
+			members: []
+		}
 	},
 	{
 		name: 'ltd empty position',
@@ -60,12 +60,12 @@ export default [
 						type: 'individual',
 						firstName: 'Maxim',
 						lastName: 'Kovalov',
-						email: 'test@gmail.com',
+						email: 'test@gmail.com'
 					},
-					positions: [],
-				},
-			],
-		},
+					positions: []
+				}
+			]
+		}
 	},
 	{
 		name: 'ltd missing positions',
@@ -77,11 +77,11 @@ export default [
 						type: 'individual',
 						firstName: 'Maxim',
 						lastName: 'Kovalov',
-						email: 'test@gmail.com',
-					},
-				},
-			],
-		},
+						email: 'test@gmail.com'
+					}
+				}
+			]
+		}
 	},
 	{
 		name: 'ltd no entity',
@@ -91,12 +91,12 @@ export default [
 				{
 					positions: [
 						{
-							position: 'director',
-						},
-					],
-				},
-			],
-		},
+							position: 'director-ltd'
+						}
+					]
+				}
+			]
+		}
 	},
 	{
 		name: 'ltd no position name',
@@ -108,12 +108,12 @@ export default [
 						type: 'individual',
 						firstName: 'Maxim',
 						lastName: 'Kovalov',
-						email: 'test@gmail.com',
+						email: 'test@gmail.com'
 					},
-					positions: [{}],
-				},
-			],
-		},
+					positions: [{}]
+				}
+			]
+		}
 	},
 	{
 		name: 'ltd invalid entity type',
@@ -123,12 +123,12 @@ export default [
 				{
 					entity: {
 						type: 'invalid',
-						email: 'test@gmail.com',
+						email: 'test@gmail.com'
 					},
-					positions: [{ position: 'director' }],
-				},
-			],
-		},
+					positions: [{ position: 'director-ltd' }]
+				}
+			]
+		}
 	},
 	{
 		name: 'ltd individual entity missing email',
@@ -137,12 +137,12 @@ export default [
 			members: [
 				{
 					entity: {
-						type: 'individual',
+						type: 'individual'
 					},
-					positions: [{ position: 'director' }],
-				},
-			],
-		},
+					positions: [{ position: 'director-ltd' }]
+				}
+			]
+		}
 	},
 	{
 		name: 'ltd corporate entity missing email',
@@ -155,10 +155,10 @@ export default [
 						companyType: 'Company Limited by Shares (LTD)',
 						companyName: 'test-company'
 					},
-					positions: [{ position: 'director' }],
-				},
-			],
-		},
+					positions: [{ position: 'director-ltd' }]
+				}
+			]
+		}
 	},
 	{
 		name: 'ltd entity missing type',
@@ -167,12 +167,12 @@ export default [
 			members: [
 				{
 					entity: {
-						email: 'type@type.com',
+						email: 'type@type.com'
 					},
-					positions: [{ position: 'director' }],
-				},
-			],
-		},
+					positions: [{ position: 'director-ltd' }]
+				}
+			]
+		}
 	},
 	{
 		name: 'ltd invalid equity 101',
@@ -182,12 +182,15 @@ export default [
 				{
 					entity: {
 						type: 'individual',
-						email: 'type@type.com',
+						email: 'type@type.com'
 					},
-					positions: [{ position: 'director' }, { position: 'shareholder', equity: 101 }],
-				},
-			],
-		},
+					positions: [
+						{ position: 'director-ltd' },
+						{ position: 'shareholder', equity: 101 }
+					]
+				}
+			]
+		}
 	},
 	{
 		name: 'ltd invalid equity "test"',
@@ -197,12 +200,15 @@ export default [
 				{
 					entity: {
 						type: 'individual',
-						email: 'type@type.com',
+						email: 'type@type.com'
 					},
-					positions: [{ position: 'director' }, { position: 'shareholder', equity: 'test' }],
-				},
-			],
-		},
+					positions: [
+						{ position: 'director-ltd' },
+						{ position: 'shareholder', equity: 'test' }
+					]
+				}
+			]
+		}
 	},
 	{
 		name: 'ltd invalid equity -1',
@@ -212,12 +218,15 @@ export default [
 				{
 					entity: {
 						type: 'individual',
-						email: 'type@type.com',
+						email: 'type@type.com'
 					},
-					positions: [{ position: 'director' }, { position: 'shareholder', equity: -1 }],
-				},
-			],
-		},
+					positions: [
+						{ position: 'director-ltd' },
+						{ position: 'shareholder', equity: -1 }
+					]
+				}
+			]
+		}
 	},
 	{
 		name: 'ltd duplicate position',
@@ -227,12 +236,12 @@ export default [
 				{
 					entity: {
 						type: 'individual',
-						email: 'type@type.com',
+						email: 'type@type.com'
 					},
-					positions: [{ position: 'director' }, { position: 'director' }],
-				},
-			],
-		},
+					positions: [{ position: 'director-ltd' }, { position: 'director-ltd' }]
+				}
+			]
+		}
 	},
 	{
 		name: 'llc invalid position director',
@@ -242,12 +251,12 @@ export default [
 				{
 					entity: {
 						type: 'individual',
-						email: 'type@type.com',
+						email: 'type@type.com'
 					},
-					positions: [{ position: 'director' }],
-				},
-			],
-		},
+					positions: [{ position: 'director-ltd' }]
+				}
+			]
+		}
 	},
 	{
 		name: 'llc corporate member invalid company type',
@@ -259,14 +268,13 @@ export default [
 						type: 'corporate',
 						companyType: 'test',
 						companyName: 'test-company',
-						email: 'type@type.com',
+						email: 'type@type.com'
 					},
-					positions: [{ position: 'manager' }],
-				},
-			],
-		},
+					positions: [{ position: 'manager' }]
+				}
+			]
+		}
 	},
-	,
 	{
 		name: 'llc corporate member invalid company type',
 		value: {
@@ -277,12 +285,12 @@ export default [
 						type: 'corporate',
 						companyType: 'test',
 						companyName: 'test-company',
-						email: 'type@type.com',
+						email: 'type@type.com'
 					},
-					positions: [{ position: 'manager' }],
-				},
-			],
-		},
+					positions: [{ position: 'manager' }]
+				}
+			]
+		}
 	},
 	{
 		name: 'llc corporate member no company name',
@@ -293,13 +301,14 @@ export default [
 					entity: {
 						type: 'corporate',
 						companyType: 'Limited Liability Company (LLC)',
-						email: 'type@type.com',
+						email: 'type@type.com'
 					},
-					positions: [{ position: 'manager' }],
-				},
-			],
-		},
-	},{
+					positions: [{ position: 'manager' }]
+				}
+			]
+		}
+	},
+	{
 		name: 'llc corporate member no company type',
 		value: {
 			companyType: 'Limited Liability Company (LLC)',
@@ -308,11 +317,11 @@ export default [
 					entity: {
 						type: 'corporate',
 						companyName: 'test-company',
-						email: 'type@type.com',
+						email: 'type@type.com'
 					},
-					positions: [{ position: 'manager' }],
-				},
-			],
-		},
-	},
+					positions: [{ position: 'manager' }]
+				}
+			]
+		}
+	}
 ];

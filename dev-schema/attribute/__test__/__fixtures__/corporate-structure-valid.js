@@ -13,7 +13,7 @@ export default [
 					},
 					positions: [
 						{
-							position: 'director'
+							position: 'director-ltd'
 						},
 						{
 							position: 'shareholder',
@@ -39,7 +39,7 @@ export default [
 					},
 					positions: [
 						{
-							position: 'director'
+							position: 'director-ltd'
 						},
 						{
 							position: 'shareholder',
