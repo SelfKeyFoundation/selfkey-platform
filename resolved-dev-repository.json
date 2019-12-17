@@ -4544,7 +4544,7 @@
 							"properties": {
 								"position": {
 									"title": "Director",
-									"description": "The person that is chief executive of the organization.",
+									"description": "Person from a group of managers who leads or supervises a particular area of your company.",
 									"const": "director-ltd"
 								}
 							}
@@ -4852,7 +4852,7 @@
 																"properties": {
 																	"position": {
 																		"title": "Director",
-																		"description": "The person that is chief executive of the organization.",
+																		"description": "Person from a group of managers who leads or supervises a particular area of your company.",
 																		"const": "director-ltd"
 																	}
 																}
@@ -6049,7 +6049,7 @@
 														"properties": {
 															"position": {
 																"title": "Director",
-																"description": "The person that is chief executive of the organization.",
+																"description": "Person from a group of managers who leads or supervises a particular area of your company.",
 																"const": "director-ltd"
 															}
 														}
@@ -7231,7 +7231,7 @@
 													"properties": {
 														"position": {
 															"title": "Director",
-															"description": "The person that is chief executive of the organization.",
+															"description": "Person from a group of managers who leads or supervises a particular area of your company.",
 															"const": "director-ltd"
 														}
 													}
@@ -8329,7 +8329,7 @@
 									"properties": {
 										"position": {
 											"title": "Director",
-											"description": "The person that is chief executive of the organization.",
+											"description": "Person from a group of managers who leads or supervises a particular area of your company.",
 											"const": "director-ltd"
 										}
 									}
@@ -8774,7 +8774,7 @@
 							"properties": {
 								"position": {
 									"title": "Director",
-									"description": "The person that is chief executive of the organization.",
+									"description": "Person from a group of managers who leads or supervises a particular area of your company.",
 									"const": "director-ltd"
 								}
 							}
