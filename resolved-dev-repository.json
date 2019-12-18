@@ -4394,7 +4394,7 @@
 							"type": "object",
 							"oneOf": [
 								{
-									"$ref": "#/definitions/positions/director"
+									"$ref": "#/definitions/positions/director_ltd"
 								},
 								{
 									"$ref": "#/definitions/positions/shareholder"
@@ -4469,7 +4469,7 @@
 									"$ref": "#/definitions/positions/founder"
 								},
 								{
-									"$ref": "#/definitions/positions/director"
+									"$ref": "#/definitions/positions/director_fnd"
 								},
 								{
 									"$ref": "#/definitions/positions/supervisor"
@@ -4529,13 +4529,23 @@
 								}
 							]
 						},
-						"director": {
+						"director_fnd": {
 							"type": "object",
 							"properties": {
 								"position": {
 									"title": "Director",
 									"description": "The person that is chief executive of the organization.",
-									"const": "director"
+									"const": "director-fnd"
+								}
+							}
+						},
+						"director_ltd": {
+							"type": "object",
+							"properties": {
+								"position": {
+									"title": "Director",
+									"description": "Person from a group of managers who leads or supervises a particular area of your company.",
+									"const": "director-ltd"
 								}
 							}
 						},
@@ -4602,7 +4612,7 @@
 							"properties": {
 								"position": {
 									"title": "Company Member",
-									"description": "Co-owner of a business, who oversees and runs the that business.",
+									"description": "Co-owner of a business, who oversees and runs the business.",
 									"const": "member"
 								},
 								"equity": {
@@ -4696,7 +4706,7 @@
 							"properties": {
 								"position": {
 									"title": "General Partner",
-									"description": "Co-owner of a business, who oversees and runs the that business.",
+									"description": "Co-owner of a business, who oversees and runs the business.",
 									"const": "general-partner"
 								},
 								"equity": {
@@ -4842,8 +4852,8 @@
 																"properties": {
 																	"position": {
 																		"title": "Director",
-																		"description": "The person that is chief executive of the organization.",
-																		"const": "director"
+																		"description": "Person from a group of managers who leads or supervises a particular area of your company.",
+																		"const": "director-ltd"
 																	}
 																}
 															},
@@ -5454,7 +5464,7 @@
 																	"position": {
 																		"title": "Director",
 																		"description": "The person that is chief executive of the organization.",
-																		"const": "director"
+																		"const": "director-fnd"
 																	}
 																}
 															},
@@ -5652,7 +5662,7 @@
 																"properties": {
 																	"position": {
 																		"title": "General Partner",
-																		"description": "Co-owner of a business, who oversees and runs the that business.",
+																		"description": "Co-owner of a business, who oversees and runs the business.",
 																		"const": "general-partner"
 																	},
 																	"equity": {
@@ -5853,7 +5863,7 @@
 																"properties": {
 																	"position": {
 																		"title": "Company Member",
-																		"description": "Co-owner of a business, who oversees and runs the that business.",
+																		"description": "Co-owner of a business, who oversees and runs the business.",
 																		"const": "member"
 																	},
 																	"equity": {
@@ -6039,8 +6049,8 @@
 														"properties": {
 															"position": {
 																"title": "Director",
-																"description": "The person that is chief executive of the organization.",
-																"const": "director"
+																"description": "Person from a group of managers who leads or supervises a particular area of your company.",
+																"const": "director-ltd"
 															}
 														}
 													},
@@ -6651,7 +6661,7 @@
 															"position": {
 																"title": "Director",
 																"description": "The person that is chief executive of the organization.",
-																"const": "director"
+																"const": "director-fnd"
 															}
 														}
 													},
@@ -6849,7 +6859,7 @@
 														"properties": {
 															"position": {
 																"title": "General Partner",
-																"description": "Co-owner of a business, who oversees and runs the that business.",
+																"description": "Co-owner of a business, who oversees and runs the business.",
 																"const": "general-partner"
 															},
 															"equity": {
@@ -7050,7 +7060,7 @@
 														"properties": {
 															"position": {
 																"title": "Company Member",
-																"description": "Co-owner of a business, who oversees and runs the that business.",
+																"description": "Co-owner of a business, who oversees and runs the business.",
 																"const": "member"
 															},
 															"equity": {
@@ -7221,8 +7231,8 @@
 													"properties": {
 														"position": {
 															"title": "Director",
-															"description": "The person that is chief executive of the organization.",
-															"const": "director"
+															"description": "Person from a group of managers who leads or supervises a particular area of your company.",
+															"const": "director-ltd"
 														}
 													}
 												},
@@ -7791,7 +7801,7 @@
 														"position": {
 															"title": "Director",
 															"description": "The person that is chief executive of the organization.",
-															"const": "director"
+															"const": "director-fnd"
 														}
 													}
 												},
@@ -7975,7 +7985,7 @@
 													"properties": {
 														"position": {
 															"title": "General Partner",
-															"description": "Co-owner of a business, who oversees and runs the that business.",
+															"description": "Co-owner of a business, who oversees and runs the business.",
 															"const": "general-partner"
 														},
 														"equity": {
@@ -8162,7 +8172,7 @@
 													"properties": {
 														"position": {
 															"title": "Company Member",
-															"description": "Co-owner of a business, who oversees and runs the that business.",
+															"description": "Co-owner of a business, who oversees and runs the business.",
 															"const": "member"
 														},
 														"equity": {
@@ -8319,8 +8329,8 @@
 									"properties": {
 										"position": {
 											"title": "Director",
-											"description": "The person that is chief executive of the organization.",
-											"const": "director"
+											"description": "Person from a group of managers who leads or supervises a particular area of your company.",
+											"const": "director-ltd"
 										}
 									}
 								},
@@ -8556,7 +8566,7 @@
 										"position": {
 											"title": "Director",
 											"description": "The person that is chief executive of the organization.",
-											"const": "director"
+											"const": "director-fnd"
 										}
 									}
 								},
@@ -8629,7 +8639,7 @@
 									"properties": {
 										"position": {
 											"title": "General Partner",
-											"description": "Co-owner of a business, who oversees and runs the that business.",
+											"description": "Co-owner of a business, who oversees and runs the business.",
 											"const": "general-partner"
 										},
 										"equity": {
@@ -8705,7 +8715,7 @@
 									"properties": {
 										"position": {
 											"title": "Company Member",
-											"description": "Co-owner of a business, who oversees and runs the that business.",
+											"description": "Co-owner of a business, who oversees and runs the business.",
 											"const": "member"
 										},
 										"equity": {
@@ -8749,13 +8759,23 @@
 								}
 							]
 						},
-						"director": {
+						"director_fnd": {
 							"type": "object",
 							"properties": {
 								"position": {
 									"title": "Director",
 									"description": "The person that is chief executive of the organization.",
-									"const": "director"
+									"const": "director-fnd"
+								}
+							}
+						},
+						"director_ltd": {
+							"type": "object",
+							"properties": {
+								"position": {
+									"title": "Director",
+									"description": "Person from a group of managers who leads or supervises a particular area of your company.",
+									"const": "director-ltd"
 								}
 							}
 						},
@@ -8828,7 +8848,7 @@
 							"properties": {
 								"position": {
 									"title": "Company Member",
-									"description": "Co-owner of a business, who oversees and runs the that business.",
+									"description": "Co-owner of a business, who oversees and runs the business.",
 									"const": "member"
 								},
 								"equity": {
@@ -8925,7 +8945,7 @@
 							"properties": {
 								"position": {
 									"title": "General Partner",
-									"description": "Co-owner of a business, who oversees and runs the that business.",
+									"description": "Co-owner of a business, who oversees and runs the business.",
 									"const": "general-partner"
 								},
 								"equity": {

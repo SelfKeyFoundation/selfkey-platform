@@ -234,7 +234,7 @@
 			"ltd": {
 				"type": "object",
 				"oneOf": [
-					{ "$ref": "#/definitions/positions/director" },
+					{ "$ref": "#/definitions/positions/director_ltd" },
 					{ "$ref": "#/definitions/positions/shareholder" },
 					{ "$ref": "#/definitions/positions/ubo" },
 					{ "$ref": "#/definitions/positions/observer" },
@@ -267,7 +267,7 @@
 			"fnd": {
 				"oneOf": [
 					{ "$ref": "#/definitions/positions/founder" },
-					{ "$ref": "#/definitions/positions/director" },
+					{ "$ref": "#/definitions/positions/director_fnd" },
 					{ "$ref": "#/definitions/positions/supervisor" },
 					{ "$ref": "#/definitions/positions/beneficiary_fnd" },
 					{ "$ref": "#/definitions/positions/ubo" },
@@ -294,13 +294,23 @@
 					{ "$ref": "#/definitions/positions/authorizedSignatory" }
 				]
 			},
-			"director": {
+			"director_fnd": {
 				"type": "object",
 				"properties": {
 					"position": {
 						"title": "Director",
 						"description": "The person that is chief executive of the organization.",
-						"const": "director"
+						"const": "director-fnd"
+					}
+				}
+			},
+			"director_ltd": {
+				"type": "object",
+				"properties": {
+					"position": {
+						"title": "Director",
+						"description": "Person from a group of managers who leads or supervises a particular area of your company.",
+						"const": "director-ltd"
 					}
 				}
 			},
@@ -367,7 +377,7 @@
 				"properties": {
 					"position": {
 						"title": "Company Member",
-						"description": "Co-owner of a business, who oversees and runs the that business.",
+						"description": "Co-owner of a business, who oversees and runs the business.",
 						"const": "member"
 					},
 					"equity": {
@@ -461,7 +471,7 @@
 				"properties": {
 					"position": {
 						"title": "General Partner",
-						"description": "Co-owner of a business, who oversees and runs the that business.",
+						"description": "Co-owner of a business, who oversees and runs the business.",
 						"const": "general-partner"
 					},
 					"equity": {
