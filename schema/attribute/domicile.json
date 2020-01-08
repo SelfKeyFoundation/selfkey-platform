@@ -1,0 +1,16 @@
+{
+	"$id": "http://platform.selfkey.org/schema/attribute/domicile.json",
+	"$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
+	"identityAttribute": true,
+	"identityAttributeRepository": "http://platform.selfkey.org/repository.json",
+	"entityType": ["corporate"],
+	"title": "Domicile",
+	"description": "Please specify the country that is the legal home of the corporation",
+	"type": "object",
+	"properties": {
+		"country": {
+			"$ref": "http://platform.selfkey.org/schema/misc/country.json"
+		}
+	},
+	"required": ["country"]
+}
