@@ -1,9 +1,9 @@
 import * as testUtils from '../../../test/utils';
 // import avj from 'avg';
-import domicile from '../domicile.json';
-import { validPayloads, invalidPayloads } from './__fixtures__/domicile';
+import legalJurisdiction from '../legal-jurisdiction.json';
+import { validPayloads, invalidPayloads } from './__fixtures__/legal-jurisdiction';
 
-describe('domicile attribute', () => {
+describe('legal-jurisdiction attribute', () => {
 	let validate = null;
 	let ajv = null;
 	let repo = null;
@@ -12,23 +12,24 @@ describe('domicile attribute', () => {
 		const options = { testDir: __dirname };
 		ajv = await testUtils.loadAllSchemas(options);
 		repo = await testUtils.loadRepository(options);
-		validate = ajv.compile(domicile);
+		validate = ajv.compile(legalJurisdiction);
 	});
 
-	it('repo should contain domicile', async () => {
+	it('repo should contain legal-jurisdiction', async () => {
 		expect(repo.identityAttributes).toEqual(
 			expect.arrayContaining([
 				{
-					json: 'http://platform.selfkey.org/schema/attribute/domicile.json',
-					ui: 'http://platform.selfkey.org/schema/ui/domicile.json',
+					json: 'http://platform.selfkey.org/schema/attribute/legal-jurisdiction.json',
+					ui: 'http://platform.selfkey.org/schema/ui/legal-jurisdiction.json',
 					entityType: ['corporate']
 				}
 			])
 		);
 	});
 
-	it('domicile schema should be valid', () => {
-		expect(ajv.validateSchema(domicile)).toBe(true);
+	it('legal-jurisdiction schema should be valid', () => {
+		ajv.validateSchema(legalJurisdiction);
+		expect(ajv.validateSchema(legalJurisdiction)).toBe(true);
 	});
 
 	const t = (payload, valid) =>
