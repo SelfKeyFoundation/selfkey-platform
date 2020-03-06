@@ -1733,7 +1733,8 @@
 				"title": "Legal Entity Type",
 				"description": "Please specify the type of legal entity.",
 				"type": "string",
-				"enum": [
+				"enum": ["ltd", "llc", "tst", "fnd", "llp", "other"],
+				"enumNames": [
 					"Company Limited by Shares (LTD)",
 					"Limited Liability Company (LLC)",
 					"Trust (TST)",
@@ -1751,7 +1752,8 @@
 				"title": "Legal Entity Type",
 				"description": "Please specify the type of legal entity.",
 				"type": "string",
-				"enum": [
+				"enum": ["ltd", "llc", "tst", "fnd", "llp", "other"],
+				"enumNames": [
 					"Company Limited by Shares (LTD)",
 					"Limited Liability Company (LLC)",
 					"Trust (TST)",
@@ -4746,7 +4748,7 @@
 						"type": "object",
 						"properties": {
 							"companyType": {
-								"enum": ["Company Limited by Shares (LTD)"]
+								"enum": ["ltd"]
 							},
 							"members": {
 								"$ref": "#/definitions/members/ltd"
@@ -4757,7 +4759,7 @@
 						"type": "object",
 						"properties": {
 							"companyType": {
-								"enum": ["Limited Liability Company (LLC)"]
+								"enum": ["llc"]
 							},
 							"members": {
 								"$ref": "#/definitions/members/llc"
@@ -4768,7 +4770,7 @@
 						"type": "object",
 						"properties": {
 							"companyType": {
-								"enum": ["Trust (TST)"]
+								"enum": ["tst"]
 							},
 							"members": {
 								"$ref": "#/definitions/members/tst"
@@ -4779,7 +4781,7 @@
 						"type": "object",
 						"properties": {
 							"companyType": {
-								"enum": ["Foundation (FND)"]
+								"enum": ["fnd"]
 							},
 							"members": {
 								"$ref": "#/definitions/members/fnd"
@@ -4790,7 +4792,7 @@
 						"type": "object",
 						"properties": {
 							"companyType": {
-								"enum": ["Limited Partnership (LLP)"]
+								"enum": ["llp"]
 							},
 							"members": {
 								"$ref": "#/definitions/members/llp"
@@ -4801,7 +4803,7 @@
 						"type": "object",
 						"properties": {
 							"companyType": {
-								"enum": ["Other"]
+								"enum": ["other"]
 							},
 							"members": {
 								"$ref": "#/definitions/members/other_company"
@@ -5358,7 +5360,8 @@
 						"title": "Legal Entity Type",
 						"description": "Please specify the type of legal entity.",
 						"type": "string",
-						"enum": [
+						"enum": ["ltd", "llc", "tst", "fnd", "llp", "other"],
+						"enumNames": [
 							"Company Limited by Shares (LTD)",
 							"Limited Liability Company (LLC)",
 							"Trust (TST)",
@@ -5375,7 +5378,7 @@
 								"type": "object",
 								"properties": {
 									"companyType": {
-										"enum": ["Company Limited by Shares (LTD)"]
+										"enum": ["ltd"]
 									},
 									"members": {
 										"type": "array",
@@ -5520,6 +5523,14 @@
 																	"description": "Please specify the type of legal entity.",
 																	"type": "string",
 																	"enum": [
+																		"ltd",
+																		"llc",
+																		"tst",
+																		"fnd",
+																		"llp",
+																		"other"
+																	],
+																	"enumNames": [
 																		"Company Limited by Shares (LTD)",
 																		"Limited Liability Company (LLC)",
 																		"Trust (TST)",
@@ -5572,7 +5583,7 @@
 								"type": "object",
 								"properties": {
 									"companyType": {
-										"enum": ["Limited Liability Company (LLC)"]
+										"enum": ["llc"]
 									},
 									"members": {
 										"type": "array",
@@ -5716,6 +5727,14 @@
 																	"description": "Please specify the type of legal entity.",
 																	"type": "string",
 																	"enum": [
+																		"ltd",
+																		"llc",
+																		"tst",
+																		"fnd",
+																		"llp",
+																		"other"
+																	],
+																	"enumNames": [
 																		"Company Limited by Shares (LTD)",
 																		"Limited Liability Company (LLC)",
 																		"Trust (TST)",
@@ -5768,7 +5787,7 @@
 								"type": "object",
 								"properties": {
 									"companyType": {
-										"enum": ["Trust (TST)"]
+										"enum": ["tst"]
 									},
 									"members": {
 										"type": "array",
@@ -5925,6 +5944,14 @@
 																	"description": "Please specify the type of legal entity.",
 																	"type": "string",
 																	"enum": [
+																		"ltd",
+																		"llc",
+																		"tst",
+																		"fnd",
+																		"llp",
+																		"other"
+																	],
+																	"enumNames": [
 																		"Company Limited by Shares (LTD)",
 																		"Limited Liability Company (LLC)",
 																		"Trust (TST)",
@@ -5977,7 +6004,7 @@
 								"type": "object",
 								"properties": {
 									"companyType": {
-										"enum": ["Foundation (FND)"]
+										"enum": ["fnd"]
 									},
 									"members": {
 										"type": "array",
@@ -6134,6 +6161,14 @@
 																	"description": "Please specify the type of legal entity.",
 																	"type": "string",
 																	"enum": [
+																		"ltd",
+																		"llc",
+																		"tst",
+																		"fnd",
+																		"llp",
+																		"other"
+																	],
+																	"enumNames": [
 																		"Company Limited by Shares (LTD)",
 																		"Limited Liability Company (LLC)",
 																		"Trust (TST)",
@@ -6186,7 +6221,7 @@
 								"type": "object",
 								"properties": {
 									"companyType": {
-										"enum": ["Limited Partnership (LLP)"]
+										"enum": ["llp"]
 									},
 									"members": {
 										"type": "array",
@@ -6335,6 +6370,14 @@
 																	"description": "Please specify the type of legal entity.",
 																	"type": "string",
 																	"enum": [
+																		"ltd",
+																		"llc",
+																		"tst",
+																		"fnd",
+																		"llp",
+																		"other"
+																	],
+																	"enumNames": [
 																		"Company Limited by Shares (LTD)",
 																		"Limited Liability Company (LLC)",
 																		"Trust (TST)",
@@ -6387,7 +6430,7 @@
 								"type": "object",
 								"properties": {
 									"companyType": {
-										"enum": ["Other"]
+										"enum": ["other"]
 									},
 									"members": {
 										"type": "array",
@@ -6510,6 +6553,14 @@
 																	"description": "Please specify the type of legal entity.",
 																	"type": "string",
 																	"enum": [
+																		"ltd",
+																		"llc",
+																		"tst",
+																		"fnd",
+																		"llp",
+																		"other"
+																	],
+																	"enumNames": [
 																		"Company Limited by Shares (LTD)",
 																		"Limited Liability Company (LLC)",
 																		"Trust (TST)",
@@ -6572,7 +6623,7 @@
 						"type": "object",
 						"properties": {
 							"companyType": {
-								"enum": ["Company Limited by Shares (LTD)"]
+								"enum": ["ltd"]
 							},
 							"members": {
 								"type": "array",
@@ -6717,6 +6768,14 @@
 															"description": "Please specify the type of legal entity.",
 															"type": "string",
 															"enum": [
+																"ltd",
+																"llc",
+																"tst",
+																"fnd",
+																"llp",
+																"other"
+															],
+															"enumNames": [
 																"Company Limited by Shares (LTD)",
 																"Limited Liability Company (LLC)",
 																"Trust (TST)",
@@ -6769,7 +6828,7 @@
 						"type": "object",
 						"properties": {
 							"companyType": {
-								"enum": ["Limited Liability Company (LLC)"]
+								"enum": ["llc"]
 							},
 							"members": {
 								"type": "array",
@@ -6913,6 +6972,14 @@
 															"description": "Please specify the type of legal entity.",
 															"type": "string",
 															"enum": [
+																"ltd",
+																"llc",
+																"tst",
+																"fnd",
+																"llp",
+																"other"
+															],
+															"enumNames": [
 																"Company Limited by Shares (LTD)",
 																"Limited Liability Company (LLC)",
 																"Trust (TST)",
@@ -6965,7 +7032,7 @@
 						"type": "object",
 						"properties": {
 							"companyType": {
-								"enum": ["Trust (TST)"]
+								"enum": ["tst"]
 							},
 							"members": {
 								"type": "array",
@@ -7122,6 +7189,14 @@
 															"description": "Please specify the type of legal entity.",
 															"type": "string",
 															"enum": [
+																"ltd",
+																"llc",
+																"tst",
+																"fnd",
+																"llp",
+																"other"
+															],
+															"enumNames": [
 																"Company Limited by Shares (LTD)",
 																"Limited Liability Company (LLC)",
 																"Trust (TST)",
@@ -7174,7 +7249,7 @@
 						"type": "object",
 						"properties": {
 							"companyType": {
-								"enum": ["Foundation (FND)"]
+								"enum": ["fnd"]
 							},
 							"members": {
 								"type": "array",
@@ -7331,6 +7406,14 @@
 															"description": "Please specify the type of legal entity.",
 															"type": "string",
 															"enum": [
+																"ltd",
+																"llc",
+																"tst",
+																"fnd",
+																"llp",
+																"other"
+															],
+															"enumNames": [
 																"Company Limited by Shares (LTD)",
 																"Limited Liability Company (LLC)",
 																"Trust (TST)",
@@ -7383,7 +7466,7 @@
 						"type": "object",
 						"properties": {
 							"companyType": {
-								"enum": ["Limited Partnership (LLP)"]
+								"enum": ["llp"]
 							},
 							"members": {
 								"type": "array",
@@ -7532,6 +7615,14 @@
 															"description": "Please specify the type of legal entity.",
 															"type": "string",
 															"enum": [
+																"ltd",
+																"llc",
+																"tst",
+																"fnd",
+																"llp",
+																"other"
+															],
+															"enumNames": [
 																"Company Limited by Shares (LTD)",
 																"Limited Liability Company (LLC)",
 																"Trust (TST)",
@@ -7584,7 +7675,7 @@
 						"type": "object",
 						"properties": {
 							"companyType": {
-								"enum": ["Other"]
+								"enum": ["other"]
 							},
 							"members": {
 								"type": "array",
@@ -7707,6 +7798,14 @@
 															"description": "Please specify the type of legal entity.",
 															"type": "string",
 															"enum": [
+																"ltd",
+																"llc",
+																"tst",
+																"fnd",
+																"llp",
+																"other"
+															],
+															"enumNames": [
 																"Company Limited by Shares (LTD)",
 																"Limited Liability Company (LLC)",
 																"Trust (TST)",
@@ -7896,6 +7995,14 @@
 														"description": "Please specify the type of legal entity.",
 														"type": "string",
 														"enum": [
+															"ltd",
+															"llc",
+															"tst",
+															"fnd",
+															"llp",
+															"other"
+														],
+														"enumNames": [
 															"Company Limited by Shares (LTD)",
 															"Limited Liability Company (LLC)",
 															"Trust (TST)",
@@ -8078,6 +8185,14 @@
 														"description": "Please specify the type of legal entity.",
 														"type": "string",
 														"enum": [
+															"ltd",
+															"llc",
+															"tst",
+															"fnd",
+															"llp",
+															"other"
+														],
+														"enumNames": [
 															"Company Limited by Shares (LTD)",
 															"Limited Liability Company (LLC)",
 															"Trust (TST)",
@@ -8273,6 +8388,14 @@
 														"description": "Please specify the type of legal entity.",
 														"type": "string",
 														"enum": [
+															"ltd",
+															"llc",
+															"tst",
+															"fnd",
+															"llp",
+															"other"
+														],
+														"enumNames": [
 															"Company Limited by Shares (LTD)",
 															"Limited Liability Company (LLC)",
 															"Trust (TST)",
@@ -8468,6 +8591,14 @@
 														"description": "Please specify the type of legal entity.",
 														"type": "string",
 														"enum": [
+															"ltd",
+															"llc",
+															"tst",
+															"fnd",
+															"llp",
+															"other"
+														],
+														"enumNames": [
 															"Company Limited by Shares (LTD)",
 															"Limited Liability Company (LLC)",
 															"Trust (TST)",
@@ -8655,6 +8786,14 @@
 														"description": "Please specify the type of legal entity.",
 														"type": "string",
 														"enum": [
+															"ltd",
+															"llc",
+															"tst",
+															"fnd",
+															"llp",
+															"other"
+														],
+														"enumNames": [
 															"Company Limited by Shares (LTD)",
 															"Limited Liability Company (LLC)",
 															"Trust (TST)",
@@ -8816,6 +8955,14 @@
 														"description": "Please specify the type of legal entity.",
 														"type": "string",
 														"enum": [
+															"ltd",
+															"llc",
+															"tst",
+															"fnd",
+															"llp",
+															"other"
+														],
+														"enumNames": [
 															"Company Limited by Shares (LTD)",
 															"Limited Liability Company (LLC)",
 															"Trust (TST)",
@@ -9591,7 +9738,8 @@
 											"title": "Legal Entity Type",
 											"description": "Please specify the type of legal entity.",
 											"type": "string",
-											"enum": [
+											"enum": ["ltd", "llc", "tst", "fnd", "llp", "other"],
+											"enumNames": [
 												"Company Limited by Shares (LTD)",
 												"Limited Liability Company (LLC)",
 												"Trust (TST)",
@@ -9681,7 +9829,8 @@
 									"title": "Legal Entity Type",
 									"description": "Please specify the type of legal entity.",
 									"type": "string",
-									"enum": [
+									"enum": ["ltd", "llc", "tst", "fnd", "llp", "other"],
+									"enumNames": [
 										"Company Limited by Shares (LTD)",
 										"Limited Liability Company (LLC)",
 										"Trust (TST)",

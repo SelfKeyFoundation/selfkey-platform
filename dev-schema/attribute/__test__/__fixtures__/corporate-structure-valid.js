@@ -2,7 +2,7 @@ export default [
 	{
 		name: 'ltd full',
 		value: {
-			companyType: 'Company Limited by Shares (LTD)',
+			companyType: 'ltd',
 			members: [
 				{
 					entity: {
@@ -33,7 +33,7 @@ export default [
 				{
 					entity: {
 						type: 'corporate',
-						companyType: 'Company Limited by Shares (LTD)',
+						companyType: 'ltd',
 						companyName: 'Test Company name',
 						email: 'test@company.org'
 					},
@@ -62,14 +62,14 @@ export default [
 	{
 		name: 'ltd with empty members',
 		value: {
-			companyType: 'Company Limited by Shares (LTD)',
+			companyType: 'ltd',
 			members: []
 		}
 	},
 	{
 		name: 'llc full',
 		value: {
-			companyType: 'Limited Liability Company (LLC)',
+			companyType: 'llc',
 			members: [
 				{
 					entity: {
@@ -100,7 +100,7 @@ export default [
 				{
 					entity: {
 						type: 'corporate',
-						companyType: 'Company Limited by Shares (LTD)',
+						companyType: 'ltd',
 						companyName: 'Test Company name',
 						email: 'test@company.org'
 					},
@@ -129,7 +129,7 @@ export default [
 	{
 		name: 'tst full',
 		value: {
-			companyType: 'Trust (TST)',
+			companyType: 'tst',
 			members: [
 				{
 					entity: {
@@ -165,7 +165,7 @@ export default [
 				{
 					entity: {
 						type: 'corporate',
-						companyType: 'Company Limited by Shares (LTD)',
+						companyType: 'ltd',
 						companyName: 'Test Company name',
 						email: 'test@company.org'
 					},
@@ -199,7 +199,7 @@ export default [
 	{
 		name: 'llp full',
 		value: {
-			companyType: 'Limited Partnership (LLP)',
+			companyType: 'llp',
 			members: [
 				{
 					entity: {
@@ -231,7 +231,7 @@ export default [
 				{
 					entity: {
 						type: 'corporate',
-						companyType: 'Company Limited by Shares (LTD)',
+						companyType: 'ltd',
 						companyName: 'Test Company name',
 						email: 'test@company.org'
 					},
@@ -261,7 +261,7 @@ export default [
 	{
 		name: 'other company full',
 		value: {
-			companyType: 'Other',
+			companyType: 'other',
 			members: [
 				{
 					entity: {
@@ -290,7 +290,7 @@ export default [
 				{
 					entity: {
 						type: 'corporate',
-						companyType: 'Company Limited by Shares (LTD)',
+						companyType: 'ltd',
 						companyName: 'Test Company name',
 						email: 'test@company.org'
 					},
