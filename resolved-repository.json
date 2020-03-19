@@ -1733,7 +1733,8 @@
 				"title": "Legal Entity Type",
 				"description": "Please specify the type of legal entity.",
 				"type": "string",
-				"enum": [
+				"enum": ["ltd", "llc", "tst", "fnd", "llp", "other"],
+				"enumNames": [
 					"Company Limited by Shares (LTD)",
 					"Limited Liability Company (LLC)",
 					"Trust (TST)",
@@ -1751,7 +1752,8 @@
 				"title": "Legal Entity Type",
 				"description": "Please specify the type of legal entity.",
 				"type": "string",
-				"enum": [
+				"enum": ["ltd", "llc", "tst", "fnd", "llp", "other"],
+				"enumNames": [
 					"Company Limited by Shares (LTD)",
 					"Limited Liability Company (LLC)",
 					"Trust (TST)",
@@ -1773,7 +1775,262 @@
 				"description": "Please specify the jurisdiction your legal entity is incorporated in",
 				"type": "string",
 				"enum": [
-					" Afghanistan",
+					"AF",
+					"AL",
+					"DZ",
+					"AD",
+					"AO",
+					"AI",
+					"AG",
+					"AR",
+					"AM",
+					"AW",
+					"AU",
+					"AT",
+					"AZ",
+					"BS",
+					"BD",
+					"BH",
+					"BB",
+					"BY",
+					"BE",
+					"BZ",
+					"BJ",
+					"BM",
+					"BT",
+					"BO",
+					"BA",
+					"BW",
+					"BR",
+					"VG",
+					"BN",
+					"BG",
+					"BF",
+					"BI",
+					"KH",
+					"CM",
+					"CA",
+					"CV",
+					"KY",
+					"CF",
+					"CL",
+					"HK",
+					"MO",
+					"TW",
+					"CO",
+					"CD",
+					"CG",
+					"CK",
+					"CR",
+					"CI",
+					"HR",
+					"CU",
+					"CW",
+					"CY",
+					"CZ",
+					"DK",
+					"FO",
+					"GL",
+					"DJ",
+					"DM",
+					"DO",
+					"EC",
+					"EG",
+					"SV",
+					"ER",
+					"EE",
+					"ET",
+					"FG",
+					"FI",
+					"FR",
+					"GA",
+					"GM",
+					"GE",
+					"DE",
+					"GH",
+					"GI",
+					"GR",
+					"GD",
+					"GT",
+					"GG",
+					"GN",
+					"GY",
+					"HT",
+					"HN",
+					"HU",
+					"IS",
+					"IN",
+					"ID",
+					"IR",
+					"IQ",
+					"IE",
+					"IM",
+					"IL",
+					"IT",
+					"JM",
+					"JP",
+					"JE",
+					"JO",
+					"KZ",
+					"KE",
+					"KI",
+					"XK",
+					"KW",
+					"KG",
+					"LA",
+					"LV",
+					"LB",
+					"LS",
+					"LR",
+					"LI",
+					"LT",
+					"LU",
+					"MK",
+					"MG",
+					"MT",
+					"MW",
+					"MY",
+					"MV",
+					"ML",
+					"MH",
+					"MR",
+					"MU",
+					"MX",
+					"FM",
+					"MD",
+					"MC",
+					"MN",
+					"ME",
+					"MS",
+					"MA",
+					"MZ",
+					"MM",
+					"NA",
+					"NR",
+					"NP",
+					"NL",
+					"BQ",
+					"NZ",
+					"NI",
+					"NE",
+					"NG",
+					"NU",
+					"NO",
+					"OM",
+					"PK",
+					"PW",
+					"PS",
+					"PA",
+					"PG",
+					"PY",
+					"PE",
+					"PH",
+					"PL",
+					"PT",
+					"QA",
+					"RO",
+					"RU",
+					"RW",
+					"KN",
+					"LC",
+					"VC",
+					"WS",
+					"SM",
+					"ST",
+					"SA",
+					"SN",
+					"RS",
+					"SC",
+					"SL",
+					"SG",
+					"SK",
+					"SI",
+					"SB",
+					"ZA",
+					"KR",
+					"SS",
+					"ES",
+					"LK",
+					"MF",
+					"SD",
+					"SR",
+					"SZ",
+					"SE",
+					"CH",
+					"TJ",
+					"TZ",
+					"TH",
+					"TL",
+					"TO",
+					"TG",
+					"TN",
+					"TR",
+					"TC",
+					"TT",
+					"UG",
+					"UA",
+					"AE",
+					"GB",
+					"US-AL",
+					"US-AK",
+					"US-AZ",
+					"US-AR",
+					"US-CA",
+					"US-CO",
+					"US-CT",
+					"US-DE",
+					"US-FL",
+					"US-GA",
+					"US-HI",
+					"US-ID",
+					"US-IL",
+					"US-IN",
+					"US-IA",
+					"US-KS",
+					"US-KY",
+					"US-LA",
+					"US-ME",
+					"US-MD",
+					"US-MA",
+					"US-MI",
+					"US-MN",
+					"US-MS",
+					"US-MO",
+					"US-MT",
+					"US-NE",
+					"US-NV",
+					"US-NH",
+					"US-NJ",
+					"US-NM",
+					"US-NY",
+					"US-NC",
+					"US-ND",
+					"US-OH",
+					"US-OK",
+					"US-OR",
+					"US-PA",
+					"US-RI",
+					"US-SC",
+					"US-SD",
+					"US-TN",
+					"US-UT",
+					"US-VT",
+					"US-VA",
+					"US-WA",
+					"US-WV",
+					"US-WI",
+					"US-WY",
+					"UY",
+					"UZ",
+					"VU",
+					"VE",
+					"VN",
+					"YE",
+					"ZM",
+					"ZW"
+				],
+				"enumNames": [
+					"Afghanistan",
 					"Albania",
 					"Algeria",
 					"Andorra",
@@ -1907,9 +2164,7 @@
 					"Nauru",
 					"Nepal",
 					"Netherlands",
-					"Caribbean Netherlands - Bonaire",
-					"Caribbean Netherlands - Sint Eustatius ",
-					"Caribbean Netherlands - Saba ",
+					"Bonaire, Sint Eustatius and Saba",
 					"New Zealand",
 					"Nicaragua",
 					"Niger",
@@ -2040,7 +2295,262 @@
 				"description": "Please specify the jurisdiction your legal entity is incorporated in",
 				"type": "string",
 				"enum": [
-					" Afghanistan",
+					"AF",
+					"AL",
+					"DZ",
+					"AD",
+					"AO",
+					"AI",
+					"AG",
+					"AR",
+					"AM",
+					"AW",
+					"AU",
+					"AT",
+					"AZ",
+					"BS",
+					"BD",
+					"BH",
+					"BB",
+					"BY",
+					"BE",
+					"BZ",
+					"BJ",
+					"BM",
+					"BT",
+					"BO",
+					"BA",
+					"BW",
+					"BR",
+					"VG",
+					"BN",
+					"BG",
+					"BF",
+					"BI",
+					"KH",
+					"CM",
+					"CA",
+					"CV",
+					"KY",
+					"CF",
+					"CL",
+					"HK",
+					"MO",
+					"TW",
+					"CO",
+					"CD",
+					"CG",
+					"CK",
+					"CR",
+					"CI",
+					"HR",
+					"CU",
+					"CW",
+					"CY",
+					"CZ",
+					"DK",
+					"FO",
+					"GL",
+					"DJ",
+					"DM",
+					"DO",
+					"EC",
+					"EG",
+					"SV",
+					"ER",
+					"EE",
+					"ET",
+					"FG",
+					"FI",
+					"FR",
+					"GA",
+					"GM",
+					"GE",
+					"DE",
+					"GH",
+					"GI",
+					"GR",
+					"GD",
+					"GT",
+					"GG",
+					"GN",
+					"GY",
+					"HT",
+					"HN",
+					"HU",
+					"IS",
+					"IN",
+					"ID",
+					"IR",
+					"IQ",
+					"IE",
+					"IM",
+					"IL",
+					"IT",
+					"JM",
+					"JP",
+					"JE",
+					"JO",
+					"KZ",
+					"KE",
+					"KI",
+					"XK",
+					"KW",
+					"KG",
+					"LA",
+					"LV",
+					"LB",
+					"LS",
+					"LR",
+					"LI",
+					"LT",
+					"LU",
+					"MK",
+					"MG",
+					"MT",
+					"MW",
+					"MY",
+					"MV",
+					"ML",
+					"MH",
+					"MR",
+					"MU",
+					"MX",
+					"FM",
+					"MD",
+					"MC",
+					"MN",
+					"ME",
+					"MS",
+					"MA",
+					"MZ",
+					"MM",
+					"NA",
+					"NR",
+					"NP",
+					"NL",
+					"BQ",
+					"NZ",
+					"NI",
+					"NE",
+					"NG",
+					"NU",
+					"NO",
+					"OM",
+					"PK",
+					"PW",
+					"PS",
+					"PA",
+					"PG",
+					"PY",
+					"PE",
+					"PH",
+					"PL",
+					"PT",
+					"QA",
+					"RO",
+					"RU",
+					"RW",
+					"KN",
+					"LC",
+					"VC",
+					"WS",
+					"SM",
+					"ST",
+					"SA",
+					"SN",
+					"RS",
+					"SC",
+					"SL",
+					"SG",
+					"SK",
+					"SI",
+					"SB",
+					"ZA",
+					"KR",
+					"SS",
+					"ES",
+					"LK",
+					"MF",
+					"SD",
+					"SR",
+					"SZ",
+					"SE",
+					"CH",
+					"TJ",
+					"TZ",
+					"TH",
+					"TL",
+					"TO",
+					"TG",
+					"TN",
+					"TR",
+					"TC",
+					"TT",
+					"UG",
+					"UA",
+					"AE",
+					"GB",
+					"US-AL",
+					"US-AK",
+					"US-AZ",
+					"US-AR",
+					"US-CA",
+					"US-CO",
+					"US-CT",
+					"US-DE",
+					"US-FL",
+					"US-GA",
+					"US-HI",
+					"US-ID",
+					"US-IL",
+					"US-IN",
+					"US-IA",
+					"US-KS",
+					"US-KY",
+					"US-LA",
+					"US-ME",
+					"US-MD",
+					"US-MA",
+					"US-MI",
+					"US-MN",
+					"US-MS",
+					"US-MO",
+					"US-MT",
+					"US-NE",
+					"US-NV",
+					"US-NH",
+					"US-NJ",
+					"US-NM",
+					"US-NY",
+					"US-NC",
+					"US-ND",
+					"US-OH",
+					"US-OK",
+					"US-OR",
+					"US-PA",
+					"US-RI",
+					"US-SC",
+					"US-SD",
+					"US-TN",
+					"US-UT",
+					"US-VT",
+					"US-VA",
+					"US-WA",
+					"US-WV",
+					"US-WI",
+					"US-WY",
+					"UY",
+					"UZ",
+					"VU",
+					"VE",
+					"VN",
+					"YE",
+					"ZM",
+					"ZW"
+				],
+				"enumNames": [
+					"Afghanistan",
 					"Albania",
 					"Algeria",
 					"Andorra",
@@ -2174,9 +2684,7 @@
 					"Nauru",
 					"Nepal",
 					"Netherlands",
-					"Caribbean Netherlands - Bonaire",
-					"Caribbean Netherlands - Sint Eustatius ",
-					"Caribbean Netherlands - Saba ",
+					"Bonaire, Sint Eustatius and Saba",
 					"New Zealand",
 					"Nicaragua",
 					"Niger",
@@ -4240,7 +4748,7 @@
 						"type": "object",
 						"properties": {
 							"companyType": {
-								"enum": ["Company Limited by Shares (LTD)"]
+								"enum": ["ltd"]
 							},
 							"members": {
 								"$ref": "#/definitions/members/ltd"
@@ -4251,7 +4759,7 @@
 						"type": "object",
 						"properties": {
 							"companyType": {
-								"enum": ["Limited Liability Company (LLC)"]
+								"enum": ["llc"]
 							},
 							"members": {
 								"$ref": "#/definitions/members/llc"
@@ -4262,7 +4770,7 @@
 						"type": "object",
 						"properties": {
 							"companyType": {
-								"enum": ["Trust (TST)"]
+								"enum": ["tst"]
 							},
 							"members": {
 								"$ref": "#/definitions/members/tst"
@@ -4273,7 +4781,7 @@
 						"type": "object",
 						"properties": {
 							"companyType": {
-								"enum": ["Foundation (FND)"]
+								"enum": ["fnd"]
 							},
 							"members": {
 								"$ref": "#/definitions/members/fnd"
@@ -4284,7 +4792,7 @@
 						"type": "object",
 						"properties": {
 							"companyType": {
-								"enum": ["Limited Partnership (LLP)"]
+								"enum": ["llp"]
 							},
 							"members": {
 								"$ref": "#/definitions/members/llp"
@@ -4295,7 +4803,7 @@
 						"type": "object",
 						"properties": {
 							"companyType": {
-								"enum": ["Other"]
+								"enum": ["other"]
 							},
 							"members": {
 								"$ref": "#/definitions/members/other_company"
@@ -4852,7 +5360,8 @@
 						"title": "Legal Entity Type",
 						"description": "Please specify the type of legal entity.",
 						"type": "string",
-						"enum": [
+						"enum": ["ltd", "llc", "tst", "fnd", "llp", "other"],
+						"enumNames": [
 							"Company Limited by Shares (LTD)",
 							"Limited Liability Company (LLC)",
 							"Trust (TST)",
@@ -4869,7 +5378,7 @@
 								"type": "object",
 								"properties": {
 									"companyType": {
-										"enum": ["Company Limited by Shares (LTD)"]
+										"enum": ["ltd"]
 									},
 									"members": {
 										"type": "array",
@@ -5014,6 +5523,14 @@
 																	"description": "Please specify the type of legal entity.",
 																	"type": "string",
 																	"enum": [
+																		"ltd",
+																		"llc",
+																		"tst",
+																		"fnd",
+																		"llp",
+																		"other"
+																	],
+																	"enumNames": [
 																		"Company Limited by Shares (LTD)",
 																		"Limited Liability Company (LLC)",
 																		"Trust (TST)",
@@ -5066,7 +5583,7 @@
 								"type": "object",
 								"properties": {
 									"companyType": {
-										"enum": ["Limited Liability Company (LLC)"]
+										"enum": ["llc"]
 									},
 									"members": {
 										"type": "array",
@@ -5210,6 +5727,14 @@
 																	"description": "Please specify the type of legal entity.",
 																	"type": "string",
 																	"enum": [
+																		"ltd",
+																		"llc",
+																		"tst",
+																		"fnd",
+																		"llp",
+																		"other"
+																	],
+																	"enumNames": [
 																		"Company Limited by Shares (LTD)",
 																		"Limited Liability Company (LLC)",
 																		"Trust (TST)",
@@ -5262,7 +5787,7 @@
 								"type": "object",
 								"properties": {
 									"companyType": {
-										"enum": ["Trust (TST)"]
+										"enum": ["tst"]
 									},
 									"members": {
 										"type": "array",
@@ -5419,6 +5944,14 @@
 																	"description": "Please specify the type of legal entity.",
 																	"type": "string",
 																	"enum": [
+																		"ltd",
+																		"llc",
+																		"tst",
+																		"fnd",
+																		"llp",
+																		"other"
+																	],
+																	"enumNames": [
 																		"Company Limited by Shares (LTD)",
 																		"Limited Liability Company (LLC)",
 																		"Trust (TST)",
@@ -5471,7 +6004,7 @@
 								"type": "object",
 								"properties": {
 									"companyType": {
-										"enum": ["Foundation (FND)"]
+										"enum": ["fnd"]
 									},
 									"members": {
 										"type": "array",
@@ -5628,6 +6161,14 @@
 																	"description": "Please specify the type of legal entity.",
 																	"type": "string",
 																	"enum": [
+																		"ltd",
+																		"llc",
+																		"tst",
+																		"fnd",
+																		"llp",
+																		"other"
+																	],
+																	"enumNames": [
 																		"Company Limited by Shares (LTD)",
 																		"Limited Liability Company (LLC)",
 																		"Trust (TST)",
@@ -5680,7 +6221,7 @@
 								"type": "object",
 								"properties": {
 									"companyType": {
-										"enum": ["Limited Partnership (LLP)"]
+										"enum": ["llp"]
 									},
 									"members": {
 										"type": "array",
@@ -5829,6 +6370,14 @@
 																	"description": "Please specify the type of legal entity.",
 																	"type": "string",
 																	"enum": [
+																		"ltd",
+																		"llc",
+																		"tst",
+																		"fnd",
+																		"llp",
+																		"other"
+																	],
+																	"enumNames": [
 																		"Company Limited by Shares (LTD)",
 																		"Limited Liability Company (LLC)",
 																		"Trust (TST)",
@@ -5881,7 +6430,7 @@
 								"type": "object",
 								"properties": {
 									"companyType": {
-										"enum": ["Other"]
+										"enum": ["other"]
 									},
 									"members": {
 										"type": "array",
@@ -6004,6 +6553,14 @@
 																	"description": "Please specify the type of legal entity.",
 																	"type": "string",
 																	"enum": [
+																		"ltd",
+																		"llc",
+																		"tst",
+																		"fnd",
+																		"llp",
+																		"other"
+																	],
+																	"enumNames": [
 																		"Company Limited by Shares (LTD)",
 																		"Limited Liability Company (LLC)",
 																		"Trust (TST)",
@@ -6066,7 +6623,7 @@
 						"type": "object",
 						"properties": {
 							"companyType": {
-								"enum": ["Company Limited by Shares (LTD)"]
+								"enum": ["ltd"]
 							},
 							"members": {
 								"type": "array",
@@ -6211,6 +6768,14 @@
 															"description": "Please specify the type of legal entity.",
 															"type": "string",
 															"enum": [
+																"ltd",
+																"llc",
+																"tst",
+																"fnd",
+																"llp",
+																"other"
+															],
+															"enumNames": [
 																"Company Limited by Shares (LTD)",
 																"Limited Liability Company (LLC)",
 																"Trust (TST)",
@@ -6263,7 +6828,7 @@
 						"type": "object",
 						"properties": {
 							"companyType": {
-								"enum": ["Limited Liability Company (LLC)"]
+								"enum": ["llc"]
 							},
 							"members": {
 								"type": "array",
@@ -6407,6 +6972,14 @@
 															"description": "Please specify the type of legal entity.",
 															"type": "string",
 															"enum": [
+																"ltd",
+																"llc",
+																"tst",
+																"fnd",
+																"llp",
+																"other"
+															],
+															"enumNames": [
 																"Company Limited by Shares (LTD)",
 																"Limited Liability Company (LLC)",
 																"Trust (TST)",
@@ -6459,7 +7032,7 @@
 						"type": "object",
 						"properties": {
 							"companyType": {
-								"enum": ["Trust (TST)"]
+								"enum": ["tst"]
 							},
 							"members": {
 								"type": "array",
@@ -6616,6 +7189,14 @@
 															"description": "Please specify the type of legal entity.",
 															"type": "string",
 															"enum": [
+																"ltd",
+																"llc",
+																"tst",
+																"fnd",
+																"llp",
+																"other"
+															],
+															"enumNames": [
 																"Company Limited by Shares (LTD)",
 																"Limited Liability Company (LLC)",
 																"Trust (TST)",
@@ -6668,7 +7249,7 @@
 						"type": "object",
 						"properties": {
 							"companyType": {
-								"enum": ["Foundation (FND)"]
+								"enum": ["fnd"]
 							},
 							"members": {
 								"type": "array",
@@ -6825,6 +7406,14 @@
 															"description": "Please specify the type of legal entity.",
 															"type": "string",
 															"enum": [
+																"ltd",
+																"llc",
+																"tst",
+																"fnd",
+																"llp",
+																"other"
+															],
+															"enumNames": [
 																"Company Limited by Shares (LTD)",
 																"Limited Liability Company (LLC)",
 																"Trust (TST)",
@@ -6877,7 +7466,7 @@
 						"type": "object",
 						"properties": {
 							"companyType": {
-								"enum": ["Limited Partnership (LLP)"]
+								"enum": ["llp"]
 							},
 							"members": {
 								"type": "array",
@@ -7026,6 +7615,14 @@
 															"description": "Please specify the type of legal entity.",
 															"type": "string",
 															"enum": [
+																"ltd",
+																"llc",
+																"tst",
+																"fnd",
+																"llp",
+																"other"
+															],
+															"enumNames": [
 																"Company Limited by Shares (LTD)",
 																"Limited Liability Company (LLC)",
 																"Trust (TST)",
@@ -7078,7 +7675,7 @@
 						"type": "object",
 						"properties": {
 							"companyType": {
-								"enum": ["Other"]
+								"enum": ["other"]
 							},
 							"members": {
 								"type": "array",
@@ -7201,6 +7798,14 @@
 															"description": "Please specify the type of legal entity.",
 															"type": "string",
 															"enum": [
+																"ltd",
+																"llc",
+																"tst",
+																"fnd",
+																"llp",
+																"other"
+															],
+															"enumNames": [
 																"Company Limited by Shares (LTD)",
 																"Limited Liability Company (LLC)",
 																"Trust (TST)",
@@ -7390,6 +7995,14 @@
 														"description": "Please specify the type of legal entity.",
 														"type": "string",
 														"enum": [
+															"ltd",
+															"llc",
+															"tst",
+															"fnd",
+															"llp",
+															"other"
+														],
+														"enumNames": [
 															"Company Limited by Shares (LTD)",
 															"Limited Liability Company (LLC)",
 															"Trust (TST)",
@@ -7572,6 +8185,14 @@
 														"description": "Please specify the type of legal entity.",
 														"type": "string",
 														"enum": [
+															"ltd",
+															"llc",
+															"tst",
+															"fnd",
+															"llp",
+															"other"
+														],
+														"enumNames": [
 															"Company Limited by Shares (LTD)",
 															"Limited Liability Company (LLC)",
 															"Trust (TST)",
@@ -7767,6 +8388,14 @@
 														"description": "Please specify the type of legal entity.",
 														"type": "string",
 														"enum": [
+															"ltd",
+															"llc",
+															"tst",
+															"fnd",
+															"llp",
+															"other"
+														],
+														"enumNames": [
 															"Company Limited by Shares (LTD)",
 															"Limited Liability Company (LLC)",
 															"Trust (TST)",
@@ -7962,6 +8591,14 @@
 														"description": "Please specify the type of legal entity.",
 														"type": "string",
 														"enum": [
+															"ltd",
+															"llc",
+															"tst",
+															"fnd",
+															"llp",
+															"other"
+														],
+														"enumNames": [
 															"Company Limited by Shares (LTD)",
 															"Limited Liability Company (LLC)",
 															"Trust (TST)",
@@ -8149,6 +8786,14 @@
 														"description": "Please specify the type of legal entity.",
 														"type": "string",
 														"enum": [
+															"ltd",
+															"llc",
+															"tst",
+															"fnd",
+															"llp",
+															"other"
+														],
+														"enumNames": [
 															"Company Limited by Shares (LTD)",
 															"Limited Liability Company (LLC)",
 															"Trust (TST)",
@@ -8310,6 +8955,14 @@
 														"description": "Please specify the type of legal entity.",
 														"type": "string",
 														"enum": [
+															"ltd",
+															"llc",
+															"tst",
+															"fnd",
+															"llp",
+															"other"
+														],
+														"enumNames": [
 															"Company Limited by Shares (LTD)",
 															"Limited Liability Company (LLC)",
 															"Trust (TST)",
@@ -9085,7 +9738,8 @@
 											"title": "Legal Entity Type",
 											"description": "Please specify the type of legal entity.",
 											"type": "string",
-											"enum": [
+											"enum": ["ltd", "llc", "tst", "fnd", "llp", "other"],
+											"enumNames": [
 												"Company Limited by Shares (LTD)",
 												"Limited Liability Company (LLC)",
 												"Trust (TST)",
@@ -9175,7 +9829,8 @@
 									"title": "Legal Entity Type",
 									"description": "Please specify the type of legal entity.",
 									"type": "string",
-									"enum": [
+									"enum": ["ltd", "llc", "tst", "fnd", "llp", "other"],
+									"enumNames": [
 										"Company Limited by Shares (LTD)",
 										"Limited Liability Company (LLC)",
 										"Trust (TST)",
