@@ -1,0 +1,23 @@
+{
+	"$id": "http://platform.selfkey.org/schema/attribute/national-id-number.json",
+	"$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
+	"identityAttribute": true,
+	"identityAttributeRepository": "http://platform.selfkey.org/repository.json",
+	"entityType": ["individual"],
+	"title": "National ID number",
+	"description": "National ID number and issuing country",
+	"properties": {
+		"id_number": {
+			"title": "National ID number",
+			"description": "National ID number, national insurance number or other number your government is using to identify its residents",
+			"type": "string"
+		},
+		"issuing_country": {
+			"title": "Issuing country",
+			"description": "Country where your national ID was issued",
+			"$ref": "http://platform.selfkey.org/schema/misc/country.json"
+		}
+	},
+	"type": "object",
+	"required": ["id_number", "issuing_country"]
+}
