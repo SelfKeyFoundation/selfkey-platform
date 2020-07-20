@@ -17,6 +17,21 @@
 			"type": "string",
 			"title": "Physical Address 2",
 			"description": "Building, apartment, etc."
+		},
+		"city": {
+			"type": "string",
+			"title": "City",
+			"description": "City or Town"
+		},
+		"province": {
+			"type": "string",
+			"title": "Province",
+			"description": "Province or State"
+		},
+		"postalcode": {
+			"type": "string",
+			"title": "Postal Code",
+			"description": "Postal code or Zip code"
 		}
 	},
 	"required": ["address_line_1"]

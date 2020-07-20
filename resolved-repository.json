@@ -3731,6 +3731,21 @@
 						"type": "string",
 						"title": "Physical Address 2",
 						"description": "Building, apartment, etc."
+					},
+					"city": {
+						"type": "string",
+						"title": "City",
+						"description": "City or Town"
+					},
+					"province": {
+						"type": "string",
+						"title": "Province",
+						"description": "Province or State"
+					},
+					"postalcode": {
+						"type": "string",
+						"title": "Postal Code",
+						"description": "Postal code or Zip code"
 					}
 				},
 				"required": ["address_line_1"]
@@ -3754,6 +3769,21 @@
 						"type": "string",
 						"title": "Physical Address 2",
 						"description": "Building, apartment, etc."
+					},
+					"city": {
+						"type": "string",
+						"title": "City",
+						"description": "City or Town"
+					},
+					"province": {
+						"type": "string",
+						"title": "Province",
+						"description": "Province or State"
+					},
+					"postalcode": {
+						"type": "string",
+						"title": "Postal Code",
+						"description": "Postal code or Zip code"
 					}
 				},
 				"required": ["address_line_1"]
@@ -10007,7 +10037,7 @@
 		"http://platform.selfkey.org/schema/ui/physical-address.json": {
 			"url": "http://platform.selfkey.org/schema/ui/physical-address.json",
 			"schema": {
-				"ui:order": ["address_line_1", "address_line_2"]
+				"ui:order": ["address_line_1", "address_line_2", "city", "province", "postalcode"]
 			}
 		},
 		"http://platform.selfkey.org/schema/ui/tax-certificate.json": {
