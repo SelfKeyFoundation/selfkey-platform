@@ -5,6 +5,6 @@
 	"identityAttributeRepository": "http://platform.selfkey.org/repository.json",
 	"entityType": ["individual"],
 	"title": "Workplace",
-	"description": "Current place of work or employment status.",
+	"description": "Current place of work.",
 	"type": "string"
 }
