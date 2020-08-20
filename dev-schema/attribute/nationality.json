@@ -14,7 +14,7 @@
 		"denonym": {
 			"type": "string",
 			"title": "Denonym",
-			"description": "The word used to identify citizens of the country"
+			"description": "Word used to identify citizens."
 		}
 	},
 	"required": ["country"]
