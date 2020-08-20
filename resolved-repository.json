@@ -3015,7 +3015,7 @@
 					"denonym": {
 						"type": "string",
 						"title": "Denonym",
-						"description": "The word used to identify citizens of the country"
+						"description": "Word used to identify citizens."
 					}
 				},
 				"required": ["country"]
@@ -3541,7 +3541,7 @@
 					"denonym": {
 						"type": "string",
 						"title": "Denonym",
-						"description": "The word used to identify citizens of the country"
+						"description": "Word used to identify citizens."
 					}
 				},
 				"required": ["country"]
@@ -4072,7 +4072,7 @@
 				"identityAttributeRepository": "http://platform.selfkey.org/repository.json",
 				"entityType": ["individual"],
 				"title": "Workplace",
-				"description": "Please specify your current place of work. You can also state if you are un-employed or retired.",
+				"description": "Current place of work.",
 				"type": "string"
 			},
 			"dereferenced": {
@@ -4082,7 +4082,7 @@
 				"identityAttributeRepository": "http://platform.selfkey.org/repository.json",
 				"entityType": ["individual"],
 				"title": "Workplace",
-				"description": "Please specify your current place of work. You can also state if you are un-employed or retired.",
+				"description": "Current place of work.",
 				"type": "string"
 			}
 		},
