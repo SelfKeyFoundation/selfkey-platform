@@ -5,11 +5,14 @@
 	"format": "file",
 	"title": "Audio",
 	"properties": {
-		"mimeType": { "type": "string", "enum": ["audio/mp3", "audio/mp4", "audio/mpeg", "audio/ogg", "audio/x-wav"] },
+		"mimeType": {
+			"type": "string",
+			"enum": ["audio/mp3", "audio/mp4", "audio/mpeg", "audio/ogg", "audio/x-wav"]
+		},
 		"size": { "type": "integer", "maximum": 50000000 },
 		"content": {
 			"type": "string"
 		}
 	},
-	"required": ["mimeType", "size", "content"]
+	"required": ["content"]
 }

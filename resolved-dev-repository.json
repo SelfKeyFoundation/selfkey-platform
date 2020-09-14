@@ -240,7 +240,7 @@
 									"type": "string"
 								}
 							},
-							"required": ["mimeType", "size", "content"]
+							"required": ["content"]
 						}
 					},
 					"issued": {
@@ -275,7 +275,7 @@
 									"type": "string"
 								}
 							},
-							"required": ["mimeType", "size", "content"]
+							"required": ["content"]
 						}
 					}
 				},
@@ -1473,7 +1473,7 @@
 								"type": "string"
 							}
 						},
-						"required": ["mimeType", "size", "content"]
+						"required": ["content"]
 					},
 					"back": {
 						"title": "Back image",
@@ -1494,7 +1494,7 @@
 								"type": "string"
 							}
 						},
-						"required": ["mimeType", "size", "content"]
+						"required": ["content"]
 					},
 					"expires": {
 						"$id": "http://platform.selfkey.org/schema/misc/expiry-date.json",
@@ -1529,7 +1529,7 @@
 										"type": "string"
 									}
 								},
-								"required": ["mimeType", "size", "content"]
+								"required": ["content"]
 							}
 						},
 						"required": ["image"]
@@ -1559,7 +1559,7 @@
 									"type": "string"
 								}
 							},
-							"required": ["mimeType", "size", "content"]
+							"required": ["content"]
 						}
 					}
 				},
@@ -1646,7 +1646,7 @@
 									"type": "string"
 								}
 							},
-							"required": ["mimeType", "size", "content"]
+							"required": ["content"]
 						}
 					},
 					"extra": {
@@ -1674,7 +1674,7 @@
 									"type": "string"
 								}
 							},
-							"required": ["mimeType", "size", "content"]
+							"required": ["content"]
 						}
 					}
 				},
@@ -2902,7 +2902,7 @@
 								"type": "string"
 							}
 						},
-						"required": ["mimeType", "size", "content"]
+						"required": ["content"]
 					},
 					"back": {
 						"title": "Back image",
@@ -2923,7 +2923,7 @@
 								"type": "string"
 							}
 						},
-						"required": ["mimeType", "size", "content"]
+						"required": ["content"]
 					},
 					"issued": {
 						"$id": "http://platform.selfkey.org/schema/misc/issue-date.json",
@@ -2965,7 +2965,7 @@
 										"type": "string"
 									}
 								},
-								"required": ["mimeType", "size", "content"]
+								"required": ["content"]
 							}
 						},
 						"required": ["image"]
@@ -2995,7 +2995,7 @@
 									"type": "string"
 								}
 							},
-							"required": ["mimeType", "size", "content"]
+							"required": ["content"]
 						}
 					}
 				},
@@ -3611,7 +3611,7 @@
 								"type": "string"
 							}
 						},
-						"required": ["mimeType", "size", "content"]
+						"required": ["content"]
 					},
 					"issued": {
 						"$id": "http://platform.selfkey.org/schema/misc/issue-date.json",
@@ -3653,7 +3653,7 @@
 										"type": "string"
 									}
 								},
-								"required": ["mimeType", "size", "content"]
+								"required": ["content"]
 							}
 						},
 						"required": ["image"]
@@ -3683,7 +3683,7 @@
 									"type": "string"
 								}
 							},
-							"required": ["mimeType", "size", "content"]
+							"required": ["content"]
 						}
 					}
 				},
@@ -3847,7 +3847,7 @@
 								"type": "string"
 							}
 						},
-						"required": ["mimeType", "size", "content"]
+						"required": ["content"]
 					},
 					"issued": {
 						"$id": "http://platform.selfkey.org/schema/misc/issue-date.json",
@@ -3881,7 +3881,7 @@
 									"type": "string"
 								}
 							},
-							"required": ["mimeType", "size", "content"]
+							"required": ["content"]
 						}
 					}
 				},
@@ -3969,7 +3969,7 @@
 									"type": "string"
 								}
 							},
-							"required": ["mimeType", "size", "content"]
+							"required": ["content"]
 						}
 					},
 					"issued": {
@@ -4004,7 +4004,7 @@
 									"type": "string"
 								}
 							},
-							"required": ["mimeType", "size", "content"]
+							"required": ["content"]
 						}
 					}
 				},
@@ -4062,7 +4062,7 @@
 							"type": "string"
 						}
 					},
-					"required": ["mimeType", "size", "content"]
+					"required": ["content"]
 				},
 				"minItems": 1,
 				"noFill": true
@@ -4219,7 +4219,7 @@
 								"type": "string"
 							}
 						},
-						"required": ["mimeType", "size", "content"]
+						"required": ["content"]
 					},
 					"issued": {
 						"$id": "http://platform.selfkey.org/schema/misc/issue-date.json",
@@ -4253,7 +4253,7 @@
 									"type": "string"
 								}
 							},
-							"required": ["mimeType", "size", "content"]
+							"required": ["content"]
 						}
 					}
 				},
@@ -4321,7 +4321,7 @@
 								"type": "string"
 							}
 						},
-						"required": ["mimeType", "size", "content"]
+						"required": ["content"]
 					},
 					"company_name": {
 						"title": "Company Name",
@@ -4363,7 +4363,7 @@
 									"type": "string"
 								}
 							},
-							"required": ["mimeType", "size", "content"]
+							"required": ["content"]
 						}
 					}
 				},
@@ -4415,7 +4415,7 @@
 							"type": "string"
 						}
 					},
-					"required": ["mimeType", "size", "content"]
+					"required": ["content"]
 				},
 				"minItems": 1,
 				"noFill": true
@@ -4499,7 +4499,7 @@
 									"type": "string"
 								}
 							},
-							"required": ["mimeType", "size", "content"]
+							"required": ["content"]
 						}
 					},
 					"extra": {
@@ -4527,7 +4527,7 @@
 									"type": "string"
 								}
 							},
-							"required": ["mimeType", "size", "content"]
+							"required": ["content"]
 						}
 					}
 				},
@@ -4592,7 +4592,7 @@
 									"type": "string"
 								}
 							},
-							"required": ["mimeType", "size", "content"]
+							"required": ["content"]
 						}
 					},
 					"issued": {
@@ -4627,7 +4627,7 @@
 									"type": "string"
 								}
 							},
-							"required": ["mimeType", "size", "content"]
+							"required": ["content"]
 						}
 					}
 				},
@@ -4679,7 +4679,7 @@
 							"type": "string"
 						}
 					},
-					"required": ["mimeType", "size", "content"]
+					"required": ["content"]
 				},
 				"minItems": 1,
 				"noFill": true
@@ -4730,7 +4730,7 @@
 							"type": "string"
 						}
 					},
-					"required": ["mimeType", "size", "content"]
+					"required": ["content"]
 				},
 				"minItems": 1,
 				"noFill": true
