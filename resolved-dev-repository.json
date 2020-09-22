@@ -10709,7 +10709,9 @@
 		},
 		"http://platform.selfkey.org/schema/ui/national-id-number.json": {
 			"url": "http://platform.selfkey.org/schema/ui/national-id-number.json",
-			"schema": {}
+			"schema": {
+				"ui:order": ["id_number", "issuing_country"]
+			}
 		}
 	},
 	"identityAttributeSchema": {
