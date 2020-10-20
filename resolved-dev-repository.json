@@ -4102,7 +4102,7 @@
 				"title": "BTC Wallet Address",
 				"description": "Please enter your Bitcoin Wallet Address.",
 				"type": "string",
-				"pattern": "^[13][a-km-zA-HJ-NP-Z1-9]{25,34}$"
+				"pattern": "^(bc1|[13])[a-zA-HJ-NP-Z0-9]{25,39}$"
 			},
 			"dereferenced": {
 				"$id": "http://platform.selfkey.org/schema/attribute/btc-address.json",
@@ -4113,7 +4113,7 @@
 				"title": "BTC Wallet Address",
 				"description": "Please enter your Bitcoin Wallet Address.",
 				"type": "string",
-				"pattern": "^[13][a-km-zA-HJ-NP-Z1-9]{25,34}$"
+				"pattern": "^(bc1|[13])[a-zA-HJ-NP-Z0-9]{25,39}$"
 			}
 		},
 		"http://platform.selfkey.org/schema/attribute/eth-address.json": {
