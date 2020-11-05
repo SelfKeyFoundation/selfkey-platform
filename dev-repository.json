@@ -180,5 +180,6 @@
 			"ui": "http://platform.selfkey.org/schema/ui/national-id-number.json",
 			"entityType": ["individual"]
 		}
-	]
+	],
+	"verifiableCredentialSchemaId": "http://platform.selfkey.org/schema/verifiable-credential.json"
 }

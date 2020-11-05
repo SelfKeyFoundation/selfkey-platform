@@ -181,6 +181,7 @@
 			"entityType": ["individual"]
 		}
 	],
+	"verifiableCredentialSchemaId": "http://platform.selfkey.org/schema/verifiable-credential.json",
 	"jsonSchemas": {
 		"http://platform.selfkey.org/schema/attribute/bank-statement.json": {
 			"url": "http://platform.selfkey.org/schema/attribute/bank-statement.json",
