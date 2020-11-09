@@ -1,8 +1,8 @@
-import * as testUtils from '../../test/utils';
-import verifiableCredential from '../verifiable-credential';
-import { validPayloads, invalidPayloads } from './__fixtures__/verifiable-credential';
+import * as testUtils from '../../../test/utils';
+import over18 from '../over-18';
+import { validPayloads, invalidPayloads } from './__fixtures__/over-18';
 
-describe('verifiable-credential', () => {
+describe('over-18-credential', () => {
 	let validate = null;
 	let ajv = null;
 	let repo = null;
@@ -11,18 +11,22 @@ describe('verifiable-credential', () => {
 		const options = { testDir: __dirname };
 		ajv = await testUtils.loadAllSchemas(options);
 		repo = await testUtils.loadRepository(options);
-		validate = ajv.compile(verifiableCredential);
+		validate = ajv.compile(over18);
 	});
 
-	it('repo shouild point to credential schema id', async () => {
-		expect(repo.verifiableCredentialSchemaId).toEqual(
-			'http://platform.selfkey.org/schema/verifiable-credential.json'
+	it('repo should contain over-18', async () => {
+		expect(repo.verifiableCredentials).toEqual(
+			expect.arrayContaining([
+				{
+					id: 'http://platform.selfkey.org/schema/credentials/over-18.json'
+				}
+			])
 		);
 	});
 
 	it('schema should be valid', () => {
-		ajv.validateSchema(verifiableCredential);
-		expect(ajv.validateSchema(verifiableCredential)).toBe(true);
+		ajv.validateSchema(over18);
+		expect(ajv.validateSchema(over18)).toBe(true);
 	});
 
 	const t = (payload, valid) =>

@@ -181,5 +181,10 @@
 			"entityType": ["individual"]
 		}
 	],
-	"verifiableCredentialSchemaId": "http://platform.selfkey.org/schema/verifiable-credential.json"
+	"verifiableCredentialSchemaId": "http://platform.selfkey.org/schema/verifiable-credential.json",
+	"verifiableCredentials": [
+		{ "id": "http://platform.selfkey.org/schema/credentials/keyfi.json" },
+		{ "id": "http://platform.selfkey.org/schema/credentials/over-18.json" },
+		{ "id": "http://platform.selfkey.org/schema/credentials/not-in-sanction-lists.json" }
+	]
 }

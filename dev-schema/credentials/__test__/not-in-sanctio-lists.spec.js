@@ -1,8 +1,8 @@
-import * as testUtils from '../../test/utils';
-import verifiableCredential from '../verifiable-credential';
-import { validPayloads, invalidPayloads } from './__fixtures__/verifiable-credential';
+import * as testUtils from '../../../test/utils';
+import notInSanctions from '../not-in-sanction-lists';
+import { validPayloads, invalidPayloads } from './__fixtures__/not-in-sanction-lists';
 
-describe('verifiable-credential', () => {
+describe('not in sanction lists credential', () => {
 	let validate = null;
 	let ajv = null;
 	let repo = null;
@@ -11,18 +11,22 @@ describe('verifiable-credential', () => {
 		const options = { testDir: __dirname };
 		ajv = await testUtils.loadAllSchemas(options);
 		repo = await testUtils.loadRepository(options);
-		validate = ajv.compile(verifiableCredential);
+		validate = ajv.compile(notInSanctions);
 	});
 
-	it('repo shouild point to credential schema id', async () => {
-		expect(repo.verifiableCredentialSchemaId).toEqual(
-			'http://platform.selfkey.org/schema/verifiable-credential.json'
+	it('repo should contain not in sanction lists credential', async () => {
+		expect(repo.verifiableCredentials).toEqual(
+			expect.arrayContaining([
+				{
+					id: 'http://platform.selfkey.org/schema/credentials/not-in-sanction-lists.json'
+				}
+			])
 		);
 	});
 
 	it('schema should be valid', () => {
-		ajv.validateSchema(verifiableCredential);
-		expect(ajv.validateSchema(verifiableCredential)).toBe(true);
+		ajv.validateSchema(notInSanctions);
+		expect(ajv.validateSchema(notInSanctions)).toBe(true);
 	});
 
 	const t = (payload, valid) =>

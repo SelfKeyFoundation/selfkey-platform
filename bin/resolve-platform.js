@@ -22,7 +22,7 @@ const dereferenceJsonSchema = (schema, options) => {
 		canRead: /platform\.selfkey\.org/i,
 		async read(file) {
 			return loadJsonFile(getSchemaPath(file.url, options));
-		},
+		}
 	};
 	return RefParser.dereference(schema, { resolve: { selfkey: resolver } });
 };
@@ -54,6 +54,23 @@ const resolveRepository = async options => {
 		acc[curr.url] = curr;
 		return acc;
 	}, {});
+
+	const credentials = await Promise.all(
+		(repo.verifiableCredentials || []).map(async url => {
+			if (typeof url !== 'string') {
+				url = url.id;
+			}
+			const schema = await loadSchema(url, options);
+			const dereferenced = await dereferenceJsonSchema(_.cloneDeep(schema), options);
+			return { url, schema, dereferenced };
+		})
+	);
+
+	jsonSchemas = credentials.reduce((acc, curr) => {
+		acc[curr.url] = curr;
+		return acc;
+	}, jsonSchemas);
+
 	let uiSchemas = await Promise.all(
 		repo.identityAttributes
 			.filter(r => typeof r !== 'string' && r.ui)
@@ -73,7 +90,15 @@ const resolveRepository = async options => {
 
 		resolvedRepository.identityAttributeSchema = {
 			url: repo.identityAttributeSchemaId,
-			schema,
+			schema
+		};
+	}
+	if (repo.verifiableCredentialSchemaId) {
+		const schema = await loadSchema(repo.verifiableCredentialSchemaId, options);
+
+		resolvedRepository.verifiableCredentialSchema = {
+			url: repo.verifiableCredentialSchemaId,
+			schema
 		};
 	}
 	return resolvedRepository;
