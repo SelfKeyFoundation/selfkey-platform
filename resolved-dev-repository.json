@@ -181,6 +181,18 @@
 			"entityType": ["individual"]
 		}
 	],
+	"verifiableCredentialSchemaId": "http://platform.selfkey.org/schema/verifiable-credential.json",
+	"verifiableCredentials": [
+		{
+			"id": "http://platform.selfkey.org/schema/credentials/keyfi.json"
+		},
+		{
+			"id": "http://platform.selfkey.org/schema/credentials/over-18.json"
+		},
+		{
+			"id": "http://platform.selfkey.org/schema/credentials/not-in-sanction-lists.json"
+		}
+	],
 	"jsonSchemas": {
 		"http://platform.selfkey.org/schema/attribute/bank-statement.json": {
 			"url": "http://platform.selfkey.org/schema/attribute/bank-statement.json",
@@ -10459,6 +10471,1134 @@
 				"type": "object",
 				"required": ["id_number", "issuing_country"]
 			}
+		},
+		"http://platform.selfkey.org/schema/credentials/keyfi.json": {
+			"url": "http://platform.selfkey.org/schema/credentials/keyfi.json",
+			"schema": {
+				"title": "KeyFi Eligibility Credential",
+				"$id": "http://platform.selfkey.org/schema/credentials/keyfi.json",
+				"$schema": "http://json-schema.org/draft-07/schema#",
+				"allOf": [
+					{
+						"$ref": "http://platform.selfkey.org/schema/verifiable-credential.json"
+					},
+					{
+						"type": "object",
+						"properties": {
+							"name": {
+								"type": "string",
+								"const": "KeyFi Eligibility Credential"
+							},
+							"keyfiEligibility": {
+								"type": "boolean",
+								"const": true
+							}
+						},
+						"required": ["keyfiEligibility"]
+					}
+				]
+			},
+			"dereferenced": {
+				"title": "KeyFi Eligibility Credential",
+				"$id": "http://platform.selfkey.org/schema/credentials/keyfi.json",
+				"$schema": "http://json-schema.org/draft-07/schema#",
+				"allOf": [
+					{
+						"title": "Selfkey verifiable credential",
+						"$id": "http://platform.selfkey.org/schema/verifiable-credential.json",
+						"$schema": "http://json-schema.org/draft-07/schema#",
+						"type": "object",
+						"definitions": {
+							"issuer": {
+								"type": "object",
+								"properties": {
+									"id": {
+										"type": "string",
+										"format": "uri",
+										"description": "URI when dereferenced, results in a document containing machine-readable information about the issuer that can be used to verify the information expressed in the credential. More information in https://www.w3.org/TR/vc-data-model/#issuer"
+									},
+									"name": {
+										"type": "string",
+										"description": "Issuer's name"
+									},
+									"identityProof": {
+										"type": "object",
+										"properties": {
+											"type": {
+												"type": "string",
+												"enum": ["DNS-TXT", "W3C-DID"]
+											},
+											"location": {
+												"type": "string",
+												"description": "Url of the website referencing to document store OR valid DID as defined by W3C: https://www.w3.org/TR/did-core/"
+											}
+										},
+										"additionalProperties": false,
+										"required": ["type", "location"]
+									}
+								},
+								"required": ["id", "name", "identityProof"],
+								"additionalProperties": false
+							},
+							"fileEvidence": {
+								"type": "object",
+								"properties": {
+									"filename": {
+										"type": "string",
+										"description": "Name of attachment, with appropriate extensions"
+									},
+									"type": {
+										"type": "string",
+										"const": "DocumentVerification2018",
+										"description": "A valid evidence type as explained by https://www.w3.org/TR/vc-data-model/#types"
+									},
+									"mimeType": {
+										"type": "string",
+										"description": "Mime-type of attachment",
+										"enum": ["application/pdf", "image/png", "image/jpeg"]
+									},
+									"data": {
+										"type": "string",
+										"description": "Base64 encoding of attachment"
+									}
+								},
+								"required": ["filename", "mimeType", "data", "type"],
+								"additionalProperties": false
+							},
+							"credentialEvidence": {
+								"type": "object",
+								"properties": {
+									"type": {
+										"type": "string",
+										"const": "SelfkeyCredential2020",
+										"description": "A valid evidence type as explained by https://www.w3.org/TR/vc-data-model/#types"
+									},
+									"repository": {
+										"type": "string",
+										"format": "url"
+									},
+									"id": {
+										"type": "string",
+										"format": "url"
+									},
+									"value": {
+										"type": "object",
+										"additionalProperties": true
+									}
+								},
+								"required": ["type", "id", "value"],
+								"additionalProperties": false
+							},
+							"identityAttributeEvidence": {
+								"type": "object",
+								"properties": {
+									"type": {
+										"type": "string",
+										"const": "SelfkeyIdentityAttribute2020",
+										"description": "A valid evidence type as explained by https://www.w3.org/TR/vc-data-model/#types"
+									},
+									"repository": {
+										"type": "string",
+										"format": "url"
+									},
+									"id": {
+										"type": "string",
+										"format": "url"
+									},
+									"value": {
+										"type": "object",
+										"additionalProperties": true
+									}
+								},
+								"required": ["type", "id", "value"],
+								"additionalProperties": false
+							}
+						},
+						"properties": {
+							"@context": {
+								"type": "array",
+								"items": {
+									"type": "string",
+									"format": "uri"
+								},
+								"description": "List of URI to determine the terminology used in the verifiable credential as explained by https://www.w3.org/TR/vc-data-model/#contexts"
+							},
+							"id": {
+								"type": "string",
+								"format": "uri",
+								"description": "URI to the subject of the credential as explained by https://www.w3.org/TR/vc-data-model/#credential-subject"
+							},
+							"reference": {
+								"type": "string",
+								"description": "Internal reference, usually serial number, of this document"
+							},
+							"name": {
+								"type": "string",
+								"description": "Human readable name of the credential"
+							},
+							"type": {
+								"type": "array",
+								"items": {
+									"type": "string"
+								},
+								"description": "Specific verifiable credential type as explained by https://www.w3.org/TR/vc-data-model/#types"
+							},
+							"validFrom": {
+								"type": "string",
+								"format": "date-time",
+								"description": "Date and time when a credential becomes valid."
+							},
+							"validUntil": {
+								"type": "string",
+								"format": "date-time",
+								"description": "Date and time when a credential becomes valid."
+							},
+							"issuer": {
+								"type": "object",
+								"properties": {
+									"id": {
+										"type": "string",
+										"format": "uri",
+										"description": "URI when dereferenced, results in a document containing machine-readable information about the issuer that can be used to verify the information expressed in the credential. More information in https://www.w3.org/TR/vc-data-model/#issuer"
+									},
+									"name": {
+										"type": "string",
+										"description": "Issuer's name"
+									},
+									"identityProof": {
+										"type": "object",
+										"properties": {
+											"type": {
+												"type": "string",
+												"enum": ["DNS-TXT", "W3C-DID"]
+											},
+											"location": {
+												"type": "string",
+												"description": "Url of the website referencing to document store OR valid DID as defined by W3C: https://www.w3.org/TR/did-core/"
+											}
+										},
+										"additionalProperties": false,
+										"required": ["type", "location"]
+									}
+								},
+								"required": ["id", "name", "identityProof"],
+								"additionalProperties": false
+							},
+							"template": {
+								"type": "object",
+								"properties": {
+									"name": {
+										"type": "string",
+										"description": "Template name to be use by template renderer to determine the template to use"
+									},
+									"type": {
+										"type": "string",
+										"description": "Type of renderer template",
+										"enum": ["EMBEDDED_RENDERER"]
+									},
+									"url": {
+										"type": "string",
+										"description": "URL of a decentralised renderer to render this document",
+										"pattern": "^(https?)://"
+									}
+								},
+								"required": ["name", "type", "url"],
+								"additionalProperties": false
+							},
+							"proof": {
+								"type": "object",
+								"properties": {
+									"type": {
+										"type": "string",
+										"description": "Proof method name as explained by https://www.w3.org/TR/vc-data-model/#types",
+										"enum": ["OpenAttestationSignature2018"]
+									},
+									"method": {
+										"type": "string",
+										"description": "Proof open attestation method",
+										"enum": ["TOKEN_REGISTRY", "DOCUMENT_STORE"]
+									},
+									"value": {
+										"description": "Proof value for issuer(s)",
+										"type": "string"
+									}
+								},
+								"required": ["type", "method", "value"],
+								"additionalProperties": false
+							},
+							"recipient": {
+								"type": "object",
+								"properties": {
+									"name": {
+										"type": "string",
+										"description": "Recipient's name"
+									}
+								},
+								"additionalProperties": true
+							},
+							"evidence": {
+								"type": "array",
+								"items": {
+									"oneOf": [
+										{
+											"type": "object",
+											"properties": {
+												"filename": {
+													"type": "string",
+													"description": "Name of attachment, with appropriate extensions"
+												},
+												"type": {
+													"type": "string",
+													"const": "DocumentVerification2018",
+													"description": "A valid evidence type as explained by https://www.w3.org/TR/vc-data-model/#types"
+												},
+												"mimeType": {
+													"type": "string",
+													"description": "Mime-type of attachment",
+													"enum": [
+														"application/pdf",
+														"image/png",
+														"image/jpeg"
+													]
+												},
+												"data": {
+													"type": "string",
+													"description": "Base64 encoding of attachment"
+												}
+											},
+											"required": ["filename", "mimeType", "data", "type"],
+											"additionalProperties": false
+										},
+										{
+											"type": "object",
+											"properties": {
+												"type": {
+													"type": "string",
+													"const": "SelfkeyCredential2020",
+													"description": "A valid evidence type as explained by https://www.w3.org/TR/vc-data-model/#types"
+												},
+												"repository": {
+													"type": "string",
+													"format": "url"
+												},
+												"id": {
+													"type": "string",
+													"format": "url"
+												},
+												"value": {
+													"type": "object",
+													"additionalProperties": true
+												}
+											},
+											"required": ["type", "id", "value"],
+											"additionalProperties": false
+										},
+										{
+											"type": "object",
+											"properties": {
+												"type": {
+													"type": "string",
+													"const": "SelfkeyIdentityAttribute2020",
+													"description": "A valid evidence type as explained by https://www.w3.org/TR/vc-data-model/#types"
+												},
+												"repository": {
+													"type": "string",
+													"format": "url"
+												},
+												"id": {
+													"type": "string",
+													"format": "url"
+												},
+												"value": {
+													"type": "object",
+													"additionalProperties": true
+												}
+											},
+											"required": ["type", "id", "value"],
+											"additionalProperties": false
+										}
+									]
+								}
+							}
+						},
+						"required": [
+							"reference",
+							"issuer",
+							"template",
+							"proof",
+							"name",
+							"validFrom"
+						],
+						"additionalProperties": true
+					},
+					{
+						"type": "object",
+						"properties": {
+							"name": {
+								"type": "string",
+								"const": "KeyFi Eligibility Credential"
+							},
+							"keyfiEligibility": {
+								"type": "boolean",
+								"const": true
+							}
+						},
+						"required": ["keyfiEligibility"]
+					}
+				]
+			}
+		},
+		"http://platform.selfkey.org/schema/credentials/over-18.json": {
+			"url": "http://platform.selfkey.org/schema/credentials/over-18.json",
+			"schema": {
+				"title": "Over 18 Credential",
+				"$id": "http://platform.selfkey.org/schema/credentials/over-18.json",
+				"$schema": "http://json-schema.org/draft-07/schema#",
+				"allOf": [
+					{
+						"$ref": "http://platform.selfkey.org/schema/verifiable-credential.json"
+					},
+					{
+						"type": "object",
+						"properties": {
+							"name": {
+								"type": "string",
+								"const": "Age over 18 Credential"
+							},
+							"over18": {
+								"type": "boolean",
+								"const": true
+							}
+						},
+						"required": ["over18"]
+					}
+				]
+			},
+			"dereferenced": {
+				"title": "Over 18 Credential",
+				"$id": "http://platform.selfkey.org/schema/credentials/over-18.json",
+				"$schema": "http://json-schema.org/draft-07/schema#",
+				"allOf": [
+					{
+						"title": "Selfkey verifiable credential",
+						"$id": "http://platform.selfkey.org/schema/verifiable-credential.json",
+						"$schema": "http://json-schema.org/draft-07/schema#",
+						"type": "object",
+						"definitions": {
+							"issuer": {
+								"type": "object",
+								"properties": {
+									"id": {
+										"type": "string",
+										"format": "uri",
+										"description": "URI when dereferenced, results in a document containing machine-readable information about the issuer that can be used to verify the information expressed in the credential. More information in https://www.w3.org/TR/vc-data-model/#issuer"
+									},
+									"name": {
+										"type": "string",
+										"description": "Issuer's name"
+									},
+									"identityProof": {
+										"type": "object",
+										"properties": {
+											"type": {
+												"type": "string",
+												"enum": ["DNS-TXT", "W3C-DID"]
+											},
+											"location": {
+												"type": "string",
+												"description": "Url of the website referencing to document store OR valid DID as defined by W3C: https://www.w3.org/TR/did-core/"
+											}
+										},
+										"additionalProperties": false,
+										"required": ["type", "location"]
+									}
+								},
+								"required": ["id", "name", "identityProof"],
+								"additionalProperties": false
+							},
+							"fileEvidence": {
+								"type": "object",
+								"properties": {
+									"filename": {
+										"type": "string",
+										"description": "Name of attachment, with appropriate extensions"
+									},
+									"type": {
+										"type": "string",
+										"const": "DocumentVerification2018",
+										"description": "A valid evidence type as explained by https://www.w3.org/TR/vc-data-model/#types"
+									},
+									"mimeType": {
+										"type": "string",
+										"description": "Mime-type of attachment",
+										"enum": ["application/pdf", "image/png", "image/jpeg"]
+									},
+									"data": {
+										"type": "string",
+										"description": "Base64 encoding of attachment"
+									}
+								},
+								"required": ["filename", "mimeType", "data", "type"],
+								"additionalProperties": false
+							},
+							"credentialEvidence": {
+								"type": "object",
+								"properties": {
+									"type": {
+										"type": "string",
+										"const": "SelfkeyCredential2020",
+										"description": "A valid evidence type as explained by https://www.w3.org/TR/vc-data-model/#types"
+									},
+									"repository": {
+										"type": "string",
+										"format": "url"
+									},
+									"id": {
+										"type": "string",
+										"format": "url"
+									},
+									"value": {
+										"type": "object",
+										"additionalProperties": true
+									}
+								},
+								"required": ["type", "id", "value"],
+								"additionalProperties": false
+							},
+							"identityAttributeEvidence": {
+								"type": "object",
+								"properties": {
+									"type": {
+										"type": "string",
+										"const": "SelfkeyIdentityAttribute2020",
+										"description": "A valid evidence type as explained by https://www.w3.org/TR/vc-data-model/#types"
+									},
+									"repository": {
+										"type": "string",
+										"format": "url"
+									},
+									"id": {
+										"type": "string",
+										"format": "url"
+									},
+									"value": {
+										"type": "object",
+										"additionalProperties": true
+									}
+								},
+								"required": ["type", "id", "value"],
+								"additionalProperties": false
+							}
+						},
+						"properties": {
+							"@context": {
+								"type": "array",
+								"items": {
+									"type": "string",
+									"format": "uri"
+								},
+								"description": "List of URI to determine the terminology used in the verifiable credential as explained by https://www.w3.org/TR/vc-data-model/#contexts"
+							},
+							"id": {
+								"type": "string",
+								"format": "uri",
+								"description": "URI to the subject of the credential as explained by https://www.w3.org/TR/vc-data-model/#credential-subject"
+							},
+							"reference": {
+								"type": "string",
+								"description": "Internal reference, usually serial number, of this document"
+							},
+							"name": {
+								"type": "string",
+								"description": "Human readable name of the credential"
+							},
+							"type": {
+								"type": "array",
+								"items": {
+									"type": "string"
+								},
+								"description": "Specific verifiable credential type as explained by https://www.w3.org/TR/vc-data-model/#types"
+							},
+							"validFrom": {
+								"type": "string",
+								"format": "date-time",
+								"description": "Date and time when a credential becomes valid."
+							},
+							"validUntil": {
+								"type": "string",
+								"format": "date-time",
+								"description": "Date and time when a credential becomes valid."
+							},
+							"issuer": {
+								"type": "object",
+								"properties": {
+									"id": {
+										"type": "string",
+										"format": "uri",
+										"description": "URI when dereferenced, results in a document containing machine-readable information about the issuer that can be used to verify the information expressed in the credential. More information in https://www.w3.org/TR/vc-data-model/#issuer"
+									},
+									"name": {
+										"type": "string",
+										"description": "Issuer's name"
+									},
+									"identityProof": {
+										"type": "object",
+										"properties": {
+											"type": {
+												"type": "string",
+												"enum": ["DNS-TXT", "W3C-DID"]
+											},
+											"location": {
+												"type": "string",
+												"description": "Url of the website referencing to document store OR valid DID as defined by W3C: https://www.w3.org/TR/did-core/"
+											}
+										},
+										"additionalProperties": false,
+										"required": ["type", "location"]
+									}
+								},
+								"required": ["id", "name", "identityProof"],
+								"additionalProperties": false
+							},
+							"template": {
+								"type": "object",
+								"properties": {
+									"name": {
+										"type": "string",
+										"description": "Template name to be use by template renderer to determine the template to use"
+									},
+									"type": {
+										"type": "string",
+										"description": "Type of renderer template",
+										"enum": ["EMBEDDED_RENDERER"]
+									},
+									"url": {
+										"type": "string",
+										"description": "URL of a decentralised renderer to render this document",
+										"pattern": "^(https?)://"
+									}
+								},
+								"required": ["name", "type", "url"],
+								"additionalProperties": false
+							},
+							"proof": {
+								"type": "object",
+								"properties": {
+									"type": {
+										"type": "string",
+										"description": "Proof method name as explained by https://www.w3.org/TR/vc-data-model/#types",
+										"enum": ["OpenAttestationSignature2018"]
+									},
+									"method": {
+										"type": "string",
+										"description": "Proof open attestation method",
+										"enum": ["TOKEN_REGISTRY", "DOCUMENT_STORE"]
+									},
+									"value": {
+										"description": "Proof value for issuer(s)",
+										"type": "string"
+									}
+								},
+								"required": ["type", "method", "value"],
+								"additionalProperties": false
+							},
+							"recipient": {
+								"type": "object",
+								"properties": {
+									"name": {
+										"type": "string",
+										"description": "Recipient's name"
+									}
+								},
+								"additionalProperties": true
+							},
+							"evidence": {
+								"type": "array",
+								"items": {
+									"oneOf": [
+										{
+											"type": "object",
+											"properties": {
+												"filename": {
+													"type": "string",
+													"description": "Name of attachment, with appropriate extensions"
+												},
+												"type": {
+													"type": "string",
+													"const": "DocumentVerification2018",
+													"description": "A valid evidence type as explained by https://www.w3.org/TR/vc-data-model/#types"
+												},
+												"mimeType": {
+													"type": "string",
+													"description": "Mime-type of attachment",
+													"enum": [
+														"application/pdf",
+														"image/png",
+														"image/jpeg"
+													]
+												},
+												"data": {
+													"type": "string",
+													"description": "Base64 encoding of attachment"
+												}
+											},
+											"required": ["filename", "mimeType", "data", "type"],
+											"additionalProperties": false
+										},
+										{
+											"type": "object",
+											"properties": {
+												"type": {
+													"type": "string",
+													"const": "SelfkeyCredential2020",
+													"description": "A valid evidence type as explained by https://www.w3.org/TR/vc-data-model/#types"
+												},
+												"repository": {
+													"type": "string",
+													"format": "url"
+												},
+												"id": {
+													"type": "string",
+													"format": "url"
+												},
+												"value": {
+													"type": "object",
+													"additionalProperties": true
+												}
+											},
+											"required": ["type", "id", "value"],
+											"additionalProperties": false
+										},
+										{
+											"type": "object",
+											"properties": {
+												"type": {
+													"type": "string",
+													"const": "SelfkeyIdentityAttribute2020",
+													"description": "A valid evidence type as explained by https://www.w3.org/TR/vc-data-model/#types"
+												},
+												"repository": {
+													"type": "string",
+													"format": "url"
+												},
+												"id": {
+													"type": "string",
+													"format": "url"
+												},
+												"value": {
+													"type": "object",
+													"additionalProperties": true
+												}
+											},
+											"required": ["type", "id", "value"],
+											"additionalProperties": false
+										}
+									]
+								}
+							}
+						},
+						"required": [
+							"reference",
+							"issuer",
+							"template",
+							"proof",
+							"name",
+							"validFrom"
+						],
+						"additionalProperties": true
+					},
+					{
+						"type": "object",
+						"properties": {
+							"name": {
+								"type": "string",
+								"const": "Age over 18 Credential"
+							},
+							"over18": {
+								"type": "boolean",
+								"const": true
+							}
+						},
+						"required": ["over18"]
+					}
+				]
+			}
+		},
+		"http://platform.selfkey.org/schema/credentials/not-in-sanction-lists.json": {
+			"url": "http://platform.selfkey.org/schema/credentials/not-in-sanction-lists.json",
+			"schema": {
+				"title": "Not in sanction lists credential",
+				"$id": "http://platform.selfkey.org/schema/credentials/not-in-sanction-lists.json",
+				"$schema": "http://json-schema.org/draft-07/schema#",
+				"allOf": [
+					{
+						"$ref": "http://platform.selfkey.org/schema/verifiable-credential.json"
+					},
+					{
+						"type": "object",
+						"properties": {
+							"name": {
+								"type": "string",
+								"const": "Not in sanction lists credential"
+							},
+							"notInSanctionLists": {
+								"type": "boolean",
+								"const": true
+							}
+						},
+						"required": ["notInSanctionLists"]
+					}
+				]
+			},
+			"dereferenced": {
+				"title": "Not in sanction lists credential",
+				"$id": "http://platform.selfkey.org/schema/credentials/not-in-sanction-lists.json",
+				"$schema": "http://json-schema.org/draft-07/schema#",
+				"allOf": [
+					{
+						"title": "Selfkey verifiable credential",
+						"$id": "http://platform.selfkey.org/schema/verifiable-credential.json",
+						"$schema": "http://json-schema.org/draft-07/schema#",
+						"type": "object",
+						"definitions": {
+							"issuer": {
+								"type": "object",
+								"properties": {
+									"id": {
+										"type": "string",
+										"format": "uri",
+										"description": "URI when dereferenced, results in a document containing machine-readable information about the issuer that can be used to verify the information expressed in the credential. More information in https://www.w3.org/TR/vc-data-model/#issuer"
+									},
+									"name": {
+										"type": "string",
+										"description": "Issuer's name"
+									},
+									"identityProof": {
+										"type": "object",
+										"properties": {
+											"type": {
+												"type": "string",
+												"enum": ["DNS-TXT", "W3C-DID"]
+											},
+											"location": {
+												"type": "string",
+												"description": "Url of the website referencing to document store OR valid DID as defined by W3C: https://www.w3.org/TR/did-core/"
+											}
+										},
+										"additionalProperties": false,
+										"required": ["type", "location"]
+									}
+								},
+								"required": ["id", "name", "identityProof"],
+								"additionalProperties": false
+							},
+							"fileEvidence": {
+								"type": "object",
+								"properties": {
+									"filename": {
+										"type": "string",
+										"description": "Name of attachment, with appropriate extensions"
+									},
+									"type": {
+										"type": "string",
+										"const": "DocumentVerification2018",
+										"description": "A valid evidence type as explained by https://www.w3.org/TR/vc-data-model/#types"
+									},
+									"mimeType": {
+										"type": "string",
+										"description": "Mime-type of attachment",
+										"enum": ["application/pdf", "image/png", "image/jpeg"]
+									},
+									"data": {
+										"type": "string",
+										"description": "Base64 encoding of attachment"
+									}
+								},
+								"required": ["filename", "mimeType", "data", "type"],
+								"additionalProperties": false
+							},
+							"credentialEvidence": {
+								"type": "object",
+								"properties": {
+									"type": {
+										"type": "string",
+										"const": "SelfkeyCredential2020",
+										"description": "A valid evidence type as explained by https://www.w3.org/TR/vc-data-model/#types"
+									},
+									"repository": {
+										"type": "string",
+										"format": "url"
+									},
+									"id": {
+										"type": "string",
+										"format": "url"
+									},
+									"value": {
+										"type": "object",
+										"additionalProperties": true
+									}
+								},
+								"required": ["type", "id", "value"],
+								"additionalProperties": false
+							},
+							"identityAttributeEvidence": {
+								"type": "object",
+								"properties": {
+									"type": {
+										"type": "string",
+										"const": "SelfkeyIdentityAttribute2020",
+										"description": "A valid evidence type as explained by https://www.w3.org/TR/vc-data-model/#types"
+									},
+									"repository": {
+										"type": "string",
+										"format": "url"
+									},
+									"id": {
+										"type": "string",
+										"format": "url"
+									},
+									"value": {
+										"type": "object",
+										"additionalProperties": true
+									}
+								},
+								"required": ["type", "id", "value"],
+								"additionalProperties": false
+							}
+						},
+						"properties": {
+							"@context": {
+								"type": "array",
+								"items": {
+									"type": "string",
+									"format": "uri"
+								},
+								"description": "List of URI to determine the terminology used in the verifiable credential as explained by https://www.w3.org/TR/vc-data-model/#contexts"
+							},
+							"id": {
+								"type": "string",
+								"format": "uri",
+								"description": "URI to the subject of the credential as explained by https://www.w3.org/TR/vc-data-model/#credential-subject"
+							},
+							"reference": {
+								"type": "string",
+								"description": "Internal reference, usually serial number, of this document"
+							},
+							"name": {
+								"type": "string",
+								"description": "Human readable name of the credential"
+							},
+							"type": {
+								"type": "array",
+								"items": {
+									"type": "string"
+								},
+								"description": "Specific verifiable credential type as explained by https://www.w3.org/TR/vc-data-model/#types"
+							},
+							"validFrom": {
+								"type": "string",
+								"format": "date-time",
+								"description": "Date and time when a credential becomes valid."
+							},
+							"validUntil": {
+								"type": "string",
+								"format": "date-time",
+								"description": "Date and time when a credential becomes valid."
+							},
+							"issuer": {
+								"type": "object",
+								"properties": {
+									"id": {
+										"type": "string",
+										"format": "uri",
+										"description": "URI when dereferenced, results in a document containing machine-readable information about the issuer that can be used to verify the information expressed in the credential. More information in https://www.w3.org/TR/vc-data-model/#issuer"
+									},
+									"name": {
+										"type": "string",
+										"description": "Issuer's name"
+									},
+									"identityProof": {
+										"type": "object",
+										"properties": {
+											"type": {
+												"type": "string",
+												"enum": ["DNS-TXT", "W3C-DID"]
+											},
+											"location": {
+												"type": "string",
+												"description": "Url of the website referencing to document store OR valid DID as defined by W3C: https://www.w3.org/TR/did-core/"
+											}
+										},
+										"additionalProperties": false,
+										"required": ["type", "location"]
+									}
+								},
+								"required": ["id", "name", "identityProof"],
+								"additionalProperties": false
+							},
+							"template": {
+								"type": "object",
+								"properties": {
+									"name": {
+										"type": "string",
+										"description": "Template name to be use by template renderer to determine the template to use"
+									},
+									"type": {
+										"type": "string",
+										"description": "Type of renderer template",
+										"enum": ["EMBEDDED_RENDERER"]
+									},
+									"url": {
+										"type": "string",
+										"description": "URL of a decentralised renderer to render this document",
+										"pattern": "^(https?)://"
+									}
+								},
+								"required": ["name", "type", "url"],
+								"additionalProperties": false
+							},
+							"proof": {
+								"type": "object",
+								"properties": {
+									"type": {
+										"type": "string",
+										"description": "Proof method name as explained by https://www.w3.org/TR/vc-data-model/#types",
+										"enum": ["OpenAttestationSignature2018"]
+									},
+									"method": {
+										"type": "string",
+										"description": "Proof open attestation method",
+										"enum": ["TOKEN_REGISTRY", "DOCUMENT_STORE"]
+									},
+									"value": {
+										"description": "Proof value for issuer(s)",
+										"type": "string"
+									}
+								},
+								"required": ["type", "method", "value"],
+								"additionalProperties": false
+							},
+							"recipient": {
+								"type": "object",
+								"properties": {
+									"name": {
+										"type": "string",
+										"description": "Recipient's name"
+									}
+								},
+								"additionalProperties": true
+							},
+							"evidence": {
+								"type": "array",
+								"items": {
+									"oneOf": [
+										{
+											"type": "object",
+											"properties": {
+												"filename": {
+													"type": "string",
+													"description": "Name of attachment, with appropriate extensions"
+												},
+												"type": {
+													"type": "string",
+													"const": "DocumentVerification2018",
+													"description": "A valid evidence type as explained by https://www.w3.org/TR/vc-data-model/#types"
+												},
+												"mimeType": {
+													"type": "string",
+													"description": "Mime-type of attachment",
+													"enum": [
+														"application/pdf",
+														"image/png",
+														"image/jpeg"
+													]
+												},
+												"data": {
+													"type": "string",
+													"description": "Base64 encoding of attachment"
+												}
+											},
+											"required": ["filename", "mimeType", "data", "type"],
+											"additionalProperties": false
+										},
+										{
+											"type": "object",
+											"properties": {
+												"type": {
+													"type": "string",
+													"const": "SelfkeyCredential2020",
+													"description": "A valid evidence type as explained by https://www.w3.org/TR/vc-data-model/#types"
+												},
+												"repository": {
+													"type": "string",
+													"format": "url"
+												},
+												"id": {
+													"type": "string",
+													"format": "url"
+												},
+												"value": {
+													"type": "object",
+													"additionalProperties": true
+												}
+											},
+											"required": ["type", "id", "value"],
+											"additionalProperties": false
+										},
+										{
+											"type": "object",
+											"properties": {
+												"type": {
+													"type": "string",
+													"const": "SelfkeyIdentityAttribute2020",
+													"description": "A valid evidence type as explained by https://www.w3.org/TR/vc-data-model/#types"
+												},
+												"repository": {
+													"type": "string",
+													"format": "url"
+												},
+												"id": {
+													"type": "string",
+													"format": "url"
+												},
+												"value": {
+													"type": "object",
+													"additionalProperties": true
+												}
+											},
+											"required": ["type", "id", "value"],
+											"additionalProperties": false
+										}
+									]
+								}
+							}
+						},
+						"required": [
+							"reference",
+							"issuer",
+							"template",
+							"proof",
+							"name",
+							"validFrom"
+						],
+						"additionalProperties": true
+					},
+					{
+						"type": "object",
+						"properties": {
+							"name": {
+								"type": "string",
+								"const": "Not in sanction lists credential"
+							},
+							"notInSanctionLists": {
+								"type": "boolean",
+								"const": true
+							}
+						},
+						"required": ["notInSanctionLists"]
+					}
+				]
+			}
 		}
 	},
 	"uiSchemas": {
@@ -10750,6 +11890,234 @@
 				}
 			],
 			"required": ["$id", "title", "identityAttribute"]
+		}
+	},
+	"verifiableCredentialSchema": {
+		"url": "http://platform.selfkey.org/schema/verifiable-credential.json",
+		"schema": {
+			"title": "Selfkey verifiable credential",
+			"$id": "http://platform.selfkey.org/schema/verifiable-credential.json",
+			"$schema": "http://json-schema.org/draft-07/schema#",
+			"type": "object",
+			"definitions": {
+				"issuer": {
+					"type": "object",
+					"properties": {
+						"id": {
+							"type": "string",
+							"format": "uri",
+							"description": "URI when dereferenced, results in a document containing machine-readable information about the issuer that can be used to verify the information expressed in the credential. More information in https://www.w3.org/TR/vc-data-model/#issuer"
+						},
+						"name": {
+							"type": "string",
+							"description": "Issuer's name"
+						},
+						"identityProof": {
+							"type": "object",
+							"properties": {
+								"type": {
+									"type": "string",
+									"enum": ["DNS-TXT", "W3C-DID"]
+								},
+								"location": {
+									"type": "string",
+									"description": "Url of the website referencing to document store OR valid DID as defined by W3C: https://www.w3.org/TR/did-core/"
+								}
+							},
+							"additionalProperties": false,
+							"required": ["type", "location"]
+						}
+					},
+					"required": ["id", "name", "identityProof"],
+					"additionalProperties": false
+				},
+				"fileEvidence": {
+					"type": "object",
+					"properties": {
+						"filename": {
+							"type": "string",
+							"description": "Name of attachment, with appropriate extensions"
+						},
+						"type": {
+							"type": "string",
+							"const": "DocumentVerification2018",
+							"description": "A valid evidence type as explained by https://www.w3.org/TR/vc-data-model/#types"
+						},
+						"mimeType": {
+							"type": "string",
+							"description": "Mime-type of attachment",
+							"enum": ["application/pdf", "image/png", "image/jpeg"]
+						},
+						"data": {
+							"type": "string",
+							"description": "Base64 encoding of attachment"
+						}
+					},
+					"required": ["filename", "mimeType", "data", "type"],
+					"additionalProperties": false
+				},
+				"credentialEvidence": {
+					"type": "object",
+					"properties": {
+						"type": {
+							"type": "string",
+							"const": "SelfkeyCredential2020",
+							"description": "A valid evidence type as explained by https://www.w3.org/TR/vc-data-model/#types"
+						},
+						"repository": {
+							"type": "string",
+							"format": "url"
+						},
+						"id": {
+							"type": "string",
+							"format": "url"
+						},
+						"value": {
+							"type": "object",
+							"additionalProperties": true
+						}
+					},
+					"required": ["type", "id", "value"],
+					"additionalProperties": false
+				},
+				"identityAttributeEvidence": {
+					"type": "object",
+					"properties": {
+						"type": {
+							"type": "string",
+							"const": "SelfkeyIdentityAttribute2020",
+							"description": "A valid evidence type as explained by https://www.w3.org/TR/vc-data-model/#types"
+						},
+						"repository": {
+							"type": "string",
+							"format": "url"
+						},
+						"id": {
+							"type": "string",
+							"format": "url"
+						},
+						"value": {
+							"type": "object",
+							"additionalProperties": true
+						}
+					},
+					"required": ["type", "id", "value"],
+					"additionalProperties": false
+				}
+			},
+			"properties": {
+				"@context": {
+					"type": "array",
+					"items": {
+						"type": "string",
+						"format": "uri"
+					},
+					"description": "List of URI to determine the terminology used in the verifiable credential as explained by https://www.w3.org/TR/vc-data-model/#contexts"
+				},
+				"id": {
+					"type": "string",
+					"format": "uri",
+					"description": "URI to the subject of the credential as explained by https://www.w3.org/TR/vc-data-model/#credential-subject"
+				},
+				"reference": {
+					"type": "string",
+					"description": "Internal reference, usually serial number, of this document"
+				},
+				"name": {
+					"type": "string",
+					"description": "Human readable name of the credential"
+				},
+				"type": {
+					"type": "array",
+					"items": {
+						"type": "string"
+					},
+					"description": "Specific verifiable credential type as explained by https://www.w3.org/TR/vc-data-model/#types"
+				},
+				"validFrom": {
+					"type": "string",
+					"format": "date-time",
+					"description": "Date and time when a credential becomes valid."
+				},
+				"validUntil": {
+					"type": "string",
+					"format": "date-time",
+					"description": "Date and time when a credential becomes valid."
+				},
+				"issuer": {
+					"$ref": "#/definitions/issuer"
+				},
+				"template": {
+					"type": "object",
+					"properties": {
+						"name": {
+							"type": "string",
+							"description": "Template name to be use by template renderer to determine the template to use"
+						},
+						"type": {
+							"type": "string",
+							"description": "Type of renderer template",
+							"enum": ["EMBEDDED_RENDERER"]
+						},
+						"url": {
+							"type": "string",
+							"description": "URL of a decentralised renderer to render this document",
+							"pattern": "^(https?)://"
+						}
+					},
+					"required": ["name", "type", "url"],
+					"additionalProperties": false
+				},
+				"proof": {
+					"type": "object",
+					"properties": {
+						"type": {
+							"type": "string",
+							"description": "Proof method name as explained by https://www.w3.org/TR/vc-data-model/#types",
+							"enum": ["OpenAttestationSignature2018"]
+						},
+						"method": {
+							"type": "string",
+							"description": "Proof open attestation method",
+							"enum": ["TOKEN_REGISTRY", "DOCUMENT_STORE"]
+						},
+						"value": {
+							"description": "Proof value for issuer(s)",
+							"type": "string"
+						}
+					},
+					"required": ["type", "method", "value"],
+					"additionalProperties": false
+				},
+				"recipient": {
+					"type": "object",
+					"properties": {
+						"name": {
+							"type": "string",
+							"description": "Recipient's name"
+						}
+					},
+					"additionalProperties": true
+				},
+				"evidence": {
+					"type": "array",
+					"items": {
+						"oneOf": [
+							{
+								"$ref": "#/definitions/fileEvidence"
+							},
+							{
+								"$ref": "#/definitions/credentialEvidence"
+							},
+							{
+								"$ref": "#/definitions/identityAttributeEvidence"
+							}
+						]
+					}
+				}
+			},
+			"required": ["reference", "issuer", "template", "proof", "name", "validFrom"],
+			"additionalProperties": true
 		}
 	}
 }

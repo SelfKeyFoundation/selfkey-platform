@@ -30,20 +30,32 @@ export const loadOneSchema = async schemaPath => {
 	return schema;
 };
 
+export const createAjvObj = (metaSchemas = [], schemas = []) => {
+	const ajv = new Ajv({ validateSchema: false });
+	ajv.addFormat('file', () => {});
+	if (metaSchemas) metaSchemas.filter(s => !!s).forEach(schema => ajv.addMetaSchema(schema));
+	if (schemas) schemas.forEach(schema => ajv.addSchema(schema));
+	return ajv;
+};
+
 export const loadAllSchemas = async (options = {}) => {
 	const { testDir = __dirname } = options;
 	const base = getSchemaBase(testDir);
 	try {
 		const matches = await glob(`${base}/**/*.json`, {
-			ignore: [`${base}/ui/**/*.json`, `${base}/identity-attribute.json`]
+			ignore: [
+				`${base}/ui/**/*.json`,
+				`${base}/identity-attribute.json`,
+				`${base}/verifiable-credential.json`
+			]
 		});
 		const schemas = await Promise.all(matches.map(loadOneSchema));
-		const metaSchema = await loadOneSchema(`${base}/identity-attribute.json`);
-		const ajv = new Ajv({ validateSchema: false });
-		ajv.addFormat('file', () => {});
-		ajv.addMetaSchema(metaSchema);
-		schemas.forEach(schema => ajv.addSchema(schema));
-		return ajv;
+		const attributeSchema = await loadOneSchema(`${base}/identity-attribute.json`);
+		let credentialsSchema;
+		try {
+			credentialsSchema = await loadOneSchema(`${base}/verifiable-credential.json`);
+		} catch (error) {}
+		return createAjvObj([attributeSchema, credentialsSchema], schemas);
 	} catch (error) {
 		console.error(error);
 	}
