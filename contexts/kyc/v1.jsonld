@@ -1,0 +1,17 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "sk": "http://platform.selfkey.org/contexts/kyc#",
+    "schema": "http://schema.org/",
+    "CertificateOfIncorporation": "sk:CertificateOfIncorporation",
+    "Organization": "schema:Organization",
+    "legalName": "schema:legalName",
+    "address": "schema:address",
+    "legalEntityType": {
+      "@id": "sk:legalEntityType",
+      "@type": "schema:Text"
+    },
+    "jurisdiction": "schema:jurisdiction",
+    "foundingDate": "schema:foundingDate"
+  }
+}
