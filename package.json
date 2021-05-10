@@ -14,7 +14,7 @@
 		"glob-promise": "3.4.0",
 		"jest": "24.9.0",
 		"json-schema-ref-parser": "6.0.3",
-		"lodash": "^4.17.15",
+		"lodash": "^4.17.21",
 		"node-fetch": "2.3.0"
 	},
 	"devDependencies": {
