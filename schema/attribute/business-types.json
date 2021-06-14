@@ -1,0 +1,15 @@
+{
+  "$id": "http://platform.selfkey.org/schema/attribute/business-types.json",
+  "$schema": "http://platform.selfkey.org/schema/identity-attribute.json",
+  "identityAttribute": true,
+  "identityAttributeRepository": "http://platform.selfkey.org/repository.json",
+  "entityType": ["corporate"],
+  "title": "Business types",
+  "description": "Please select the primary business types",
+  "type": "array",
+  "uniqueItems": true,
+  "minItems": 1,
+  "items": {
+    "$ref": "http://platform.selfkey.org/schema/misc/business-type.json"
+  }
+}

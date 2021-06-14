@@ -1,184 +1,189 @@
 {
-	"name": "Selfkey.org",
-	"identityAttributeSchemaId": "http://platform.selfkey.org/schema/identity-attribute.json",
-	"identityAttributes": [
-		{
-			"json": "http://platform.selfkey.org/schema/attribute/bank-statement.json",
-			"ui": "http://platform.selfkey.org/schema/ui/bank-statement.json",
-			"entityType": ["individual"]
-		},
-		{
-			"json": "http://platform.selfkey.org/schema/attribute/date-of-birth.json",
-			"ui": "http://platform.selfkey.org/schema/ui/date-of-birth.json",
-			"entityType": ["individual"]
-		},
-		{
-			"json": "http://platform.selfkey.org/schema/attribute/incorporation-date.json",
-			"ui": "http://platform.selfkey.org/schema/ui/incorporation-date.json",
-			"entityType": ["corporate"]
-		},
-		{
-			"json": "http://platform.selfkey.org/schema/attribute/country-of-residency.json",
-			"ui": "http://platform.selfkey.org/schema/ui/country-of-residency.json",
-			"entityType": ["individual"]
-		},
-		{
-			"json": "http://platform.selfkey.org/schema/attribute/domicile.json",
-			"ui": "http://platform.selfkey.org/schema/ui/domicile.json",
-			"entityType": ["corporate"]
-		},
-		{
-			"json": "http://platform.selfkey.org/schema/attribute/drivers-license.json",
-			"ui": "http://platform.selfkey.org/schema/ui/drivers-license.json",
-			"entityType": ["individual"]
-		},
-		{
-			"json": "http://platform.selfkey.org/schema/attribute/email.json",
-			"ui": "http://platform.selfkey.org/schema/ui/email.json",
-			"entityType": ["corporate", "individual"]
-		},
-		{
-			"json": "http://platform.selfkey.org/schema/attribute/fingerprint.json",
-			"ui": "http://platform.selfkey.org/schema/ui/fingerprint.json",
-			"entityType": ["individual"]
-		},
-		{
-			"json": "http://platform.selfkey.org/schema/attribute/first-name.json",
-			"ui": "http://platform.selfkey.org/schema/ui/first-name.json",
-			"entityType": ["individual"]
-		},
-		{
-			"json": "http://platform.selfkey.org/schema/attribute/last-name.json",
-			"ui": "http://platform.selfkey.org/schema/ui/last-name.json",
-			"entityType": ["individual"]
-		},
-		{
-			"json": "http://platform.selfkey.org/schema/attribute/legal-entity-type.json",
-			"ui": "http://platform.selfkey.org/schema/ui/legal-entity-type.json",
-			"entityType": ["corporate"]
-		},
-		{
-			"json": "http://platform.selfkey.org/schema/attribute/legal-jurisdiction.json",
-			"ui": "http://platform.selfkey.org/schema/ui/legal-jurisdiction.json",
-			"entityType": ["corporate"]
-		},
-		{
-			"json": "http://platform.selfkey.org/schema/attribute/middle-name.json",
-			"ui": "http://platform.selfkey.org/schema/ui/middle-name.json",
-			"entityType": ["individual"]
-		},
-		{
-			"json": "http://platform.selfkey.org/schema/attribute/national-id.json",
-			"ui": "http://platform.selfkey.org/schema/ui/national-id.json",
-			"entityType": ["individual"]
-		},
-		{
-			"json": "http://platform.selfkey.org/schema/attribute/nationality.json",
-			"ui": "http://platform.selfkey.org/schema/ui/nationality.json",
-			"entityType": ["individual"]
-		},
-		{
-			"json": "http://platform.selfkey.org/schema/attribute/passport.json",
-			"ui": "http://platform.selfkey.org/schema/ui/passport.json",
-			"entityType": ["individual"]
-		},
-		{
-			"json": "http://platform.selfkey.org/schema/attribute/phone-number.json",
-			"ui": "http://platform.selfkey.org/schema/ui/phone-number.json",
-			"entityType": ["corporate", "individual"]
-		},
-		{
-			"json": "http://platform.selfkey.org/schema/attribute/physical-address.json",
-			"ui": "http://platform.selfkey.org/schema/ui/physical-address.json",
-			"entityType": ["corporate", "individual"]
-		},
-		{
-			"json": "http://platform.selfkey.org/schema/attribute/tax-certificate.json",
-			"ui": "http://platform.selfkey.org/schema/ui/tax-certificate.json",
-			"entityType": ["corporate", "individual"]
-		},
-		{
-			"json": "http://platform.selfkey.org/schema/attribute/tax-id-number.json",
-			"ui": "http://platform.selfkey.org/schema/ui/tax-id-number.json",
-			"entityType": ["corporate", "individual"]
-		},
-		{
-			"json": "http://platform.selfkey.org/schema/attribute/utility-bill.json",
-			"ui": "http://platform.selfkey.org/schema/ui/utility-bill.json",
-			"entityType": ["individual"]
-		},
-		{
-			"json": "http://platform.selfkey.org/schema/attribute/voice-id.json",
-			"ui": "http://platform.selfkey.org/schema/ui/voice-id.json"
-		},
-		{
-			"json": "http://platform.selfkey.org/schema/attribute/work-place.json",
-			"ui": "http://platform.selfkey.org/schema/ui/work-place.json",
-			"entityType": ["individual"]
-		},
-		{
-			"json": "http://platform.selfkey.org/schema/attribute/btc-address.json",
-			"ui": "http://platform.selfkey.org/schema/ui/btc-address.json",
-			"entityType": ["corporate", "individual"]
-		},
-		{
-			"json": "http://platform.selfkey.org/schema/attribute/eth-address.json",
-			"ui": "http://platform.selfkey.org/schema/ui/eth-address.json",
-			"entityType": ["corporate", "individual"]
-		},
-		{
-			"json": "http://platform.selfkey.org/schema/attribute/dash-address.json",
-			"ui": "http://platform.selfkey.org/schema/ui/dash-address.json",
-			"entityType": ["corporate", "individual"]
-		},
-		{
-			"json": "http://platform.selfkey.org/schema/attribute/certificate-of-incorporation.json",
-			"ui": "http://platform.selfkey.org/schema/ui/certificate-of-incorporation.json",
-			"entityType": ["corporate"]
-		},
-		{
-			"json": "http://platform.selfkey.org/schema/attribute/registration-certificate.json",
-			"ui": "http://platform.selfkey.org/schema/ui/registration-certificate.json",
-			"entityType": ["corporate"]
-		},
-		{
-			"json": "http://platform.selfkey.org/schema/attribute/external-document.json",
-			"ui": "http://platform.selfkey.org/schema/ui/external-document.json",
-			"entityType": ["individual", "corporate"]
-		},
-		{
-			"json": "http://platform.selfkey.org/schema/attribute/company-name.json",
-			"ui": "http://platform.selfkey.org/schema/ui/company-name.json",
-			"entityType": ["corporate"]
-		},
-		{
-			"json": "http://platform.selfkey.org/schema/attribute/birth-certificate.json",
-			"ui": "http://platform.selfkey.org/schema/ui/birth-certificate.json"
-		},
-		{
-			"json": "http://platform.selfkey.org/schema/attribute/member-register.json",
-			"ui": "http://platform.selfkey.org/schema/ui/member-register.json",
-			"entityType": ["corporate"]
-		},
-		{
-			"json": "http://platform.selfkey.org/schema/attribute/cv.json",
-			"ui": "http://platform.selfkey.org/schema/ui/cv.json",
-			"entityType": ["individual"]
-		},
-		{
-			"json": "http://platform.selfkey.org/schema/attribute/professional-reference-letter.json",
-			"ui": "http://platform.selfkey.org/schema/ui/professional-reference-letter.json",
-			"entityType": ["corporate", "individual"]
-		},
-		{
-			"json": "http://platform.selfkey.org/schema/attribute/corporate-structure.json",
-			"system": "true",
-			"entityType": ["corporate"]
-		},
-		{
-			"json": "http://platform.selfkey.org/schema/attribute/national-id-number.json",
-			"ui": "http://platform.selfkey.org/schema/ui/national-id-number.json",
-			"entityType": ["individual"]
-		}
-	]
+  "name": "Selfkey.org",
+  "identityAttributeSchemaId": "http://platform.selfkey.org/schema/identity-attribute.json",
+  "identityAttributes": [
+    {
+      "json": "http://platform.selfkey.org/schema/attribute/bank-statement.json",
+      "ui": "http://platform.selfkey.org/schema/ui/bank-statement.json",
+      "entityType": ["individual"]
+    },
+    {
+      "json": "http://platform.selfkey.org/schema/attribute/date-of-birth.json",
+      "ui": "http://platform.selfkey.org/schema/ui/date-of-birth.json",
+      "entityType": ["individual"]
+    },
+    {
+      "json": "http://platform.selfkey.org/schema/attribute/incorporation-date.json",
+      "ui": "http://platform.selfkey.org/schema/ui/incorporation-date.json",
+      "entityType": ["corporate"]
+    },
+    {
+      "json": "http://platform.selfkey.org/schema/attribute/country-of-residency.json",
+      "ui": "http://platform.selfkey.org/schema/ui/country-of-residency.json",
+      "entityType": ["individual"]
+    },
+    {
+      "json": "http://platform.selfkey.org/schema/attribute/domicile.json",
+      "ui": "http://platform.selfkey.org/schema/ui/domicile.json",
+      "entityType": ["corporate"]
+    },
+    {
+      "json": "http://platform.selfkey.org/schema/attribute/drivers-license.json",
+      "ui": "http://platform.selfkey.org/schema/ui/drivers-license.json",
+      "entityType": ["individual"]
+    },
+    {
+      "json": "http://platform.selfkey.org/schema/attribute/email.json",
+      "ui": "http://platform.selfkey.org/schema/ui/email.json",
+      "entityType": ["corporate", "individual"]
+    },
+    {
+      "json": "http://platform.selfkey.org/schema/attribute/fingerprint.json",
+      "ui": "http://platform.selfkey.org/schema/ui/fingerprint.json",
+      "entityType": ["individual"]
+    },
+    {
+      "json": "http://platform.selfkey.org/schema/attribute/first-name.json",
+      "ui": "http://platform.selfkey.org/schema/ui/first-name.json",
+      "entityType": ["individual"]
+    },
+    {
+      "json": "http://platform.selfkey.org/schema/attribute/last-name.json",
+      "ui": "http://platform.selfkey.org/schema/ui/last-name.json",
+      "entityType": ["individual"]
+    },
+    {
+      "json": "http://platform.selfkey.org/schema/attribute/legal-entity-type.json",
+      "ui": "http://platform.selfkey.org/schema/ui/legal-entity-type.json",
+      "entityType": ["corporate"]
+    },
+    {
+      "json": "http://platform.selfkey.org/schema/attribute/legal-jurisdiction.json",
+      "ui": "http://platform.selfkey.org/schema/ui/legal-jurisdiction.json",
+      "entityType": ["corporate"]
+    },
+    {
+      "json": "http://platform.selfkey.org/schema/attribute/middle-name.json",
+      "ui": "http://platform.selfkey.org/schema/ui/middle-name.json",
+      "entityType": ["individual"]
+    },
+    {
+      "json": "http://platform.selfkey.org/schema/attribute/national-id.json",
+      "ui": "http://platform.selfkey.org/schema/ui/national-id.json",
+      "entityType": ["individual"]
+    },
+    {
+      "json": "http://platform.selfkey.org/schema/attribute/nationality.json",
+      "ui": "http://platform.selfkey.org/schema/ui/nationality.json",
+      "entityType": ["individual"]
+    },
+    {
+      "json": "http://platform.selfkey.org/schema/attribute/passport.json",
+      "ui": "http://platform.selfkey.org/schema/ui/passport.json",
+      "entityType": ["individual"]
+    },
+    {
+      "json": "http://platform.selfkey.org/schema/attribute/phone-number.json",
+      "ui": "http://platform.selfkey.org/schema/ui/phone-number.json",
+      "entityType": ["corporate", "individual"]
+    },
+    {
+      "json": "http://platform.selfkey.org/schema/attribute/physical-address.json",
+      "ui": "http://platform.selfkey.org/schema/ui/physical-address.json",
+      "entityType": ["corporate", "individual"]
+    },
+    {
+      "json": "http://platform.selfkey.org/schema/attribute/tax-certificate.json",
+      "ui": "http://platform.selfkey.org/schema/ui/tax-certificate.json",
+      "entityType": ["corporate", "individual"]
+    },
+    {
+      "json": "http://platform.selfkey.org/schema/attribute/tax-id-number.json",
+      "ui": "http://platform.selfkey.org/schema/ui/tax-id-number.json",
+      "entityType": ["corporate", "individual"]
+    },
+    {
+      "json": "http://platform.selfkey.org/schema/attribute/utility-bill.json",
+      "ui": "http://platform.selfkey.org/schema/ui/utility-bill.json",
+      "entityType": ["individual"]
+    },
+    {
+      "json": "http://platform.selfkey.org/schema/attribute/voice-id.json",
+      "ui": "http://platform.selfkey.org/schema/ui/voice-id.json"
+    },
+    {
+      "json": "http://platform.selfkey.org/schema/attribute/work-place.json",
+      "ui": "http://platform.selfkey.org/schema/ui/work-place.json",
+      "entityType": ["individual"]
+    },
+    {
+      "json": "http://platform.selfkey.org/schema/attribute/btc-address.json",
+      "ui": "http://platform.selfkey.org/schema/ui/btc-address.json",
+      "entityType": ["corporate", "individual"]
+    },
+    {
+      "json": "http://platform.selfkey.org/schema/attribute/eth-address.json",
+      "ui": "http://platform.selfkey.org/schema/ui/eth-address.json",
+      "entityType": ["corporate", "individual"]
+    },
+    {
+      "json": "http://platform.selfkey.org/schema/attribute/dash-address.json",
+      "ui": "http://platform.selfkey.org/schema/ui/dash-address.json",
+      "entityType": ["corporate", "individual"]
+    },
+    {
+      "json": "http://platform.selfkey.org/schema/attribute/certificate-of-incorporation.json",
+      "ui": "http://platform.selfkey.org/schema/ui/certificate-of-incorporation.json",
+      "entityType": ["corporate"]
+    },
+    {
+      "json": "http://platform.selfkey.org/schema/attribute/registration-certificate.json",
+      "ui": "http://platform.selfkey.org/schema/ui/registration-certificate.json",
+      "entityType": ["corporate"]
+    },
+    {
+      "json": "http://platform.selfkey.org/schema/attribute/external-document.json",
+      "ui": "http://platform.selfkey.org/schema/ui/external-document.json",
+      "entityType": ["individual", "corporate"]
+    },
+    {
+      "json": "http://platform.selfkey.org/schema/attribute/company-name.json",
+      "ui": "http://platform.selfkey.org/schema/ui/company-name.json",
+      "entityType": ["corporate"]
+    },
+    {
+      "json": "http://platform.selfkey.org/schema/attribute/birth-certificate.json",
+      "ui": "http://platform.selfkey.org/schema/ui/birth-certificate.json"
+    },
+    {
+      "json": "http://platform.selfkey.org/schema/attribute/member-register.json",
+      "ui": "http://platform.selfkey.org/schema/ui/member-register.json",
+      "entityType": ["corporate"]
+    },
+    {
+      "json": "http://platform.selfkey.org/schema/attribute/cv.json",
+      "ui": "http://platform.selfkey.org/schema/ui/cv.json",
+      "entityType": ["individual"]
+    },
+    {
+      "json": "http://platform.selfkey.org/schema/attribute/professional-reference-letter.json",
+      "ui": "http://platform.selfkey.org/schema/ui/professional-reference-letter.json",
+      "entityType": ["corporate", "individual"]
+    },
+    {
+      "json": "http://platform.selfkey.org/schema/attribute/corporate-structure.json",
+      "system": "true",
+      "entityType": ["corporate"]
+    },
+    {
+      "json": "http://platform.selfkey.org/schema/attribute/national-id-number.json",
+      "ui": "http://platform.selfkey.org/schema/ui/national-id-number.json",
+      "entityType": ["individual"]
+    },
+    {
+      "json": "http://platform.selfkey.org/schema/attribute/business-types.json",
+      "ui": "http://platform.selfkey.org/schema/ui/business-types.json",
+      "entityType": ["corporate"]
+    }
+  ]
 }
