@@ -1,0 +1,17 @@
+{
+	"$id": "https://platform.selfkey.org/schema/certifier/document/certified-true-copy.json",
+	"$ref": "https://platform.selfkey.org/schema/certifier/document/certified-document.json",
+	"certifiedDocument": true,
+	"entityType": ["individual","corporate"],
+	"title": "Certified Document",
+	"description": "A document that has been certified on the SelfKey Certifiers platform.",
+	"type": "object",
+	"properties": {
+		"certifiedDocument": {
+			"$ref": "https://platform.selfkey.org/schema/certifier/document/certified-document.json"
+		},
+		"originalDocument": {
+			"$ref": "https://platform.selfkey.org/schema/certifier/document/original-document.json"
+		}
+	}
+}

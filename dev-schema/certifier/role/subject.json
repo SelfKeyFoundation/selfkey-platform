@@ -1,0 +1,22 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema",
+	"$id": "http://platform.selfkey.org/schema/certifier/role/subject.json",
+	"title": "Subject",
+	"description": "The subject of a certified document.",
+	"type": "object",
+	"properties": {
+		"city" : {
+			"type": "string"
+		},
+		"state": {
+			"type": "string"
+		},
+		"country" : {
+			"type": "string"
+		},
+		"name" : {
+			"type": "string"
+		}
+
+	}
+}

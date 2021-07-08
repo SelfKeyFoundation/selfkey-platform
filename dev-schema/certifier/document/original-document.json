@@ -1,0 +1,27 @@
+{
+	"$id": "https://platform.selfkey.org/schema/certifier/document/original-document.json",
+	"$ref": "https://platform.selfkey.org/schema/certifier/document.json",
+	"certifiedDocument": false,
+	"entityType": ["individual","corporate"],
+	"title": "Original Document",
+	"description": "An original document that has been used to create a certified document",
+	"type": "object",
+	"properties": {
+		"originalDocument": {
+			"documentType": "string",
+			"reference": {
+				"type": "string",
+				"format": "url",
+			},
+			"image": {
+				"$ref": "https://platform.selfkey.org/schema/file/image.json"
+			},
+			"issued": {
+				"ref": "http://platform.selfkey.org/schema/misc/issue-date.json"
+			},
+			"expires": {
+				"ref": "http://platform.selfkey.org/schema/misc/issue-date.json"
+			}
+		}
+	}
+}
